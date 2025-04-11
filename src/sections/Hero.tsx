@@ -7,7 +7,7 @@ const Hero = () => {
             <span className="text-[#FCAC04]">Designing the Future</span>{" "}
             Building Today
           </h1>
-          <p className="mt-4 font-[SansationLight] text-lg text-[#D9D9D9]">
+          <p className="mt-4 font-[SansationLight] text-lg font-normal text-[#D9D9D9]">
             Award wining architectural solutions that transform spaces and
             elevate experiences
           </p>
