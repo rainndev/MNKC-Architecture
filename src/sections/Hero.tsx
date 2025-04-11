@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="relative flex w-full items-center justify-center">
+    <div className="relative flex w-full items-center justify-center border-b border-[#504F4F]">
       <div className="grid h-screen w-full max-w-7xl grid-cols-2 items-center justify-center">
         <div className="w-full">
           <h1 className="font-[ClashDisplay] text-7xl font-medium text-[#D9D9D9]">
