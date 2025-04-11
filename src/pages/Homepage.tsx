@@ -1,6 +1,7 @@
 import Navigation from "../component/Navigation";
 import AboutUs from "../sections/AboutUs";
 import Hero from "../sections/Hero";
+import Services from "../sections/Services";
 
 const Homepage = () => {
   return (
@@ -8,6 +9,7 @@ const Homepage = () => {
       <Navigation />
       <Hero />
       <AboutUs />
+      <Services />
     </main>
   );
 };
