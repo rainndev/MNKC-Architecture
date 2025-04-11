@@ -13,10 +13,10 @@ const Hero = () => {
           </p>
 
           <div className="mt-10">
-            <button className="text-md rounded-lg bg-[#D9D9D9]/10 px-6 py-3 font-[ClashDisplay] font-medium text-[#D9D9D9]">
+            <button className="text-md rounded-lg bg-[#D9D9D9]/10 px-6 py-3 font-[ClashDisplay] font-medium text-[#D9D9D9] transition duration-300 ease-in-out hover:bg-[#D9D9D9]/20">
               Start Your Project
             </button>
-            <button className="text-md ml-5 rounded-lg border border-[#504F4F] px-6 py-3 font-[ClashDisplay] font-medium text-white">
+            <button className="text-md ml-5 rounded-lg border border-[#504F4F] px-6 py-3 font-[ClashDisplay] font-medium text-white transition duration-300 ease-in-out hover:bg-[#FCAC04] hover:text-[#1E1E1E]">
               Learn More
             </button>
           </div>
