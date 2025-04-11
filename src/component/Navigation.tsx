@@ -8,7 +8,7 @@ const Navigation = () => {
         </div>
         {/* links */}
         <div className="text-[#D9D9D9]">
-          <ul className="flex space-x-5 font-sans">
+          <ul className="flex space-x-10 font-sans">
             <li>Home</li>
             <li>About</li>
             <li>Services</li>
