@@ -1,6 +1,8 @@
+import CountUp from "../component/CountUp";
+
 const AboutUs = () => {
   return (
-    <div className="flex w-full items-center justify-center border-b border-[#504F4F]">
+    <div className="inset-0 flex h-full w-full items-center justify-center border-b border-[#504F4F] bg-[#1E1E1E]">
       <div className="grid h-screen w-full max-w-7xl grid-cols-[40%_60%] flex-col items-center justify-center border-x border-[#504F4F]">
         {/* item 1 */}
         <div className="relative left-20 flex h-full w-full items-center">
@@ -25,20 +27,44 @@ const AboutUs = () => {
             <div className="grid-about mt-15 grid w-full grid-cols-2 gap-4">
               <div className="col-span-1 row-span-2 h-full">
                 <p className="text-white">
-                  10+ Years of <br />
+                  <CountUp
+                    from={0}
+                    to={10}
+                    separator=","
+                    direction="up"
+                    duration={2}
+                    className="count-up-text"
+                  />
+                  + Years of <br />
                   <span className="text-amber-400"> Experience</span>
                 </p>
               </div>
 
               <div>
                 <p className="text-white">
-                  10+ <span className="text-amber-400">Projects</span>
+                  <CountUp
+                    from={0}
+                    to={10}
+                    separator=","
+                    direction="up"
+                    duration={2}
+                    className="count-up-text"
+                  />
+                  + <span className="text-amber-400">Projects</span>
                 </p>
               </div>
 
               <div>
                 <p className="text-white">
-                  50+ <span className="text-amber-400">Clients</span>
+                  <CountUp
+                    from={0}
+                    to={50}
+                    separator=","
+                    direction="up"
+                    duration={2}
+                    className="count-up-text"
+                  />
+                  + <span className="text-amber-400">Clients</span>
                 </p>
               </div>
             </div>
