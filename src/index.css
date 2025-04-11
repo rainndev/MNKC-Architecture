@@ -23,3 +23,8 @@
   -webkit-mask-image: linear-gradient(to right, transparent, black 100%);
   mask-image: linear-gradient(to right, transparent, black 100%);
 }
+
+::selection {
+  color: #1e1e1e; /* Text color */
+  background: #fcac04; /* Background when text is selected */
+}
