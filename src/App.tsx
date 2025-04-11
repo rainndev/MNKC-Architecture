@@ -1,9 +1,9 @@
-import Navigation from "./component/Navigation";
+import Homepage from "./pages/Homepage";
 
 const App = () => {
   return (
-    <div className="underline h-screen w-screen flex bg-[#212121] justify-center items-center">
-      <Navigation />
+    <div className="flex h-screen w-screen items-center justify-center bg-[#1E1E1E]">
+      <Homepage />
     </div>
   );
 };

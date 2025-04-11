@@ -1,1 +1,16 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/ClashDisplay-Variable.ttf") format("truetype");
+  font-weight: 100 900; /* or the full supported range */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SansationLight";
+  src: url("/fonts/Sansation_Light.ttf") format("truetype");
+  font-weight: 100 900; /* or the full supported range */
+  font-style: normal;
+  font-display: swap;
+}
