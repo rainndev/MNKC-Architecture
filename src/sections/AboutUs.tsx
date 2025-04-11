@@ -2,7 +2,10 @@ import CountUp from "../component/CountUp";
 
 const AboutUs = () => {
   return (
-    <div className="inset-0 flex h-full w-full items-center justify-center border-b border-[#504F4F] bg-[#1E1E1E]">
+    <div
+      id="about"
+      className="inset-0 flex h-full w-full items-center justify-center border-b border-[#504F4F] bg-[#1E1E1E]"
+    >
       <div className="grid h-screen w-full max-w-7xl grid-cols-[40%_60%] flex-col items-center justify-center border-x border-[#504F4F]">
         {/* item 1 */}
         <div className="relative left-20 flex h-full w-full items-center">

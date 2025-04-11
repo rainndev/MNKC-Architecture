@@ -9,8 +9,12 @@ const Navigation = () => {
         {/* links */}
         <div className="text-[#D9D9D9]">
           <ul className="flex space-x-10 font-sans">
-            <li>Home</li>
-            <li>About</li>
+            <li>
+              <a href="#hero">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
             <li>Services</li>
             <li>Featured</li>
             <li>Gallery</li>
