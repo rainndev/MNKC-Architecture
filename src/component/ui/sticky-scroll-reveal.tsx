@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { AnimatePresence, useMotionValueEvent, useScroll } from "motion/react";
 import { motion, useInView } from "motion/react";
 import { cn } from "../../lib/utils";

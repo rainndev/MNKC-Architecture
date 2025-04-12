@@ -6,7 +6,7 @@ const Hero = () => {
       id="hero"
       className="relative flex w-full items-center justify-center border-b border-[#504F4F] bg-[linear-gradient(to_right,rgba(80,79,79,0.2)_1px,transparent_1px),linear-gradient(to_bottom,rgba(80,79,79,0.1)_1px,transparent_1px)] bg-[size:2rem_2rem]"
     >
-      <div className="grid h-screen w-full max-w-7xl grid-cols-1 items-center justify-center p-10 md:grid-cols-2">
+      <div className="grid h-screen w-full max-w-7xl grid-cols-1 items-center justify-center p-10 py-32 md:grid-cols-2">
         <div className="z-10 w-full">
           {/* Heading  */}
           <motion.h1
@@ -37,17 +37,17 @@ const Hero = () => {
             className="mt-10 space-y-2 space-x-5"
           >
             {/* buttons */}
-            <button className="rounded-lg bg-[#D9D9D9]/10 px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-medium text-[#D9D9D9] transition duration-300 ease-in-out hover:bg-[#D9D9D9]/20">
+            <button className="rounded-lg bg-[#D9D9D9]/10 px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-medium text-[#D9D9D9] transition duration-300 ease-in-out hover:bg-[#D9D9D9]/20 active:bg-[#D9D9D9]/20">
               Start Your Project
             </button>
-            <button className="rounded-lg border border-[#504F4F] px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-medium text-white transition duration-300 ease-in-out hover:bg-[#FCAC04] hover:text-[#1E1E1E]">
+            <button className="rounded-lg border border-[#504F4F] px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-medium text-white transition duration-300 ease-in-out hover:bg-[#FCAC04] hover:text-[#1E1E1E] active:bg-[#FCAC04] active:text-[#1E1E1E]">
               Learn More
             </button>
           </motion.div>
         </div>
         <div className="flex h-full w-full items-center"></div>
         <img
-          className="absolute -top-5 right-0 h-full object-cover"
+          className="absolute -top-5 right-0 z-0 h-full object-cover"
           src="/images/hero-3.png"
           alt=""
         />
