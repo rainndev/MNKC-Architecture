@@ -28,7 +28,7 @@ const Hero = () => {
 
         <img
           className="absolute right-0 h-full"
-          src="/images/hero-2.png"
+          src="/images/hero-3.png"
           alt=""
         />
       </div>
