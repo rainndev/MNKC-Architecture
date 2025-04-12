@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const Hero = () => {
   return (
     <div
@@ -6,23 +8,42 @@ const Hero = () => {
     >
       <div className="grid h-screen w-full max-w-7xl grid-cols-2 items-center justify-center">
         <div className="w-full">
-          <h1 className="font-[ClashDisplay] text-7xl font-medium text-[#D9D9D9]">
+          {/* Heading  */}
+          <motion.h1
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="font-[ClashDisplay] text-7xl font-medium text-[#D9D9D9]"
+          >
             <span className="text-[#FCAC04]">Designing the Future</span>{" "}
             Building Today
-          </h1>
-          <p className="mt-4 font-[SansationLight] text-lg font-normal text-[#D9D9D9]">
+          </motion.h1>
+
+          {/* Description */}
+          <motion.p
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="mt-4 font-[SansationLight] text-lg font-normal text-[#D9D9D9]"
+          >
             Award wining architectural solutions that transform spaces and
             elevate experiences
-          </p>
+          </motion.p>
 
-          <div className="mt-10">
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="mt-10"
+          >
+            {/* buttons */}
             <button className="text-md rounded-lg bg-[#D9D9D9]/10 px-6 py-3 font-[ClashDisplay] font-medium text-[#D9D9D9] transition duration-300 ease-in-out hover:bg-[#D9D9D9]/20">
               Start Your Project
             </button>
             <button className="text-md ml-5 rounded-lg border border-[#504F4F] px-6 py-3 font-[ClashDisplay] font-medium text-white transition duration-300 ease-in-out hover:bg-[#FCAC04] hover:text-[#1E1E1E]">
               Learn More
             </button>
-          </div>
+          </motion.div>
         </div>
         <div className="flex h-full w-full items-center"></div>
         <img
