@@ -10,9 +10,9 @@ const Hero = () => {
         <div className="w-full">
           {/* Heading  */}
           <motion.h1
-            initial={{ opacity: 0, y: -50 }}
+            initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.1, ease: "easeInOut" }}
             className="font-[ClashDisplay] text-7xl font-medium text-[#D9D9D9]"
           >
             <span className="text-[#FCAC04]">Designing the Future</span>{" "}
@@ -21,9 +21,9 @@ const Hero = () => {
 
           {/* Description */}
           <motion.p
-            initial={{ opacity: 0, y: -50 }}
+            initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
             className="mt-4 font-[SansationLight] text-lg font-normal text-[#D9D9D9]"
           >
             Award wining architectural solutions that transform spaces and
@@ -31,9 +31,9 @@ const Hero = () => {
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: -50 }}
+            initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
             className="mt-10"
           >
             {/* buttons */}
