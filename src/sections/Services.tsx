@@ -6,7 +6,10 @@ const Services = () => {
   const isContentVisible = useServicesStore((state) => state.isContentVisbile);
 
   return (
-    <div className="mt-15 flex h-screen w-full flex-col justify-center">
+    <div
+      id="services"
+      className="mt-15 flex h-screen w-full flex-col justify-center"
+    >
       <AnimatePresence>
         {!isContentVisible && (
           <motion.div
