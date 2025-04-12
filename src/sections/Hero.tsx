@@ -13,7 +13,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1, ease: "easeInOut" }}
-            className="font-[ClashDisplay] text-7xl text-[clamp(2.5rem,3vw,5rem)] leading-tight font-medium text-pretty text-[#D9D9D9]"
+            className="font-[ClashDisplay] text-[clamp(2.5rem,3vw,5rem)] leading-tight font-medium text-pretty text-[#D9D9D9]"
           >
             <span className="text-[#FCAC04]">Designing the Future</span>{" "}
             Building Today
@@ -34,13 +34,13 @@ const Hero = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
-            className="mt-10"
+            className="mt-10 space-y-2 space-x-5"
           >
             {/* buttons */}
             <button className="rounded-lg bg-[#D9D9D9]/10 px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-medium text-[#D9D9D9] transition duration-300 ease-in-out hover:bg-[#D9D9D9]/20">
               Start Your Project
             </button>
-            <button className="ml-5 rounded-lg border border-[#504F4F] px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-medium text-white transition duration-300 ease-in-out hover:bg-[#FCAC04] hover:text-[#1E1E1E]">
+            <button className="rounded-lg border border-[#504F4F] px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-medium text-white transition duration-300 ease-in-out hover:bg-[#FCAC04] hover:text-[#1E1E1E]">
               Learn More
             </button>
           </motion.div>
