@@ -25,9 +25,8 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex h-full w-full items-center"></div>
-
         <img
-          className="absolute right-0 h-full"
+          className="absolute -top-5 right-0 h-full"
           src="/images/hero-3.png"
           alt=""
         />
