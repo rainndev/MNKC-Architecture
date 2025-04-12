@@ -9,9 +9,9 @@ const AboutUs = () => {
       {/* Dotted Background FIRST, behind everything */}
       <div className="absolute top-0 flex h-full w-full items-center justify-center border-b border-[#504F4F] bg-[#1E1E1E] bg-[radial-gradient(rgba(80,79,79,0.5)_1px,#1E1E1E_1px)] bg-[size:30px_30px]" />
 
-      <div className="z-5 grid h-screen w-full max-w-7xl grid-cols-[40%_60%] flex-col items-center justify-center border-x border-[#504F4F] bg-[rgba(30,30,30,.5)]">
+      <div className="z-5 grid min-h-screen w-full max-w-7xl grid-cols-1 flex-col items-center justify-center border-x border-[#504F4F] bg-[rgba(30,30,30,.5)] md:grid-cols-[40%_60%]">
         {/* item 1 */}
-        <div className="relative left-20 z-50 flex h-full w-full items-center">
+        <div className="relative left-0 z-50 flex h-full w-full items-center p-10 md:left-20">
           <div className="mt-10 w-full max-w-3xl py-10">
             {/* heading */}
             <div className="flex w-full items-center justify-start text-nowrap">
@@ -19,7 +19,7 @@ const AboutUs = () => {
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1, ease: "easeInOut" }}
-                className="font-[ClashDisplay] text-5xl font-medium text-[#D9D9D9]"
+                className="font-[ClashDisplay] text-[clamp(2.5rem,3vw,3rem)] font-medium text-[#D9D9D9]"
               >
                 <span className="text-[#FCAC04]">About</span> us
               </motion.h1>
@@ -36,7 +36,7 @@ const AboutUs = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
-              className="mt-10 font-[ClashDisplay] text-lg leading-[44px] font-normal text-[#D9D9D9]"
+              className="mt-10 font-[ClashDisplay] text-[clamp(1rem,3vw,1.125rem)] leading-[44px] font-normal text-[#D9D9D9]"
             >
               At MNKC Architecture, we specialize in designing modern homes and
               buildings that blend creativity with functionality. Our team is
@@ -47,8 +47,8 @@ const AboutUs = () => {
             </motion.p>
 
             <div className="grid-about mt-15 grid w-full grid-cols-2 gap-4">
-              <div className="col-span-1 row-span-2 h-full">
-                <p className="text-white">
+              <div className="col-span-2 row-span-2 h-full md:col-span-1">
+                <p className="text-[clamp(1rem,3vw,1.125rem)] text-pretty text-white">
                   <CountUp
                     from={0}
                     to={10}
@@ -63,7 +63,7 @@ const AboutUs = () => {
               </div>
 
               <div>
-                <p className="text-white">
+                <p className="text-[clamp(1rem,3vw,1.125rem)] text-pretty text-white">
                   <CountUp
                     from={0}
                     to={10}
@@ -77,7 +77,7 @@ const AboutUs = () => {
               </div>
 
               <div>
-                <p className="text-white">
+                <p className="text-[clamp(1rem,3vw,1.125rem)] text-pretty text-white">
                   <CountUp
                     from={0}
                     to={50}
