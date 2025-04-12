@@ -18,7 +18,7 @@ const Services = () => {
           >
             <div className="w-full max-w-7xl p-10">
               {/* header title */}
-              <div className="my-6 flex items-center text-nowrap">
+              <div className="my-6 flex items-center text-wrap md:text-nowrap">
                 <motion.h1
                   initial={{ opacity: 0, y: -30 }}
                   whileInView={{ opacity: 1, y: 0 }}
