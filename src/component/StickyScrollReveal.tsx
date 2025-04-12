@@ -64,7 +64,7 @@ const content = [
 ];
 export default function StickyScrollReveal() {
   return (
-    <div className="flex h-full w-full justify-center overflow-hidden p-15">
+    <div className="flex h-full w-full justify-center overflow-hidden p-10 md:p-15">
       <StickyScroll content={content} />
     </div>
   );

@@ -97,15 +97,15 @@ export const StickyScroll = ({
           width: isContentVisible ? "100%" : 0,
         }}
         transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
-        className="flex h-full w-full justify-center space-x-10 rounded-4xl py-20"
+        className="flex h-full w-full justify-center space-x-10 rounded-4xl px-10 py-20"
       >
         <div
           data-lenis-prevent
           ref={ref}
-          className="hide-scrollbar relative flex w-full max-w-7xl overflow-y-scroll"
+          className="hide-scrollbar relative flex w-full max-w-7xl flex-col overflow-y-scroll md:flex-row"
         >
           {/* text content */}
-          <div className="relative flex w-[50%]">
+          <div className="relative flex w-full lg:w-[50%]">
             <div className="w-full">
               {content.map((item, index) => (
                 <div key={item.title + index} className="my-52">
@@ -117,7 +117,7 @@ export const StickyScroll = ({
                       animate={{
                         opacity: activeCard === index ? 1 : 0.3,
                       }}
-                      className="font-[ClashDisplay] text-3xl font-semibold text-slate-100"
+                      className="font-[ClashDisplay] text-[clamp(1.2rem,3vw,1.875rem)] font-semibold text-slate-100"
                     >
                       {item.title}
                       <motion.div
@@ -142,19 +142,19 @@ export const StickyScroll = ({
                     animate={{
                       opacity: activeCard === index ? 1 : 0.3,
                     }}
-                    className="mt-10 max-w-sm text-lg text-slate-300"
+                    className="mt-10 w-full text-lg text-[clamp(1rem,3vw,1.125rem)] text-slate-300 lg:max-w-sm"
                   >
                     {item.description}
                   </motion.p>
                 </div>
               ))}
-              <div className="h-40" />
+              <div className="h-5 md:h-40" />
             </div>
           </div>
 
           {/* image content */}
 
-          <div className="sticky top-0 flex h-full w-[50%] flex-col justify-center">
+          <div className="sticky top-0 hidden h-full w-[50%] flex-col justify-center lg:flex">
             <div
               style={{ background: backgroundGradient }}
               className={cn(
