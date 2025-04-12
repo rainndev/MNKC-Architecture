@@ -16,7 +16,7 @@ const Services = () => {
             exit={{ opacity: 0, height: 0 }}
             className="flex flex-col items-center"
           >
-            <div className="w-full max-w-7xl">
+            <div className="w-full max-w-7xl p-10">
               {/* header title */}
               <div className="my-6 flex items-center text-nowrap">
                 <motion.h1
@@ -24,7 +24,7 @@ const Services = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.1, ease: "easeInOut" }}
                   exit={{ opacity: 0, y: -30 }}
-                  className="font-[ClashDisplay] text-5xl font-medium text-[#D9D9D9]"
+                  className="font-[ClashDisplay] text-[clamp(2.5rem,3vw,3rem)] font-medium text-[#D9D9D9]"
                 >
                   <span className="text-[#FCAC04]">Services</span> we offer
                 </motion.h1>
@@ -43,7 +43,7 @@ const Services = () => {
                 whileInView={{ opacity: 1 }}
                 exit={{ opacity: 0, y: -30 }}
                 transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
-                className="mt-10 font-[ClashDisplay] text-lg leading-[44px] font-normal text-[#D9D9D9]"
+                className="mt-10 font-[ClashDisplay] text-[clamp(1rem,3vw,1.125rem)] leading-[44px] font-normal text-[#D9D9D9]"
               >
                 At MNKC Architecture, we specialize in designing modern homes
                 and buildings that blend creativity with functionality. Our team
