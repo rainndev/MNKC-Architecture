@@ -66,24 +66,7 @@ export const StickyScroll = ({
   const backgroundColors = [
     "#171717", // neutral-900
     "#0a0a0a", // black
-    "#171717", // neutral-900
-    "#0a0a0a", // black
-    "#171717", // neutral-900
-    "#0a0a0a", // neutral-900
   ];
-  const linearGradients = [
-    "linear-gradient(to bottom right, #06b6d4, #10b981)", // cyan-500 to emerald-500
-    "linear-gradient(to bottom right, #ec4899, #6366f1)", // pink-500 to indigo-500
-    "linear-gradient(to bottom right, #f97316, #eab308)", // orange-500 to yellow-500
-  ];
-
-  const [backgroundGradient, setBackgroundGradient] = useState(
-    linearGradients[0],
-  );
-
-  useEffect(() => {
-    setBackgroundGradient(linearGradients[activeCard % linearGradients.length]);
-  }, [activeCard]);
 
   return (
     <AnimatePresence>
@@ -154,16 +137,26 @@ export const StickyScroll = ({
 
           {/* image content */}
 
-          <div className="sticky top-0 hidden h-full w-[50%] flex-col justify-center lg:flex">
-            <div
-              style={{ background: backgroundGradient }}
+          <div className="sticky top-0 hidden h-full w-[50%] flex-col justify-center opacity-50 lg:flex">
+            <motion.div
+              key={activeCard}
+              initial={{
+                opacity: 0,
+              }}
+              animate={{
+                opacity: 1,
+              }}
+              exit={{
+                opacity: 0,
+              }}
+              transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
               className={cn(
-                "top-10 hidden h-full overflow-hidden rounded-4xl bg-white lg:block",
+                "top-10 hidden h-full overflow-hidden rounded-4xl lg:block",
                 contentClassName,
               )}
             >
               {content[activeCard].content ?? null}
-            </div>
+            </motion.div>
           </div>
         </div>
       </motion.div>
