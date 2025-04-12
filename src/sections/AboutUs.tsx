@@ -11,7 +11,7 @@ const AboutUs = () => {
 
       <div className="z-5 grid min-h-screen w-full max-w-7xl grid-cols-1 flex-col items-center justify-center border-x border-[#504F4F] bg-[rgba(30,30,30,.5)] md:grid-cols-[40%_60%]">
         {/* item 1 */}
-        <div className="relative left-0 z-50 flex h-full w-full items-center p-10 md:left-20">
+        <div className="relative left-0 z-50 flex h-full w-full items-center p-10 md:left-20 md:p-0">
           <div className="mt-10 w-full max-w-3xl py-10">
             {/* heading */}
             <div className="flex w-full items-center justify-start text-nowrap">
