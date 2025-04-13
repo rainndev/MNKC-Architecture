@@ -80,7 +80,7 @@ export const StickyScroll = ({
           width: isContentVisible ? "100%" : 0,
         }}
         transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
-        className="flex h-full w-full justify-center space-x-10 rounded-4xl px-10 py-20"
+        className="flex h-full w-full justify-center space-x-10 rounded-4xl p-10 md:p-20"
       >
         <div
           data-lenis-prevent
@@ -125,7 +125,7 @@ export const StickyScroll = ({
                     animate={{
                       opacity: activeCard === index ? 1 : 0.3,
                     }}
-                    className="mt-10 w-full text-lg text-[clamp(1rem,3vw,1.125rem)] text-slate-300 lg:max-w-sm"
+                    className="mt-10 w-full text-lg text-[clamp(.9rem,3vw,1.125rem)] leading-loose font-thin text-slate-300 lg:max-w-sm"
                   >
                     {item.description}
                   </motion.p>
