@@ -243,7 +243,7 @@ export const Card = ({
           src={card.src}
           alt={card.title}
           style={{ objectFit: "cover", width: "100%", height: "100%" }}
-          className="absolute inset-0 z-10 object-cover"
+          className="absolute inset-0 z-10 object-cover duration-300 ease-in-out group-hover:scale-105"
         />
       </motion.button>
     </>
