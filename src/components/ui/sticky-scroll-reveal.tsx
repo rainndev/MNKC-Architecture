@@ -100,7 +100,7 @@ export const StickyScroll = ({
                       animate={{
                         opacity: activeCard === index ? 1 : 0.3,
                       }}
-                      className="font-[ClashDisplay] text-[clamp(1.2rem,3vw,1.875rem)] font-medium text-[#FCAC04]"
+                      className="font-[ClashDisplay] text-[clamp(1.2rem,3vw,1.875rem)] font-medium text-white"
                     >
                       {item.title}
                       <motion.div
@@ -125,7 +125,7 @@ export const StickyScroll = ({
                     animate={{
                       opacity: activeCard === index ? 1 : 0.3,
                     }}
-                    className="mt-10 w-full text-lg text-[clamp(.9rem,3vw,1.125rem)] leading-loose font-thin text-slate-300 lg:max-w-sm"
+                    className="mt-10 w-full text-lg text-[clamp(.9rem,3vw,1.125rem)] leading-loose font-thin text-[#D9D9D9] lg:max-w-sm"
                   >
                     {item.description}
                   </motion.p>
