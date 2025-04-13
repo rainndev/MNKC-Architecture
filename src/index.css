@@ -46,6 +46,28 @@ html {
   display: none; /* Chrome, Safari, Opera */
 }
 
+/* Customize the entire scrollbar */
+::-webkit-scrollbar {
+  width: 5px; /* for vertical scrollbar */
+  height: 10px; /* for horizontal scrollbar */
+}
+
+/* Track (the background) */
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+/* Thumb (the draggable handle) */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+/* Hover effect on the thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #fcac04;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
