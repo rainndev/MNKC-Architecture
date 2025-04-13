@@ -11,7 +11,7 @@ const DummyContent = () => {
             key={"dummy-content" + index}
             className="mb-4 rounded-3xl bg-[#171717] p-8 md:p-14"
           >
-            <p className="mx-auto text-start font-sans text-base font-normal text-neutral-600 md:text-2xl">
+            <p className="mx-auto text-start font-sans text-base font-normal text-neutral-600 md:text-lg">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi a
               consequatur facere quae consequuntur, laborum perspiciatis ab
               excepturi illum repellat similique eum suscipit reprehenderit
