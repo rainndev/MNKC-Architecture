@@ -35,7 +35,7 @@ const Featured = () => {
           whileInView={{ opacity: 1 }}
           exit={{ opacity: 0, y: -30 }}
           transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
-          className="mt-10 text-start font-[ClashDisplay] text-[clamp(1rem,3vw,1.125rem)] leading-[44px] font-normal text-[#D9D9D9]"
+          className="mt-10 text-start font-[ClashDisplay] text-[clamp(.9rem,3vw,1.125rem)] leading-loose font-normal text-[#D9D9D9] md:leading-[44px]"
         >
           Explore a selection of our signature projects that showcase MNKC
           Architecture’s commitment to innovation, sustainability, and timeless

@@ -36,7 +36,7 @@ const AboutUs = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
-              className="mt-10 font-[ClashDisplay] text-[clamp(1rem,3vw,1.125rem)] leading-[44px] font-normal text-[#D9D9D9]"
+              className="mt-10 font-[ClashDisplay] text-[clamp(.9rem,3vw,1.125rem)] leading-loose font-normal text-[#D9D9D9] md:leading-[44px]"
             >
               At MNKC Architecture, we specialize in designing modern homes and
               buildings that blend creativity with functionality. Our team is
