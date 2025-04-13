@@ -64,8 +64,8 @@ export const StickyScroll = ({
   });
 
   const backgroundColors = [
-    "#171717", // neutral-900
     "#0a0a0a", // black
+    "#171717", // neutral-900
   ];
 
   return (
