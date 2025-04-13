@@ -1,4 +1,4 @@
-import CountUp from "../component/CountUp";
+import CountUp from "../components/CountUp";
 import { motion } from "framer-motion";
 const AboutUs = () => {
   return (

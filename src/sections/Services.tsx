@@ -1,4 +1,4 @@
-import StickyScrollReveal from "../component/StickyScrollReveal";
+import StickyScrollReveal from "../components/StickyScrollReveal";
 import { AnimatePresence, motion } from "framer-motion";
 import { useServicesStore } from "../store/ServicesStore";
 

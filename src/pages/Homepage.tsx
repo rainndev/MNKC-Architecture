@@ -1,5 +1,6 @@
 import Navigation from "../component/Navigation";
 import AboutUs from "../sections/AboutUs";
+import Featured from "../sections/Featured";
 import Hero from "../sections/Hero";
 import Services from "../sections/Services";
 
@@ -10,6 +11,7 @@ const Homepage = () => {
       <Hero />
       <AboutUs />
       <Services />
+      <Featured />
     </main>
   );
 };
