@@ -20,7 +20,7 @@ const Navigation = () => {
         <div className="flex w-full items-center justify-between">
           {/* logo */}
           <div>
-            <img src="/images/icon-fixed.svg" alt="logo" />
+            <img src="/images/logo-with-text.svg" alt="logo" />
           </div>
 
           {/* Desktop links */}
