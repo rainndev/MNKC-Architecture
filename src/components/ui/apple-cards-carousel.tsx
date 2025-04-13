@@ -234,9 +234,9 @@ export const Card = ({
         <div className="z-40 p-8">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
-            className="mt-3 text-left font-[ClashDisplay] text-base font-normal text-white md:text-lg"
+            className="mt-3 text-left font-[ClashDisplay] text-base font-normal text-white md:text-base"
           >
-            {card.category}
+            {card.title}
           </motion.p>
         </div>
         <BlurImage
