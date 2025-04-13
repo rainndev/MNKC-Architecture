@@ -92,36 +92,6 @@ This project was developed as the final requirement for **WS101: Web System**. I
 - **Charles Daniel** – Graphic Designer
 - **Glenn** – Tester / Documentation & Vlog
 
-## How to Run
-
-1. Clone the repository using:
-
-   ```bash
-   git clone https://github.com/[your-username]/mnkc-architecture.git
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd mnkc-architecture
-   ```
-
-3. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-4. Run the development server:
-
-   ```bash
-   npm run dev
-   ```
-
-5. Open your browser and go to `http://localhost:5173/` (or the port Vite provides)
-
-> Note: Do **not** open `index.html` directly. The app must run through the development server for routing and environment setup.
-
 ## Course Information
 
 - **Course Code**: WS101 – Web System
