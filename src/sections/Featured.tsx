@@ -10,7 +10,7 @@ const Featured = () => {
       {/* Header and desc */}
       <div className="w-full max-w-7xl">
         {/* header title */}
-        <div className="my-6 flex items-center text-wrap md:text-nowrap">
+        <div className="my-6 flex items-center justify-start text-nowrap">
           <motion.h1
             initial={{ opacity: 0, y: -30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -25,7 +25,7 @@ const Featured = () => {
             whileInView={{ opacity: 1, width: "100%" }}
             exit={{ opacity: 0, width: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
-            className="ml-10 h-[1px] w-full bg-[#504F4F]"
+            className="ml-5 h-[1px] w-full bg-[#504F4F] md:ml-10"
           />
         </div>
 

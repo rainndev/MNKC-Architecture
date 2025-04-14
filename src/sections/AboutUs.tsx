@@ -27,7 +27,7 @@ const AboutUs = () => {
                 initial={{ opacity: 0, width: 0 }}
                 whileInView={{ opacity: 1, width: "100%" }}
                 transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
-                className="ml-10 h-[1px] w-full bg-[#504F4F]"
+                className="ml-5 h-[1px] w-full bg-[#504F4F] md:ml-10"
               />
             </div>
 
