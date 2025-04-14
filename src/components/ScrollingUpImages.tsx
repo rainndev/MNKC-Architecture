@@ -22,12 +22,12 @@ const ImageColumn = ({
       return (
         <div
           key={index}
-          className="h-60 w-full max-w-md overflow-hidden rounded-2xl bg-[#D9D9D9]/10"
+          className="2 h-60 w-full max-w-md overflow-hidden border border-dashed border-[#D9D9D9]/10 bg-[#D9D9D9]/10 p-2"
         >
           <img
             src={`/images/about-us-images/about-img${index + 1}.jpg`}
             alt={`About image ${index + 1}`}
-            className="h-full w-full object-cover opacity-70"
+            className="h-full w-full rounded-xl object-cover opacity-70"
           />
         </div>
       );
