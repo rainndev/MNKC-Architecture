@@ -80,7 +80,7 @@ export const StickyScroll = ({
           width: isContentVisible ? "100%" : 0,
         }}
         transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
-        className="z-5 flex h-full w-full justify-center space-x-10 rounded-none p-0 shadow-xl md:rounded-4xl md:p-10"
+        className="z-5 flex h-full w-full justify-center space-x-10 rounded-none p-0 shadow-xl md:rounded-4xl md:p-10 md:py-20"
       >
         <div
           data-lenis-prevent
