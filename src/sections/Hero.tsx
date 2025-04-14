@@ -49,7 +49,7 @@ const Hero = () => {
         </div>
         <div className="flex h-full w-full items-center"></div>
         <img
-          className="absolute -top-5 right-0 z-0 h-full object-cover"
+          className="absolute -top-5 right-0 z-5 h-full object-cover"
           src="/images/hero-3.png"
           alt=""
         />
