@@ -12,9 +12,9 @@ const AboutUs = () => {
 
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-[#1E1E1E] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 
-      <div className="z-5 grid min-h-screen w-full max-w-7xl grid-cols-1 flex-col items-center justify-center bg-[rgba(30,30,30,.5)] md:grid-cols-[40%_60%]">
+      <div className="relative z-5 grid min-h-screen w-full max-w-7xl grid-cols-1 flex-col items-center justify-center bg-[rgba(30,30,30,.5)] lg:grid-cols-[60%_40%]">
         {/* item 1 */}
-        <div className="relative left-0 z-50 flex h-full w-full items-center p-10 md:left-20 md:p-0">
+        <div className="z-50 flex h-full w-full items-center justify-center p-10">
           <div className="mt-10 w-full max-w-3xl py-10">
             {/* heading */}
             <div className="flex w-full items-center justify-start text-nowrap">
@@ -97,7 +97,7 @@ const AboutUs = () => {
         </div>
 
         {/* item 2 */}
-        <div className="z-5 flex h-full w-full justify-center overflow-hidden">
+        <div className="absolute right-0 z-5 hidden h-full w-full max-w-2xl justify-center overflow-hidden lg:flex">
           {/* <img
             className="fade-left h-full w-7xl object-cover opacity-50"
             src="/images/about-us-img1.jpg"
