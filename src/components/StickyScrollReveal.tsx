@@ -6,8 +6,11 @@ const content = [
     description:
       "Bring your ideas to life with high-quality 3D renders and animations. Our visualization services help clients understand the design before construction begins, ensuring alignment with your vision.",
     content: (
-      <div className="flex h-full w-full items-center justify-center bg-white/20 text-white">
-        3D Visuals
+      <div className="flex aspect-square h-full w-full items-center justify-center bg-white/20 text-white">
+        <img
+          src="/images/services-img1.png"
+          className="aspect-square h-full w-full object-cover"
+        />
       </div>
     ),
   },
@@ -16,8 +19,11 @@ const content = [
     description:
       "We turn your ideas into buildable concepts. From sketches to zoning analysis, our team develops creative and functional designs tailored to your needs and budget.",
     content: (
-      <div className="flex h-full w-full items-center justify-center bg-white/20 text-white">
-        <img src="/images/about-us-img1.jpg" alt="" />
+      <div className="flex aspect-square h-full w-full items-center justify-center bg-white/20 text-white">
+        <img
+          src="/images/services-img2.png"
+          className="aspect-square h-full w-full object-cover"
+        />
       </div>
     ),
   },
@@ -64,7 +70,7 @@ const content = [
 ];
 export default function StickyScrollReveal() {
   return (
-    <div className="flex h-full w-full justify-center overflow-hidden p-10 md:p-15">
+    <div className="flex h-full w-full justify-center overflow-hidden p-0 md:p-15">
       <StickyScroll content={content} />
     </div>
   );

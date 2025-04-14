@@ -80,7 +80,7 @@ export const StickyScroll = ({
           width: isContentVisible ? "100%" : 0,
         }}
         transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
-        className="flex h-full w-full justify-center space-x-10 rounded-4xl p-10 md:p-20"
+        className="flex h-full w-full justify-center space-x-10 rounded-none p-10 md:rounded-4xl md:p-20"
       >
         <div
           data-lenis-prevent
@@ -137,7 +137,7 @@ export const StickyScroll = ({
 
           {/* image content */}
 
-          <div className="sticky top-0 hidden h-full w-[50%] flex-col justify-center opacity-50 lg:flex">
+          <div className="sticky top-0 hidden aspect-square h-full w-[50%] flex-col justify-center opacity-50 lg:flex">
             <motion.div
               key={activeCard}
               initial={{
