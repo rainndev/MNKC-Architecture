@@ -48,7 +48,7 @@ const AboutUs = () => {
 
             <div className="grid-about mt-15 grid w-full grid-cols-2 gap-4">
               <div className="col-span-2 row-span-2 h-full md:col-span-1">
-                <p className="text-[clamp(1rem,3vw,1.125rem)] text-pretty text-white">
+                <p className="text-[clamp(.8rem,3vw,1.125rem)] text-pretty text-white">
                   <CountUp
                     from={0}
                     to={10}
@@ -63,7 +63,7 @@ const AboutUs = () => {
               </div>
 
               <div>
-                <p className="text-[clamp(1rem,3vw,1.125rem)] text-pretty text-white">
+                <p className="text-[clamp(.8rem,3vw,1.125rem)] text-pretty text-white">
                   <CountUp
                     from={0}
                     to={10}
@@ -77,7 +77,7 @@ const AboutUs = () => {
               </div>
 
               <div>
-                <p className="text-[clamp(1rem,3vw,1.125rem)] text-pretty text-white">
+                <p className="text-[clamp(.8rem,3vw,1.125rem)] text-pretty text-white">
                   <CountUp
                     from={0}
                     to={50}
