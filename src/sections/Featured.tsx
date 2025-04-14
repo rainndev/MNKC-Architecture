@@ -16,7 +16,7 @@ const Featured = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1, ease: "easeInOut" }}
             exit={{ opacity: 0, y: -30 }}
-            className="font-[ClashDisplay] text-[clamp(1.8rem,3vw,3rem)] font-medium text-[#D9D9D9]"
+            className="font-[ClashDisplay] text-[clamp(1.5rem,3vw,3rem)] font-medium text-[#D9D9D9]"
           >
             <span className="text-[#FCAC04]">Featured</span> Projects
           </motion.h1>
