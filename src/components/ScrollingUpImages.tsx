@@ -39,7 +39,7 @@ const ScrollingUpImages = () => {
   return (
     <div className="fade-left flex max-h-screen w-full space-x-5 overflow-hidden p-5">
       <ImageColumn startIndex={0} count={IMAGE_COUNT} />
-      <ImageColumn startIndex={IMAGE_COUNT} count={IMAGE_COUNT - 1} />
+      <ImageColumn startIndex={IMAGE_COUNT} count={IMAGE_COUNT - 2} />
     </div>
   );
 };
