@@ -187,7 +187,7 @@ export const Card = ({
     <>
       <AnimatePresence>
         {open && (
-          <div className="fixed inset-0 z-50 h-screen overflow-auto">
+          <div className="hide-scrollbar fixed inset-0 z-50 h-screen overflow-auto">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -200,7 +200,7 @@ export const Card = ({
               exit={{ opacity: 0 }}
               ref={containerRef}
               layoutId={layout ? `card-${card.title}` : undefined}
-              className="relative z-[60] mx-auto my-10 h-fit max-w-5xl rounded-3xl bg-[#1E1E1E] p-4 font-sans md:p-10 dark:bg-neutral-900"
+              className="relative z-[60] mx-auto my-10 h-fit w-full rounded-3xl bg-[#1E1E1E] p-4 font-sans md:max-w-5xl md:p-10"
             >
               <button
                 className="sticky top-4 right-0 ml-auto flex h-8 w-8 items-center justify-center rounded-full bg-black dark:bg-white"
@@ -231,10 +231,10 @@ export const Card = ({
         className="group relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden rounded-xl bg-gray-100 md:h-[40rem] md:w-96 md:rounded-3xl dark:bg-neutral-900"
       >
         <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-[#1E1E1E]/75 to-[#1E1E1E]/75 transition-colors duration-300 ease-in-out group-hover:to-transparent" />
-        <div className="z-40 p-8">
+        <div className="z-40 p-5 md:p-8">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
-            className="mt-3 text-left font-[ClashDisplay] text-base font-normal text-white md:text-base"
+            className="text-left font-[ClashDisplay] text-[clamp(1rem,3vw,1.2rem)] font-normal text-white md:mt-3 md:text-base"
           >
             {card.title}
           </motion.p>
