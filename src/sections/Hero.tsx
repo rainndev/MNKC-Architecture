@@ -13,7 +13,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1, ease: "easeInOut" }}
-            className="font-[ClashDisplay] text-[clamp(2.5rem,3vw,5rem)] leading-tight font-medium text-pretty text-[#D9D9D9]"
+            className="font-[ClashDisplay] text-[clamp(2rem,3vw,5rem)] leading-tight font-medium text-pretty text-[#D9D9D9]"
           >
             <span className="text-[#FCAC04]">Designing the Future</span>{" "}
             Building Today
