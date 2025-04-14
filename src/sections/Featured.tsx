@@ -5,10 +5,10 @@ const Featured = () => {
   return (
     <div
       id="featured"
-      className="mb-20 flex min-h-screen w-full flex-col items-center justify-center p-10 text-center text-5xl font-bold text-white"
+      className="mb-20 flex min-h-screen w-full flex-col items-center justify-center text-center text-5xl font-bold text-white"
     >
       {/* Header and desc */}
-      <div className="w-full max-w-7xl">
+      <div className="w-full max-w-7xl p-10">
         {/* header title */}
         <div className="my-6 flex items-center justify-start text-nowrap">
           <motion.h1
@@ -45,7 +45,7 @@ const Featured = () => {
       </div>
 
       {/* Carousel */}
-      <div className="mt-10 flex w-full max-w-7xl items-center justify-center overflow-hidden">
+      <div className="mt-10 flex w-full max-w-7xl items-center justify-center overflow-hidden p-10">
         <CardsCarousel />
       </div>
     </div>

@@ -80,7 +80,7 @@ export const StickyScroll = ({
           width: isContentVisible ? "100%" : 0,
         }}
         transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
-        className="z-5 flex h-full w-full justify-center space-x-10 rounded-none p-10 shadow-xl md:rounded-4xl md:p-20"
+        className="z-5 flex h-full w-full justify-center space-x-10 rounded-none p-0 shadow-xl md:rounded-4xl md:p-10"
       >
         <div
           data-lenis-prevent
@@ -89,7 +89,7 @@ export const StickyScroll = ({
         >
           {/* text content */}
           <div className="relative flex w-full lg:w-[50%]">
-            <div className="w-full">
+            <div className="w-full p-10">
               {content.map((item, index) => (
                 <div key={item.title + index} className="my-52">
                   <div>
