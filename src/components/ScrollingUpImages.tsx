@@ -27,7 +27,7 @@ const ImageColumn = ({
           <img
             src={`/images/about-us-images/about-img${index + 1}.jpg`}
             alt={`About image ${index + 1}`}
-            className="h-full w-full rounded-xl object-cover opacity-70"
+            className="h-full w-full rounded-xl object-cover opacity-50"
           />
         </div>
       );
