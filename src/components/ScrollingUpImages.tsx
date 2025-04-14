@@ -22,7 +22,7 @@ const ImageColumn = ({
       return (
         <div
           key={index}
-          className="2 h-60 w-full max-w-md overflow-hidden border border-dashed border-[#D9D9D9]/10 bg-[#D9D9D9]/10 p-2"
+          className="h-60 w-full max-w-md overflow-hidden border border-dashed border-[#D9D9D9]/10 bg-[#D9D9D9]/10 p-2"
         >
           <img
             src={`/images/about-us-images/about-img${index + 1}.jpg`}
@@ -37,7 +37,7 @@ const ImageColumn = ({
 
 const ScrollingUpImages = () => {
   return (
-    <div className="fade-left flex max-h-screen w-full space-x-5 overflow-hidden p-5">
+    <div className="fade-left flex max-h-screen w-full space-x-5 overflow-hidden">
       <ImageColumn startIndex={0} count={IMAGE_COUNT} />
       <ImageColumn startIndex={IMAGE_COUNT} count={IMAGE_COUNT - 2} />
     </div>
