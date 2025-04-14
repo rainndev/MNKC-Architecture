@@ -71,7 +71,7 @@ export const StickyScroll = ({
   return (
     <AnimatePresence>
       <motion.div
-        initial={{ height: 0 }}
+        initial={{ height: 0, width: 0 }}
         animate={{
           backgroundColor:
             backgroundColors[activeCard % backgroundColors.length],
@@ -80,7 +80,7 @@ export const StickyScroll = ({
           width: isContentVisible ? "100%" : 0,
         }}
         transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
-        className="flex h-full w-full justify-center space-x-10 rounded-none p-10 md:rounded-4xl md:p-20"
+        className="z-5 flex h-full w-full justify-center space-x-10 rounded-none p-10 shadow-xl md:rounded-4xl md:p-20"
       >
         <div
           data-lenis-prevent

@@ -4,8 +4,10 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="relative flex w-full items-center justify-center border-b border-[#504F4F] bg-[linear-gradient(to_right,rgba(80,79,79,0.2)_1px,transparent_1px),linear-gradient(to_bottom,rgba(80,79,79,0.1)_1px,transparent_1px)] bg-[size:2rem_2rem]"
+      className="relative flex w-full items-center justify-center border-b border-[#504F4F] bg-[linear-gradient(to_right,rgba(80,79,79,0.4)_1px,transparent_1px),linear-gradient(to_bottom,rgba(80,79,79,0.4)_1px,transparent_1px)] bg-[size:2rem_2rem]"
     >
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-[#1E1E1E] [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]" />
+
       <div className="grid h-screen w-full max-w-7xl grid-cols-1 items-center justify-center p-10 py-32 md:grid-cols-2">
         <div className="z-10 w-full">
           {/* Heading  */}

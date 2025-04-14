@@ -9,6 +9,8 @@ const AboutUs = () => {
       {/* Dotted Background FIRST, behind everything */}
       <div className="absolute top-0 flex h-full w-full items-center justify-center border-b border-[#504F4F] bg-[#1E1E1E] bg-[radial-gradient(rgba(80,79,79,0.5)_1px,#1E1E1E_1px)] bg-[size:30px_30px]" />
 
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-[#1E1E1E] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+
       <div className="z-5 grid min-h-screen w-full max-w-7xl grid-cols-1 flex-col items-center justify-center border-x border-[#504F4F] bg-[rgba(30,30,30,.5)] md:grid-cols-[40%_60%]">
         {/* item 1 */}
         <div className="relative left-0 z-50 flex h-full w-full items-center p-10 md:left-20 md:p-0">

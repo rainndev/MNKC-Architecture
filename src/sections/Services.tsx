@@ -8,8 +8,9 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="flex h-screen w-full flex-col justify-center bg-[linear-gradient(to_right,rgba(80,79,79,0.2)_1px,transparent_1px),linear-gradient(to_bottom,rgba(80,79,79,0.1)_1px,transparent_1px)] bg-[size:2rem_2rem]"
+      className="relative flex h-screen w-full flex-col justify-center bg-[linear-gradient(to_right,rgba(80,79,79,0.2)_1px,transparent_1px),linear-gradient(to_bottom,rgba(80,79,79,0.1)_1px,transparent_1px)] bg-[size:2rem_2rem]"
     >
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-[#1E1E1E] [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)]" />
       <AnimatePresence>
         {!isContentVisible && (
           <motion.div
@@ -18,7 +19,7 @@ const Services = () => {
           >
             <div className="w-full max-w-7xl p-10">
               {/* header title */}
-              <div className="my-6 flex items-center text-wrap md:text-nowrap">
+              <div className="my-6 flex items-center text-nowrap">
                 <motion.h1
                   initial={{ opacity: 0, y: -30 }}
                   whileInView={{ opacity: 1, y: 0 }}
