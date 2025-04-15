@@ -205,29 +205,32 @@ export const Card = ({
               layoutId={layout ? `card-${card.title}` : undefined}
               className="relative z-[60] mx-auto h-fit w-full bg-[#1E1E1E]/50 font-sans md:max-w-5xl"
             >
-              {/* Popup close and category  button */}
-              <div className="flex flex-col items-center justify-center px-5 pt-10">
-                <button
-                  className="sticky top-10 right-0 ml-auto flex h-10 w-20 cursor-pointer items-center justify-center"
-                  onClick={handleClose}
-                >
-                  <IoCloseOutline className="h-6 w-6 text-neutral-100" />
-                </button>
+              {/* Popup header container*/}
+              <div className="px-5 py-10 md:px-10 md:py-20">
+                {/* category   */}
                 <motion.p
                   layoutId={layout ? `category-${card.title}` : undefined}
                   className="text-[clamp(.8rem,2vw,1.125rem)] font-normal text-[#D9D9D9]"
                 >
                   {card.category}
                 </motion.p>
-              </div>
 
-              {/* Popup title */}
-              <motion.p
-                layoutId={layout ? `title-${card.title}` : undefined}
-                className="mt-5 mb-10 px-5 text-[clamp(1.3rem,3vw,3rem)] font-semibold text-white"
-              >
-                {card.title}
-              </motion.p>
+                {/* Popup close button */}
+                <button
+                  className="absolute top-5 right-0 ml-auto flex h-10 w-20 cursor-pointer items-center justify-center"
+                  onClick={handleClose}
+                >
+                  <IoCloseOutline className="h-6 w-6 text-neutral-100" />
+                </button>
+
+                {/* Popup title */}
+                <motion.p
+                  layoutId={layout ? `title-${card.title}` : undefined}
+                  className="mt-5 text-[clamp(1.3rem,3vw,3rem)] font-semibold text-white"
+                >
+                  {card.title}
+                </motion.p>
+              </div>
 
               {/* Popup content */}
               <div className="border-t-1 border-dashed border-[#D9D9D9]/20 py-10">
