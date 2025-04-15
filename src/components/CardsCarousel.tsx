@@ -7,10 +7,7 @@ const DummyContent = () => {
     <div data-lenis-prevent>
       {[...new Array(3).fill(1)].map((_, index) => {
         return (
-          <div
-            key={"dummy-content" + index}
-            className="mb-4 rounded-3xl bg-[#171717] p-8 md:p-14"
-          >
+          <div key={"dummy-content" + index} className="mb-4 p-8 md:p-14">
             <p className="mx-auto text-start font-sans text-base font-normal text-neutral-600 md:text-lg">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi a
               consequatur facere quae consequuntur, laborum perspiciatis ab
