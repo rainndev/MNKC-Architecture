@@ -63,12 +63,14 @@ const Hero = () => {
               <span className="absolute top-0 left-0 z-0 h-full w-0 bg-[#D9D9D9]/20 transition-all duration-500 ease-in-out group-hover:w-full active:w-full" />
             </button>
 
-            <button className="group relative cursor-pointer overflow-hidden rounded-lg border border-[#504F4F] px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-normal text-white">
-              <span className="relative z-10 transition-colors duration-300 ease-in-out group-hover:text-[#1E1E1E]">
-                Learn More
-              </span>
-              <span className="absolute top-0 left-0 z-0 h-full w-0 bg-[#FCAC04] transition-all duration-500 ease-in-out group-hover:w-full active:w-full" />
-            </button>
+            <a href="#about">
+              <button className="group relative cursor-pointer overflow-hidden rounded-lg border border-[#504F4F] px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-normal text-white">
+                <span className="relative z-10 transition-colors duration-300 ease-in-out group-hover:text-[#1E1E1E]">
+                  Learn More
+                </span>
+                <span className="absolute top-0 left-0 z-0 h-full w-0 bg-[#FCAC04] transition-all duration-500 ease-in-out group-hover:w-full active:w-full" />
+              </button>
+            </a>
           </motion.div>
         </div>
         <div className="flex h-full w-full items-center"></div>
