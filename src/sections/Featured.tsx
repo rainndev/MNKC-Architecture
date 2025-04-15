@@ -71,7 +71,7 @@ const Featured = () => {
       </div>
 
       {/* Carousel */}
-      <div className="mt-10 flex w-full max-w-7xl items-center justify-center overflow-hidden p-10">
+      <div className="flex w-full max-w-7xl items-center justify-center overflow-hidden p-10">
         <CardsCarousel />
       </div>
     </div>

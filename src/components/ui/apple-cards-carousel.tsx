@@ -83,7 +83,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     >
       <div className="relative w-full">
         <div
-          className="flex w-full overflow-x-scroll overscroll-x-auto scroll-smooth py-10 [scrollbar-width:none] md:py-20"
+          className="flex w-full overflow-x-scroll overscroll-x-auto scroll-smooth [scrollbar-width:none] md:py-10"
           ref={carouselRef}
           onScroll={checkScrollability}
         >
@@ -228,7 +228,7 @@ export const Card = ({
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
-        className="group relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden rounded-xl bg-gray-100 md:h-[40rem] md:w-96 md:rounded-3xl dark:bg-neutral-900"
+        className="group relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden border border-dashed border-[#D9D9D9]/10 bg-[#D9D9D9]/10 p-5 md:h-[40rem] md:w-96"
       >
         <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-[#1E1E1E]/75 to-[#1E1E1E]/75 transition-colors duration-300 ease-in-out group-hover:to-transparent" />
         <div className="z-40 p-5 md:p-8">
@@ -243,7 +243,7 @@ export const Card = ({
           src={card.src}
           alt={card.title}
           style={{ objectFit: "cover", width: "100%", height: "100%" }}
-          className="absolute inset-0 z-10 object-cover duration-300 ease-in-out group-hover:scale-105"
+          className="absolute inset-0 z-10 object-cover p-2 duration-300 ease-in-out group-hover:scale-105"
         />
       </motion.button>
     </>
