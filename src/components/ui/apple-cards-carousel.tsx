@@ -240,12 +240,16 @@ export const Card = ({
           </div>
         )}
       </AnimatePresence>
+
+      {/* Card image container */}
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
         className="group relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden border border-dashed border-[#D9D9D9]/10 bg-[#D9D9D9]/10 p-5 md:h-[40rem] md:w-96"
       >
         <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-[#1E1E1E]/75 to-[#1E1E1E]/75 transition-colors duration-300 ease-in-out group-hover:to-transparent" />
+
+        {/* Card title */}
         <div className="z-40 p-5 md:p-8">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
@@ -254,6 +258,8 @@ export const Card = ({
             {card.title}
           </motion.p>
         </div>
+
+        {/* Card image */}
         <BlurImage
           src={card.src}
           alt={card.title}
