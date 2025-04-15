@@ -14,11 +14,11 @@ const Footer = () => {
     <div
       id="contact"
       ref={ref}
-      className="flex h-fit w-full flex-col items-center justify-center bg-[#191919] text-white"
+      className="flex h-fit w-full flex-col items-start justify-center bg-[#191919] text-white sm:items-center"
     >
       <div className="bg-striped h-10 w-full" />
-      <div className="footer-grid grid max-w-7xl grid-cols-4 justify-between gap-15 p-10 py-20">
-        <div>
+      <div className="footer-grid grid max-w-7xl grid-cols-1 justify-start gap-15 p-10 py-20 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="sm:col-span-2 md:col-span-1">
           <img src="/images/logo-with-text.svg" className="w-30" />
         </div>
         <div>
@@ -28,19 +28,43 @@ const Footer = () => {
               <span>
                 <FaTiktok />
               </span>
-              @tiktokuser
+              <a
+                className="group relative"
+                href="https://www.tiktok.com/@mnkc.architecture"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="link-animation"></span>
+                mnkc.architecture
+              </a>
             </li>
             <li>
               <span>
                 <FaFacebook />
               </span>
-              @company
+              <a
+                href="https://www.facebook.com/MNKCArchitecture/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative"
+              >
+                <span className="link-animation"></span>
+                MNKC Architecture
+              </a>
             </li>
             <li>
               <span>
                 <RiInstagramFill />
               </span>
-              sampleig
+              <a
+                href="https://www.instagram.com/mnkc_architecture/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative"
+              >
+                <span className="link-animation"></span>
+                mnkc_architecture
+              </a>
             </li>
           </ul>
         </div>
@@ -68,7 +92,13 @@ const Footer = () => {
               <span>
                 <MdEmail />
               </span>
-              mnkcarchitecture@gmail.com
+              <a
+                href="mailto:mnkcarchitecture@gmail.com"
+                className="group relative"
+              >
+                <span className="link-animation"></span>
+                mnkcarchitecture@gmail.com
+              </a>
             </li>
             <li>
               <span>
