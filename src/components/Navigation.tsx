@@ -42,9 +42,7 @@ const Navigation = () => {
               <li>
                 <a href="#featured">Featured</a>
               </li>
-              <li>
-                <a href="#gallery">Gallery</a>
-              </li>
+
               <li>
                 <a href="#contact">Contact</a>
               </li>
@@ -116,11 +114,7 @@ const Navigation = () => {
                   Featured
                 </a>
               </li>
-              <li>
-                <a href="#gallery" onClick={toggleMenu}>
-                  Gallery
-                </a>
-              </li>
+
               <li>
                 <a href="#contact" onClick={toggleMenu}>
                   Contact
