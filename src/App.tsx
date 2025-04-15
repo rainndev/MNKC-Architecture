@@ -22,7 +22,7 @@ const App = () => {
       <div className="flex h-full w-full items-center justify-center bg-[#1E1E1E]">
         <Homepage />
 
-        <div className="fixed bottom-10 left-15 z-50 w-[20%]">
+        <div className="z-50 hidden md:bottom-10 lg:fixed lg:left-10 lg:block lg:w-[20%]">
           <AnimatePresence mode="wait">
             {leftSidedata.number !== "00" && (
               <motion.div
