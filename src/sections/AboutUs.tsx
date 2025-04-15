@@ -25,7 +25,7 @@ const AboutUs = () => {
       className="relative flex h-full w-full items-center justify-center border-b border-[#504F4F] bg-[#1E1E1E]"
     >
       {/* Dotted Background FIRST, behind everything */}
-      <div className="absolute top-0 flex h-full w-full items-center justify-center border-b border-[#504F4F] bg-[#1E1E1E] bg-[radial-gradient(rgba(80,79,79,0.5)_1px,#1E1E1E_1px)] bg-[size:30px_30px]" />
+      <div className="absolute top-0 flex h-full w-full items-center justify-center border-b border-[#504F4F] bg-[#1E1E1E] bg-[radial-gradient(rgba(80,79,79,0.5)_1px,#1E1E1E_1px)] bg-[size:10px_10px]" />
 
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-[#1E1E1E] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 
