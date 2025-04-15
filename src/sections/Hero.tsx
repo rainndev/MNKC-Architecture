@@ -40,7 +40,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
-            className="mt-10 space-y-2 space-x-5"
+            className="mt-10 space-x-5"
           >
             {/* buttons */}
 
@@ -54,7 +54,7 @@ const Hero = () => {
             </a>
 
             <a href="#about">
-              <button className="group relative cursor-pointer overflow-hidden rounded-lg border border-[#504F4F] px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-normal text-white">
+              <button className="group relative mt-2 cursor-pointer overflow-hidden rounded-lg border border-[#504F4F] px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-normal text-white">
                 <span className="relative z-10 transition-colors duration-300 ease-in-out group-hover:text-[#1E1E1E]">
                   Learn More
                 </span>
