@@ -25,7 +25,7 @@ const ImageColumn = ({
           className="h-60 w-full max-w-md overflow-hidden border border-dashed border-[#D9D9D9]/10 bg-[#D9D9D9]/10 p-2"
         >
           <img
-            src={`/images/about-us/about-img${index + 1}.jpg`}
+            src={`/images/about-us/about-img${index + 1}.webp`}
             alt={`About image ${index + 1}`}
             className="h-full w-full rounded-xl object-cover opacity-50"
           />
