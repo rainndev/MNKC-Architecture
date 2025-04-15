@@ -21,7 +21,7 @@ const Featured = () => {
     <div
       ref={ref}
       id="featured"
-      className="mb-20 flex min-h-screen w-full flex-col items-center justify-center text-center text-5xl font-bold text-white"
+      className="flex min-h-screen w-full flex-col items-center justify-center border-b border-[#504F4F] text-center text-5xl font-bold text-white"
     >
       {/* Header and desc */}
       <div className="w-full max-w-7xl p-10">
