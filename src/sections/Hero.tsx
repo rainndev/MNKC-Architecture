@@ -56,12 +56,14 @@ const Hero = () => {
           >
             {/* buttons */}
 
-            <button className="group relative cursor-pointer overflow-hidden rounded-lg border border-[#504F4F] bg-[#D9D9D9]/10 px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-normal text-white">
-              <span className="relative z-10 transition-colors duration-300 ease-in-out">
-                Start Your Project
-              </span>
-              <span className="absolute top-0 left-0 z-0 h-full w-0 bg-[#D9D9D9]/20 transition-all duration-500 ease-in-out group-hover:w-full active:w-full" />
-            </button>
+            <a href="https://www.facebook.com/MNKCArchitecture" target="_blank">
+              <button className="group relative cursor-pointer overflow-hidden rounded-lg border border-[#504F4F] bg-[#D9D9D9]/10 px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-normal text-white">
+                <span className="relative z-10 transition-colors duration-300 ease-in-out">
+                  Start Your Project
+                </span>
+                <span className="absolute top-0 left-0 z-0 h-full w-0 bg-[#D9D9D9]/20 transition-all duration-500 ease-in-out group-hover:w-full active:w-full" />
+              </button>
+            </a>
 
             <a href="#about">
               <button className="group relative cursor-pointer overflow-hidden rounded-lg border border-[#504F4F] px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-normal text-white">
