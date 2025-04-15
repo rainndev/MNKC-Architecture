@@ -1,8 +1,24 @@
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
+import { useLeftSideOverlayStore } from "../store/LeftSideOverlayStore";
 
 const Hero = () => {
+  const ref = useRef(null);
+
+  const setLeftSideOverlayData = useLeftSideOverlayStore(
+    (state) => state.setData,
+  );
+
+  const isInView = useInView(ref, { amount: 0.3 });
+  useEffect(() => {
+    if (isInView) {
+      setLeftSideOverlayData({ number: "00" });
+    }
+  }, [isInView, setLeftSideOverlayData]);
+
   return (
     <div
+      ref={ref}
       id="hero"
       className="relative flex w-full items-center justify-center border-b border-[#504F4F] bg-[linear-gradient(to_right,rgba(80,79,79,0.4)_1px,transparent_1px),linear-gradient(to_bottom,rgba(80,79,79,0.4)_1px,transparent_1px)] bg-[size:2rem_2rem]"
     >

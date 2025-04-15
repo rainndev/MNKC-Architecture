@@ -1,9 +1,26 @@
 import CountUp from "../components/CountUp";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import ScrollingUpImages from "../components/ScrollingUpImages";
+import { useLeftSideOverlayStore } from "../store/LeftSideOverlayStore";
+import { useEffect, useRef } from "react";
 const AboutUs = () => {
+  const ref = useRef(null);
+
+  const setLeftSideOverlayData = useLeftSideOverlayStore(
+    (state) => state.setData,
+  );
+
+  const isInView = useInView(ref, { amount: 0.5 });
+
+  useEffect(() => {
+    if (isInView) {
+      setLeftSideOverlayData({ title: "About us", number: "01" });
+    }
+  }, [isInView, setLeftSideOverlayData]);
+
   return (
     <div
+      ref={ref}
       id="about"
       className="relative flex h-full w-full items-center justify-center border-b border-[#504F4F] bg-[#1E1E1E]"
     >
