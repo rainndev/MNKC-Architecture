@@ -203,7 +203,7 @@ export const Card = ({
               exit={{ opacity: 0 }}
               ref={containerRef}
               layoutId={layout ? `card-${card.title}` : undefined}
-              className="relative z-[60] mx-auto h-fit w-full bg-[#1E1E1E]/50 font-sans md:max-w-5xl"
+              className="relative z-[60] mx-auto h-fit w-full bg-[#1E1E1E]/40 font-sans md:max-w-5xl"
             >
               {/* Popup header container*/}
               <div className="px-5 py-10 md:px-10 md:py-20">
