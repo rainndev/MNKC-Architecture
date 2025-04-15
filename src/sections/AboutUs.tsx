@@ -1,22 +1,10 @@
 import CountUp from "../components/CountUp";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import ScrollingUpImages from "../components/ScrollingUpImages";
-import { useLeftSideOverlayStore } from "../store/LeftSideOverlayStore";
-import { useEffect, useRef } from "react";
+import { useSectionTracker } from "../hooks/use-section-tracker";
+
 const AboutUs = () => {
-  const ref = useRef(null);
-
-  const setLeftSideOverlayData = useLeftSideOverlayStore(
-    (state) => state.setData,
-  );
-
-  const isInView = useInView(ref, { amount: 0.5 });
-
-  useEffect(() => {
-    if (isInView) {
-      setLeftSideOverlayData({ title: "About us", number: "01" });
-    }
-  }, [isInView, setLeftSideOverlayData]);
+  const ref = useSectionTracker({ title: "About us", number: "01" });
 
   return (
     <div

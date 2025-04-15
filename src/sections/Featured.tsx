@@ -1,21 +1,9 @@
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import { CardsCarousel } from "../components/CardsCarousel";
-import { useEffect, useRef } from "react";
-import { useLeftSideOverlayStore } from "../store/LeftSideOverlayStore";
+import { useSectionTracker } from "../hooks/use-section-tracker";
 
 const Featured = () => {
-  const ref = useRef(null);
-
-  const setLeftSideOverlayData = useLeftSideOverlayStore(
-    (state) => state.setData,
-  );
-
-  const isInView = useInView(ref, { amount: 0.5 });
-  useEffect(() => {
-    if (isInView) {
-      setLeftSideOverlayData({ title: "Featured Projects", number: "03" });
-    }
-  }, [isInView, setLeftSideOverlayData]);
+  const ref = useSectionTracker({ title: "Featured Projects", number: "03" });
 
   return (
     <div

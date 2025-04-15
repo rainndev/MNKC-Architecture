@@ -1,25 +1,11 @@
 import StickyScrollReveal from "../components/StickyScrollReveal";
-import { AnimatePresence, motion, useInView } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useServicesStore } from "../store/ServicesStore";
-import { useEffect, useRef } from "react";
-import { useLeftSideOverlayStore } from "../store/LeftSideOverlayStore";
+import { useSectionTracker } from "../hooks/use-section-tracker";
 
 const Services = () => {
+  const ref = useSectionTracker({ title: "Services we offer", number: "02" });
   const isContentVisible = useServicesStore((state) => state.isContentVisbile);
-
-  const ref = useRef(null);
-
-  const setLeftSideOverlayData = useLeftSideOverlayStore(
-    (state) => state.setData,
-  );
-
-  const isInView = useInView(ref, { amount: 0.5 });
-
-  useEffect(() => {
-    if (isInView) {
-      setLeftSideOverlayData({ title: "Services we offer", number: "02" });
-    }
-  }, [isInView, setLeftSideOverlayData]);
 
   return (
     <div

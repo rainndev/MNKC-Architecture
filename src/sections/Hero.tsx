@@ -1,20 +1,8 @@
-import { motion, useInView } from "framer-motion";
-import { useEffect, useRef } from "react";
-import { useLeftSideOverlayStore } from "../store/LeftSideOverlayStore";
+import { motion } from "framer-motion";
+import { useSectionTracker } from "../hooks/use-section-tracker";
 
 const Hero = () => {
-  const ref = useRef(null);
-
-  const setLeftSideOverlayData = useLeftSideOverlayStore(
-    (state) => state.setData,
-  );
-
-  const isInView = useInView(ref, { amount: 0.3 });
-  useEffect(() => {
-    if (isInView) {
-      setLeftSideOverlayData({ number: "00" });
-    }
-  }, [isInView, setLeftSideOverlayData]);
+  const ref = useSectionTracker({ title: "Hero", number: "00" });
 
   return (
     <div
