@@ -56,7 +56,7 @@ const AboutUs = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
-              className="mt-10 font-[ClashDisplay] text-[clamp(.9rem,3vw,1.125rem)] leading-loose font-normal text-[#D9D9D9] md:leading-[44px]"
+              className="group relative mt-10 font-[ClashDisplay] text-[clamp(.9rem,3vw,1.125rem)] leading-loose font-normal text-[#D9D9D9] md:leading-[44px]"
             >
               At MNKC Architecture, we specialize in designing modern homes and
               buildings that blend creativity with functionality. Our team is
@@ -64,6 +64,16 @@ const AboutUs = () => {
               but also practical for everyday living. We strive to create
               strong, stylish, and timeless structures that align with the
               unique needs and desires of our clients
+              <motion.span
+                initial={{ height: "0%", opacity: 0, width: "0%" }}
+                whileInView={{
+                  height: "100%",
+                  opacity: 0.7,
+                  width: ["100%", "0%"],
+                }}
+                transition={{ duration: 0.7, delay: 0.2, ease: "easeInOut" }}
+                className="absolute top-0 right-0 z-0 h-full bg-[#FCAC04]"
+              />
             </motion.p>
 
             <div className="grid-about mt-15 grid w-full grid-cols-2 gap-4">

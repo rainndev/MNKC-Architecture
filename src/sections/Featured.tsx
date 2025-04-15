@@ -51,12 +51,22 @@ const Featured = () => {
           whileInView={{ opacity: 1 }}
           exit={{ opacity: 0, y: -30 }}
           transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
-          className="mt-10 text-start font-[ClashDisplay] text-[clamp(.9rem,3vw,1.125rem)] leading-loose font-normal text-[#D9D9D9] md:leading-[44px]"
+          className="relative mt-10 text-start font-[ClashDisplay] text-[clamp(.9rem,3vw,1.125rem)] leading-loose font-normal text-[#D9D9D9] md:leading-[44px]"
         >
           Explore a selection of our signature projects that showcase MNKC
           Architecture’s commitment to innovation, sustainability, and timeless
           design. Each project reflects our passion for creating spaces that
           elevate everyday life
+          <motion.span
+            initial={{ height: "0%", opacity: 0, width: "0%" }}
+            whileInView={{
+              height: "100%",
+              opacity: 0.7,
+              width: ["100%", "0%"],
+            }}
+            transition={{ duration: 0.7, delay: 0.2, ease: "easeInOut" }}
+            className="absolute top-0 right-0 z-0 h-full bg-[#FCAC04]"
+          />
         </motion.p>
       </div>
 
