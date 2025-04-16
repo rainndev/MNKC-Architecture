@@ -58,10 +58,10 @@ const Hero = () => {
             <a href="#about">
               <div className="mt-2 inline-block border border-[#504F4F]">
                 <button className="group relative m-[2px] cursor-pointer overflow-hidden border border-[#504F4F] px-5 py-2 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-normal text-[#D9D9D9]">
-                  <span className="relative z-10 transition-colors duration-300 ease-in-out group-hover:text-[#1E1E1E]">
+                  <span className="relative z-10 transition-colors duration-300 ease-in-out">
                     Learn More
                   </span>
-                  <span className="absolute top-0 left-0 z-0 h-full w-0 bg-[#FCAC04] transition-all duration-500 ease-in-out group-hover:w-full active:w-full" />
+                  <span className="absolute top-0 left-0 z-0 h-full w-0 bg-[#D9D9D9]/20 transition-all duration-500 ease-in-out group-hover:w-full active:w-full" />
                 </button>
               </div>
             </a>
