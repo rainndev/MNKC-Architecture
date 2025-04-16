@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="bg-striped h-10 w-full" />
       <div className="footer-grid grid max-w-7xl grid-cols-1 justify-start gap-15 p-10 py-20 sm:grid-cols-2 lg:grid-cols-4">
         <div className="sm:col-span-2 md:col-span-1">
-          <img src="/images/logo-with-text.svg" className="w-30" />
+          <img src="/images/logo/logo-with-text.svg" className="w-30" />
         </div>
         <div>
           <h1>Follow us</h1>

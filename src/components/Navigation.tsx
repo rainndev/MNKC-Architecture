@@ -21,7 +21,7 @@ const Navigation = () => {
           {/* logo */}
           <div>
             <img
-              src="/images/logo-with-text.svg"
+              src="/images/logo/logo-with-text.svg"
               className="w-26 sm:w-30"
               alt="logo"
             />
