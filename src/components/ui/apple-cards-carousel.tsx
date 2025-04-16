@@ -131,14 +131,14 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
         <div className="flex justify-end gap-2">
           {/* Previous button */}
           <button className="border border-[#504F4F]" onClick={scrollLeft}>
-            <p className="relative z-40 m-[3px] flex cursor-pointer bg-[#D9D9D9]/10 px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-normal text-[#D9D9D9] transition duration-300 ease-in-out hover:bg-[#D9D9D9]/20 active:bg-[#FCAC04] active:text-[#1E1E1E]">
+            <p className="relative m-[3px] flex cursor-pointer bg-[#D9D9D9]/10 px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-normal text-[#D9D9D9] transition duration-300 ease-in-out hover:bg-[#D9D9D9]/20 active:bg-[#FCAC04] active:text-[#1E1E1E]">
               Previous
             </p>
           </button>
 
           {/* Next button */}
           <button className="border border-[#504F4F]" onClick={scrollRight}>
-            <p className="relative z-40 m-[3px] flex cursor-pointer bg-[#D9D9D9]/10 px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-normal text-[#D9D9D9] transition duration-300 ease-in-out hover:bg-[#D9D9D9]/20 active:bg-[#FCAC04] active:text-[#1E1E1E]">
+            <p className="relative m-[3px] flex cursor-pointer bg-[#D9D9D9]/10 px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-normal text-[#D9D9D9] transition duration-300 ease-in-out hover:bg-[#D9D9D9]/20 active:bg-[#FCAC04] active:text-[#1E1E1E]">
               Next
             </p>
           </button>
