@@ -130,7 +130,7 @@ export const StickyScroll = ({
 
           {/* image content */}
 
-          <div className="sticky top-0 hidden aspect-square h-full w-[50%] flex-col justify-center opacity-50 lg:flex">
+          <div className="bg-striped sticky top-0 hidden aspect-square h-full w-[50%] flex-col justify-center lg:flex">
             <motion.div
               key={activeCard}
               initial={{
@@ -144,7 +144,7 @@ export const StickyScroll = ({
               }}
               transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
               className={cn(
-                "top-10 hidden h-full overflow-hidden rounded-4xl lg:block",
+                "top-10 hidden h-full overflow-hidden lg:block",
                 contentClassName,
               )}
             >

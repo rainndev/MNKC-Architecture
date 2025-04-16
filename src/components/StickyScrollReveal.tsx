@@ -6,11 +6,13 @@ const content = [
     description:
       "Bring your ideas to life with high-quality 3D renders and animations. Our visualization services help clients understand the design before construction begins, ensuring alignment with your vision.",
     content: (
-      <div className="flex aspect-square h-full w-full items-center justify-center bg-white/20 text-white">
-        <img
-          src="/images/services-img1.png"
-          className="aspect-square h-full w-full object-cover"
-        />
+      <div className="h-full w-full items-center justify-center bg-black/20 p-5 text-white">
+        <div className="h-full w-full rounded-lg opacity-55">
+          <img
+            src="/images/services/img1.png"
+            className="h-full w-full rounded-lg object-cover"
+          />
+        </div>
       </div>
     ),
   },
@@ -19,11 +21,13 @@ const content = [
     description:
       "We turn your ideas into buildable concepts. From sketches to zoning analysis, our team develops creative and functional designs tailored to your needs and budget.",
     content: (
-      <div className="flex aspect-square h-full w-full items-center justify-center bg-white/20 text-white">
-        <img
-          src="/images/services-img2.png"
-          className="aspect-square h-full w-full object-cover"
-        />
+      <div className="h-full w-full items-center justify-center bg-black/20 p-5 text-white">
+        <div className="h-full w-full rounded-lg opacity-55">
+          <img
+            src="/images/services/img2.png"
+            className="h-full w-full rounded-lg object-cover"
+          />
+        </div>
       </div>
     ),
   },
@@ -32,8 +36,13 @@ const content = [
     description:
       "We refine initial concepts into detailed plans, integrating aesthetics, functionality, and sustainability. Our process ensures smooth transition to construction documentation.",
     content: (
-      <div className="flex h-full w-full items-center justify-center bg-white/20 text-white">
-        Design Plans
+      <div className="h-full w-full items-center justify-center bg-black/20 p-5 text-white">
+        <div className="h-full w-full rounded-lg opacity-40">
+          <img
+            src="/images/services/img3.png"
+            className="h-full w-full rounded-lg object-cover"
+          />
+        </div>
       </div>
     ),
   },
@@ -42,8 +51,13 @@ const content = [
     description:
       "We prepare complete sets of drawings and specifications required for construction, permitting, and bidding. Accuracy and detail ensure smooth execution on-site.",
     content: (
-      <div className="flex h-full w-full items-center justify-center bg-white/20 text-white">
-        Blueprints
+      <div className="h-full w-full items-center justify-center bg-black/20 p-5 text-white">
+        <div className="h-full w-full rounded-lg opacity-55">
+          <img
+            src="/images/services/img1.png"
+            className="h-full w-full rounded-lg object-cover"
+          />
+        </div>
       </div>
     ),
   },
@@ -52,8 +66,13 @@ const content = [
     description:
       "From planning to handover, we manage timelines, budgets, and coordination between contractors and consultants to deliver your project successfully.",
     content: (
-      <div className="flex h-full w-full items-center justify-center bg-white/20 text-white">
-        Project Oversight
+      <div className="h-full w-full items-center justify-center bg-black/20 p-5 text-white">
+        <div className="h-full w-full rounded-lg opacity-55">
+          <img
+            src="/images/services/img1.png"
+            className="h-full w-full rounded-lg object-cover"
+          />
+        </div>
       </div>
     ),
   },
@@ -62,8 +81,13 @@ const content = [
     description:
       "We integrate green building principles and energy-efficient strategies into your project to reduce environmental impact and operating costs.",
     content: (
-      <div className="flex h-full w-full items-center justify-center bg-white/20 text-white">
-        Eco Design
+      <div className="h-full w-full items-center justify-center bg-black/20 p-5 text-white">
+        <div className="h-full w-full rounded-lg opacity-55">
+          <img
+            src="/images/services/img1.png"
+            className="h-full w-full rounded-lg object-cover"
+          />
+        </div>
       </div>
     ),
   },
