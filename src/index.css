@@ -64,7 +64,7 @@ html {
 }
 
 .footer-grid > div > h1 {
-  @apply font-[ClashDisplay] text-2xl;
+  @apply font-[ClashDisplay] text-[clamp(1rem,3vw,1.25rem)];
 }
 
 .link-animation {
