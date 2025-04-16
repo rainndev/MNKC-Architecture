@@ -45,8 +45,8 @@ const Hero = () => {
             {/* buttons */}
 
             <a href="https://www.facebook.com/MNKCArchitecture" target="_blank">
-              <div className="inline-block border border-[#504F4F]">
-                <button className="group relative m-[2px] cursor-pointer overflow-hidden bg-[#D9D9D9]/10 px-5 py-2 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-normal text-[#D9D9D9]">
+              <div className="group inline-block border border-[#504F4F]">
+                <button className="relative m-[3px] cursor-pointer overflow-hidden bg-[#FCAC04] px-5 py-2 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-medium text-[#1E1E1E]">
                   <span className="z-10 transition-colors duration-300 ease-in-out">
                     Start Your Project
                   </span>
