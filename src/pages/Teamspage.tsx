@@ -39,9 +39,9 @@ const Teamspage = () => {
   return (
     <div
       ref={ref}
-      className="bg-striped flex h-screen w-screen items-center justify-center text-white"
+      className="bg-striped flex min-h-screen w-screen justify-center text-white"
     >
-      <div className="flex h-full w-full max-w-7xl flex-col items-center justify-center overflow-hidden border border-[#504F4F] bg-[#1E1E1E] p-10">
+      <div className="flex max-w-7xl flex-col justify-center overflow-hidden border border-[#504F4F] bg-[#1E1E1E] p-10">
         {/* Header info */}
         <div className="mt-20">
           <motion.p
@@ -82,11 +82,18 @@ const Teamspage = () => {
         {/* Team members */}
         <div
           data-lenis-prevent
-          className="hide-scrollbar flex h-full justify-center gap-5 overflow-auto p-12"
+          className="hide-scrollbar mt-10 grid h-fit grid-cols-4 gap-5"
         >
           {sampleData.map((data, i) => (
             <CardsTeam key={i} data={data} />
           ))}
+        </div>
+
+        <div className="mt-20 h-[200vh] font-[SansationLight] text-[clamp(1rem,3vw,1.125rem)] font-normal text-[#D9D9D9]">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste beatae
+          accusantium nobis vel ex alias voluptates blanditiis impedit rem nam
+          magnam deleniti vero reprehenderit in atque velit, aliquid quibusdam
+          officia?
         </div>
       </div>
     </div>

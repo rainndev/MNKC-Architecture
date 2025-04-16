@@ -10,7 +10,7 @@ const CardsTeam = ({ data }: CardsTeamProps) => {
   const { name, position, image } = data;
   return (
     <div className="group">
-      <div className="h-96 w-72 overflow-hidden border border-[#504F4F] bg-white/10">
+      <div className="h-92 w-full overflow-hidden border border-[#504F4F] bg-white/10">
         <img
           loading="lazy"
           src={image}
@@ -19,11 +19,11 @@ const CardsTeam = ({ data }: CardsTeamProps) => {
       </div>
 
       {/* Info */}
-      <div className="mt-2">
+      <div className="mt-5">
         <h4 className="font-[ClashDisplay] text-[clamp(.9rem,3vw,1.3rem)] text-[#D9D9D9] transition-all duration-300 ease-in-out group-hover:text-2xl">
           {name}
         </h4>
-        <p className="font-[SansationLight] text-sm text-white/60 transition-all duration-300 ease-in-out group-hover:text-base">
+        <p className="font-[SansationLight] text-sm text-white/60 transition-all">
           {position}
         </p>
       </div>
