@@ -5,6 +5,7 @@ import { IoCalendarClear } from "react-icons/io5";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
+import { CiHeart } from "react-icons/ci";
 import { useSectionTracker } from "../hooks/use-section-tracker";
 
 const Footer = () => {
@@ -109,6 +110,16 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+
+      <a
+        href="https://www.facebook.com/rainier.sison.23/"
+        target="_blank"
+        className="mb-10 flex w-full items-center justify-center space-x-1 text-[clamp(.8rem,3vw,.9rem)] font-thin text-white/60"
+      >
+        <p>Created with </p>
+        <CiHeart />
+        <p>by Rainier</p>
+      </a>
     </div>
   );
 };
