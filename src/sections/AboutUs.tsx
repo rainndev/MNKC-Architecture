@@ -64,7 +64,7 @@ const AboutUs = () => {
               />
             </motion.p>
 
-            <div className="grid-about bg-striped mt-15 grid w-full grid-cols-2 gap-2">
+            <div className="grid-about bg-striped mt-15 grid w-full grid-cols-2 gap-2 border border-[#D9D9D9]/10 p-2">
               <div className="col-span-2 row-span-2 h-full md:col-span-1">
                 <p className="text-[clamp(.8rem,3vw,1.125rem)] text-pretty text-white">
                   <CountUp
