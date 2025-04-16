@@ -1,4 +1,3 @@
-import Navigation from "../components/Navigation";
 import AboutUs from "../sections/AboutUs";
 import Featured from "../sections/Featured";
 import Footer from "../sections/Footer";
@@ -8,7 +7,6 @@ import Services from "../sections/Services";
 const Homepage = () => {
   return (
     <main className="flex h-full w-full flex-col items-center justify-center">
-      <Navigation />
       <Hero />
       <AboutUs />
       <Services />

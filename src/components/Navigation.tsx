@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,20 +32,10 @@ const Navigation = () => {
           <div className="hidden text-[#D9D9D9] md:block">
             <ul className="flex space-x-10 font-sans">
               <li>
-                <a href="#hero">Home</a>
+                <Link to={"/"}>Home</Link>
               </li>
               <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#services">Services</a>
-              </li>
-              <li>
-                <a href="#featured">Featured</a>
-              </li>
-
-              <li>
-                <a href="#contact">Contact</a>
+                <Link to={"/teams"}>Teams</Link>
               </li>
             </ul>
           </div>
@@ -95,30 +86,10 @@ const Navigation = () => {
           <div className="mt-5 ml-5 w-full py-4 md:hidden">
             <ul className="flex flex-col items-start space-y-4 font-sans text-[#D9D9D9]">
               <li>
-                <a href="#hero" onClick={toggleMenu}>
-                  Home
-                </a>
+                <Link to={"/"}>Home</Link>
               </li>
               <li>
-                <a href="#about" onClick={toggleMenu}>
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#services" onClick={toggleMenu}>
-                  Services
-                </a>
-              </li>
-              <li>
-                <a href="#featured" onClick={toggleMenu}>
-                  Featured
-                </a>
-              </li>
-
-              <li>
-                <a href="#contact" onClick={toggleMenu}>
-                  Contact
-                </a>
+                <Link to={"/teams"}>Teams</Link>
               </li>
             </ul>
           </div>

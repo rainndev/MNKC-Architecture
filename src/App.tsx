@@ -3,6 +3,9 @@ import Homepage from "./pages/Homepage";
 import { AnimatePresence, motion } from "framer-motion";
 import Lenis from "lenis";
 import { useLeftSideOverlayStore } from "./store/LeftSideOverlayStore";
+import { Routes, Route } from "react-router-dom";
+import Teamspage from "./pages/Teamspage";
+import Navigation from "./components/Navigation";
 
 const App = () => {
   const leftSidedata = useLeftSideOverlayStore((state) => state.data);
@@ -20,8 +23,12 @@ const App = () => {
   return (
     <>
       <div className="flex h-full w-full items-center justify-center bg-[#1E1E1E]">
-        <Homepage />
+        <Navigation />
 
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/teams" element={<Teamspage />} />
+        </Routes>
         <div className="z-50 hidden md:bottom-10 lg:fixed lg:left-10 lg:block lg:w-[20%]">
           <AnimatePresence mode="wait">
             {leftSidedata.number !== "00" && (
