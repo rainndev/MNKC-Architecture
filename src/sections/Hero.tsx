@@ -46,11 +46,14 @@ const Hero = () => {
 
             <a href="https://www.facebook.com/MNKCArchitecture" target="_blank">
               <div className="group inline-block border border-[#504F4F]">
-                <button className="relative m-[3px] cursor-pointer overflow-hidden bg-[#FCAC04] px-5 py-2 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-medium text-[#1E1E1E]">
-                  <span className="z-10 transition-colors duration-300 ease-in-out">
+                <button className="relative m-[3px] cursor-pointer overflow-hidden px-5 py-2 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-medium">
+                  {/* Animated Background */}
+                  <span className="absolute top-0 left-0 z-10 h-full w-full bg-[#FCAC04] transition-all duration-500 ease-in-out group-hover:w-0 active:w-0" />
+
+                  {/* Text on Top */}
+                  <span className="relative z-20 font-medium text-[#1E1E1E] transition-colors duration-300 ease-in-out group-hover:text-[#D9D9D9]">
                     Start Your Project
                   </span>
-                  <span className="absolute top-0 left-0 z-0 h-full w-0 bg-[#D9D9D9]/20 transition-all duration-500 ease-in-out group-hover:w-full active:w-full" />
                 </button>
               </div>
             </a>
