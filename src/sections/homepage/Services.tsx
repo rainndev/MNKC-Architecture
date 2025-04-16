@@ -1,7 +1,7 @@
-import StickyScrollReveal from "../components/StickyScrollReveal";
+import StickyScrollReveal from "../../components/StickyScrollReveal";
 import { AnimatePresence, motion } from "framer-motion";
-import { useServicesStore } from "../store/ServicesStore";
-import { useSectionTracker } from "../hooks/use-section-tracker";
+import { useServicesStore } from "../../store/ServicesStore";
+import { useSectionTracker } from "../../hooks/use-section-tracker";
 
 const Services = () => {
   const ref = useSectionTracker({ title: "Services we offer", number: "02" });

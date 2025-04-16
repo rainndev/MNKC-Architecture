@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { CardsCarousel } from "../components/CardsCarousel";
-import { useSectionTracker } from "../hooks/use-section-tracker";
+import { CardsCarousel } from "../../components/CardsCarousel";
+import { useSectionTracker } from "../../hooks/use-section-tracker";
 
 const Featured = () => {
   const ref = useSectionTracker({ title: "Featured Projects", number: "03" });

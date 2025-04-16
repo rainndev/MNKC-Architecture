@@ -1,8 +1,8 @@
-import AboutUs from "../sections/AboutUs";
-import Featured from "../sections/Featured";
-import Footer from "../sections/Footer";
-import Hero from "../sections/Hero";
-import Services from "../sections/Services";
+import AboutUs from "../sections/homepage/AboutUs";
+import Featured from "../sections/homepage/Featured";
+import Footer from "../sections/homepage/Footer";
+import Hero from "../sections/homepage/Hero";
+import Services from "../sections/homepage/Services";
 
 const Homepage = () => {
   return (
