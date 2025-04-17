@@ -87,7 +87,7 @@ const sampleData: TeamMemberTypes[] = [
 
 const TeamsCardContainer = () => {
   return (
-    <div className="flex h-full w-full flex-col items-center justify-center overflow-hidden border border-[#504F4F] bg-[#1E1E1E] p-10 pt-32">
+    <div className="flex h-full w-full flex-col items-center justify-center overflow-hidden border-x border-[#504F4F]/20 bg-[#1E1E1E] p-10 pt-40">
       {/* Header info */}
 
       <div>
@@ -105,7 +105,7 @@ const TeamsCardContainer = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="font-[ClashDisplay] text-[clamp(2rem,3vw,5rem)] font-medium text-pretty text-[#D9D9D9]"
+          className="mt-1 font-[ClashDisplay] text-[clamp(2rem,3vw,5rem)] font-medium text-pretty text-[#D9D9D9]"
         >
           Meet Our Team
         </motion.h1>
