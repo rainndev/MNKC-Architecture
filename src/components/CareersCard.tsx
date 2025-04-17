@@ -24,7 +24,7 @@ const CareersCard = ({ data }: CareersPageProps) => {
       {/* Info about careers */}
       <div className="grid grid-cols-1 gap-10 p-5 md:grid-cols-2 md:p-10">
         <div className="w-full">
-          <h1 className="font-[ClashDisplay] text-[clamp(1.2rem,3vw,1.5rem)]">
+          <h1 className="font-[ClashDisplay] text-[clamp(1.2rem,3vw,1.5rem)] text-[#FCAC04]">
             {jobTitle}
           </h1>
           <p className="mt-3 font-[SansationLight] text-base text-[clamp(.9rem,3vw,1rem)] text-[#D9D9D9]">

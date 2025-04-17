@@ -57,7 +57,7 @@ const Careerspage = () => {
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="mt-2 font-[ClashDisplay] text-[clamp(2rem,3vw,5rem)] font-medium text-pretty text-[#D9D9D9]"
             >
-              Build the Future, Together
+              <span className="text-[#FCAC04]">Build the Future</span>, Together
             </motion.h1>
             <p className="relative mt-2 font-[SansationLight] text-[clamp(1rem,3vw,1.125rem)] font-normal text-[#D9D9D9]">
               We’re on the lookout for passionate, creative people who love

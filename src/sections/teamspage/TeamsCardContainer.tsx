@@ -107,7 +107,7 @@ const TeamsCardContainer = () => {
           transition={{ duration: 0.5, ease: "easeInOut" }}
           className="mt-1 font-[ClashDisplay] text-[clamp(2rem,3vw,5rem)] font-medium text-pretty text-[#D9D9D9]"
         >
-          Meet Our Team
+          <span className="text-[#FCAC04]">Meet</span> Our Team
         </motion.h1>
         <p className="relative mt-2 font-[SansationLight] text-[clamp(1rem,3vw,1.125rem)] font-normal text-[#D9D9D9]">
           Get to know the passionate minds behind our designs. Our team is a
