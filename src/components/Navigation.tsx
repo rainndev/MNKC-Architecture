@@ -15,7 +15,7 @@ const Navigation = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -50 }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
-      className="fixed top-0 left-0 z-20 flex w-full justify-center border-b border-b-[#504F4F] bg-[#1E1E1E]/40 p-5 backdrop-blur-md"
+      className="fixed top-0 left-0 z-20 flex w-full justify-center border-b border-b-[#504F4F] bg-[#1E1E1E]/40 p-5 font-[SansationLight] backdrop-blur-md"
     >
       <nav className="flex w-full max-w-7xl flex-col items-center justify-between">
         <div className="flex w-full items-center justify-between">
@@ -30,7 +30,7 @@ const Navigation = () => {
 
           {/* Desktop links */}
           <div className="hidden text-[#D9D9D9] md:block">
-            <ul className="flex space-x-10 font-sans">
+            <ul className="flex space-x-10">
               <li>
                 <Link to={"/"}>Home</Link>
               </li>
@@ -87,7 +87,7 @@ const Navigation = () => {
         {/* Mobile menu */}
         {isMenuOpen && (
           <div className="mt-5 ml-5 w-full py-4 md:hidden">
-            <ul className="flex flex-col items-start space-y-4 font-sans text-[#D9D9D9]">
+            <ul className="flex flex-col items-start space-y-4 text-[#D9D9D9]">
               <li>
                 <Link to={"/"}>Home</Link>
               </li>
