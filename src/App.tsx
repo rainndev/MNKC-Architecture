@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <>
-      <div className="flex h-full w-full items-center justify-center bg-[#1E1E1E]">
+      <div className="flex h-full w-full flex-col items-center justify-center bg-[#1E1E1E]">
         <Navigation />
 
         <Routes>

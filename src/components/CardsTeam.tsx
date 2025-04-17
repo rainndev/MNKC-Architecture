@@ -34,7 +34,7 @@ const CardsTeam = ({ data }: { data: TeamData }) => {
 
       {/* Info */}
       <div className="mt-5">
-        <h4 className="flex items-center pb-[2px] font-[ClashDisplay] text-[clamp(.9rem,3vw,1.3rem)] text-[#D9D9D9]">
+        <h4 className="flex items-center pb-[2px] font-[ClashDisplay] text-[clamp(1.2rem,3vw,1.3rem)] text-[#D9D9D9]">
           {name}
         </h4>
         <p className="font-[SansationLight] text-sm text-white/60 transition-all">

@@ -37,7 +37,7 @@ const Careerspage = () => {
       <div className="h-full w-full max-w-7xl border-x border-[#504F4F]/20">
         <div
           ref={ref}
-          className="flex h-full w-full flex-col items-center justify-center bg-[#1E1E1E] p-20 pt-40"
+          className="flex h-full w-full flex-col items-center justify-center bg-[#1E1E1E] p-10 md:p-20"
         >
           {/* Container */}
           <div>
@@ -79,8 +79,8 @@ const Careerspage = () => {
           </div>
 
           <div className="mt-30 flex w-full flex-col space-y-10">
-            {data.map((jobData) => (
-              <CareersCard data={jobData} />
+            {data.map((jobData, i) => (
+              <CareersCard key={i} data={jobData} />
             ))}
           </div>
         </div>

@@ -14,10 +14,10 @@ const TeamsModal = () => {
       {isOpen && (
         <motion.div>
           {/* Overlay profile */}
-          <div className="fixed top-0 z-50 flex h-full w-full items-center justify-center bg-black/50 backdrop-blur-2xl">
+          <div className="fixed top-0 right-0 z-50 flex h-full w-full items-center justify-center bg-black/50 backdrop-blur-2xl">
             <div
               onClick={() => openModal(false)}
-              className="absolute top-5 right-5 cursor-pointer border border-[#504F4F] p-2 text-[clamp(1rem,2vw,1.5rem)] text-[#D9D9D9] transition-all duration-300 ease-in-out hover:bg-[#D9D9D9]/20 active:bg-[#D9D9D9]/20 md:top-10 md:right-10"
+              className="absolute top-5 right-5 z-50 cursor-pointer border border-[#504F4F] p-2 text-[clamp(1rem,2vw,1.5rem)] text-[#D9D9D9] transition-all duration-300 ease-in-out hover:bg-[#D9D9D9]/20 active:bg-[#D9D9D9]/20 md:top-10 md:right-10"
             >
               <MdClose />
             </div>

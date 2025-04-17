@@ -15,7 +15,7 @@ const Navigation = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -50 }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
-      className="fixed top-0 left-0 z-20 flex w-full justify-center border-b border-b-[#504F4F] bg-[#1E1E1E]/40 p-5 font-[SansationLight] backdrop-blur-md"
+      className="sticky top-0 left-0 z-20 flex w-full justify-center border-b border-b-[#504F4F] bg-[#1E1E1E]/40 p-5 font-[SansationLight] backdrop-blur-md"
     >
       <nav className="flex w-full max-w-7xl flex-col items-center justify-between">
         <div className="flex w-full items-center justify-between">
