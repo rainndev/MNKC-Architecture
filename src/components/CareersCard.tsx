@@ -1,5 +1,4 @@
 import { GoArrowUpRight } from "react-icons/go";
-import { motion } from "framer-motion";
 
 interface CareersPageProps {
   data: {

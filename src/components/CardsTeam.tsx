@@ -29,7 +29,7 @@ const CardsTeam = ({ data }: { data: TeamData }) => {
           className="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-103 group-active:scale-103"
         />
 
-        <span className="absolute bottom-0 left-0 flex h-full w-full items-center justify-center bg-[#1E1E1E] opacity-70 transition-all duration-300 ease-in-out group-hover:h-0 group-hover:opacity-0 group-active:opacity-0"></span>
+        <span className="bg-striped absolute bottom-0 left-0 flex h-full w-full items-center justify-center bg-[#1E1E1E] opacity-70 transition-all duration-300 ease-in-out group-hover:h-0 group-hover:opacity-0 group-active:opacity-0"></span>
       </div>
 
       {/* Info */}
