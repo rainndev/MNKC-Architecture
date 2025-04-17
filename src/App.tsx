@@ -4,7 +4,8 @@ import Lenis from "lenis";
 import { Routes, Route } from "react-router-dom";
 import Teamspage from "@/pages/Teamspage";
 import Navigation from "@/components/Navigation";
-import LeftSideOverlay from "./components/LeftSideOverlay";
+import LeftSideOverlay from "@/components/LeftSideOverlay";
+import Careerspage from "@/pages/Careerspage";
 
 const App = () => {
   useEffect(() => {
@@ -26,6 +27,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/teams" element={<Teamspage />} />
+          <Route path="/careers" element={<Careerspage />} />
         </Routes>
 
         {/* Left side overlay */}
