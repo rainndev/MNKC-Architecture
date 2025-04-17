@@ -22,7 +22,7 @@ const CardsTeam = ({ data }: { data: TeamData }) => {
 
   return (
     <div onClick={handleClick} className="group">
-      <div className="relative h-80 w-full overflow-hidden border border-[#504F4F]">
+      <div className="relative h-80 w-full cursor-pointer overflow-hidden border border-[#504F4F]">
         <img
           loading="lazy"
           src={image}

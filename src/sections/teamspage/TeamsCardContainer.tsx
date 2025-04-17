@@ -87,7 +87,7 @@ const sampleData: TeamMemberTypes[] = [
 
 const TeamsCardContainer = () => {
   return (
-    <div className="flex h-full w-full flex-col items-center justify-center overflow-hidden border-x border-[#504F4F]/20 bg-[#1E1E1E] p-10 pt-40">
+    <div className="flex h-full w-full flex-col items-center justify-center overflow-hidden border-x border-[#504F4F]/20 bg-[#1E1E1E] p-20 pt-40">
       {/* Header info */}
 
       <div>
@@ -127,7 +127,7 @@ const TeamsCardContainer = () => {
       </div>
 
       {/* Team members */}
-      <div className="hide-scrollbar mt-15 grid h-fit w-full grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="hide-scrollbar mt-30 grid h-fit w-full grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {sampleData.map((data, i) => (
           <CardsTeam key={i} data={data} />
         ))}
