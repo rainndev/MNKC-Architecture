@@ -14,13 +14,13 @@ const CardsTeam = ({ data }: CardsTeamProps) => {
         <img
           loading="lazy"
           src={image}
-          className="h-full w-full object-cover opacity-20 transition-all duration-300 ease-in-out group-hover:scale-103 hover:opacity-100"
+          className="h-full w-full object-cover opacity-20 transition-all duration-300 ease-in-out group-hover:scale-103 group-active:scale-103 hover:opacity-100 active:opacity-100"
         />
       </div>
 
       {/* Info */}
       <div className="mt-5">
-        <h4 className="font-[ClashDisplay] text-[clamp(.9rem,3vw,1.3rem)] text-[#D9D9D9] transition-all duration-300 ease-in-out group-hover:text-2xl">
+        <h4 className="font-[ClashDisplay] text-[clamp(.9rem,3vw,1.3rem)] text-[#D9D9D9] transition-all duration-300 ease-in-out group-hover:text-2xl group-active:text-2xl">
           {name}
         </h4>
         <p className="font-[SansationLight] text-sm text-white/60 transition-all">
