@@ -20,7 +20,7 @@ const Services = () => {
             exit={{ opacity: 0, height: 0 }}
             className="flex flex-col items-center"
           >
-            <div className="w-full max-w-7xl p-10">
+            <div className="w-full max-w-7xl p-7">
               {/* header title */}
               <div className="my-6 flex items-center text-nowrap">
                 <motion.h1

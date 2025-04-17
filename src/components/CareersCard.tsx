@@ -22,14 +22,16 @@ const CareersCard = ({ data }: CareersPageProps) => {
   return (
     <div className="border border-[#504F4F] text-white">
       {/* Info about careers */}
-      <div className="flex p-10">
+      <div className="grid grid-cols-1 gap-10 p-5 md:grid-cols-2 md:p-10">
         <div className="w-full">
-          <h1 className="font-[ClashDisplay] text-2xl">{jobTitle}</h1>
-          <p className="mt-3 font-[SansationLight] text-base font-normal text-[#D9D9D9]">
+          <h1 className="font-[ClashDisplay] text-[clamp(1.2rem,3vw,1.5rem)]">
+            {jobTitle}
+          </h1>
+          <p className="mt-3 font-[SansationLight] text-base text-[clamp(.9rem,3vw,1rem)] text-[#D9D9D9]">
             {jobShortDescription}
           </p>
         </div>
-        <div className="flex cursor-pointer items-center font-[SansationLight] text-lg">
+        <div className="flex cursor-pointer items-center justify-end font-[SansationLight] text-[clamp(1rem,3vw,1.125rem)]">
           Apply{" "}
           <span className="ml-3 text-2xl">
             <GoArrowUpRight />
@@ -39,24 +41,24 @@ const CareersCard = ({ data }: CareersPageProps) => {
       <hr className="h-[1px] border-none bg-[#504F4F]" />
 
       {/* Job Info*/}
-      <div className="grid grid-cols-2 gap-10 p-10 py-20">
+      <div className="grid grid-cols-1 gap-10 p-5 py-20 md:grid-cols-2 md:p-10">
         {/* Job type */}
         <div className="space-y-4">
           <div>
-            <p className="font-[ClashDisplay] text-sm text-[#D9D9D9]">
+            <p className="font-[ClashDisplay] text-[clamp(.8rem,3vw,1rem)] text-[#D9D9D9]">
               Job Type
             </p>
-            <h1 className="mt-1 font-[ClashDisplay] text-xl font-normal text-white">
+            <h1 className="mt-1 font-[ClashDisplay] text-[clamp(1.1rem,3vw,1.25rem)] font-normal text-white">
               {jobType}
             </h1>
             <hr className="mt-3 h-[1px] border-none bg-[#504F4F]" />
           </div>
 
           <div>
-            <p className="font-[ClashDisplay] text-sm text-[#D9D9D9]">
+            <p className="font-[ClashDisplay] text-[clamp(.8rem,3vw,1rem)] text-[#D9D9D9]">
               Location
             </p>
-            <h1 className="mt-1 font-[ClashDisplay] text-xl font-normal text-white">
+            <h1 className="mt-1 font-[ClashDisplay] text-[clamp(1.1rem,3vw,1.25rem)] font-normal text-white">
               {jobLocation}
             </h1>
             <hr className="mt-3 h-[1px] border-none bg-[#504F4F]" />
@@ -65,10 +67,10 @@ const CareersCard = ({ data }: CareersPageProps) => {
 
         {/* Job description */}
         <div>
-          <h1 className="font-[ClashDisplay] text-2xl font-normal text-white">
+          <h1 className="font-[ClashDisplay] text-[clamp(1.2rem,3vw,1.5rem)] font-normal text-white">
             Job Description
           </h1>
-          <p className="mt-2 font-[SansationLight] text-[#D9D9D9]">
+          <p className="mt-2 font-[SansationLight] text-[clamp(.9rem,3vw,1rem)] text-[#D9D9D9]">
             {jobDescription}
           </p>
         </div>

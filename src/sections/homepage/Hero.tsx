@@ -12,7 +12,7 @@ const Hero = () => {
     >
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-[#1E1E1E] [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]" />
 
-      <div className="grid h-screen w-full max-w-7xl grid-cols-1 items-center justify-center p-10 py-32 md:grid-cols-2">
+      <div className="grid h-screen w-full max-w-7xl grid-cols-1 items-center justify-center p-7 py-32 md:grid-cols-2">
         <div className="z-10 w-full">
           {/* Heading  */}
           <motion.h1

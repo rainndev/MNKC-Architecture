@@ -37,7 +37,7 @@ const Careerspage = () => {
       <div className="h-full w-full max-w-7xl border-x border-[#504F4F]/20">
         <div
           ref={ref}
-          className="flex h-full w-full flex-col items-center justify-center bg-[#1E1E1E] p-10 md:p-20"
+          className="flex h-full w-full flex-col items-center justify-center bg-[#1E1E1E] p-7 md:p-20"
         >
           {/* Container */}
           <div>

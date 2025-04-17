@@ -12,7 +12,7 @@ const Featured = () => {
       className="flex min-h-screen w-full flex-col items-center justify-center border-b border-[#504F4F] text-center text-5xl font-bold text-white"
     >
       {/* Header and desc */}
-      <div className="w-full max-w-7xl p-10">
+      <div className="w-full max-w-7xl p-7">
         {/* header title */}
         <div className="my-6 flex items-center justify-start text-nowrap">
           <motion.h1
