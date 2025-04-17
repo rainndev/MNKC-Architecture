@@ -28,11 +28,36 @@ const sampleData: TeamMember[] = [
     position: "Project Manager",
     image: "https://i.pravatar.cc/300?img=4",
   },
+  {
+    name: "Emily Davis",
+    position: "Structural Engineer",
+    image: "https://i.pravatar.cc/300?img=5",
+  },
+  {
+    name: "Michael Wilson",
+    position: "Landscape Designer",
+    image: "https://i.pravatar.cc/300?img=6",
+  },
+  {
+    name: "Sophia Martinez",
+    position: "Sustainability Consultant",
+    image: "https://i.pravatar.cc/300?img=7",
+  },
+  {
+    name: "James Anderson",
+    position: "Urban Planner",
+    image: "https://i.pravatar.cc/300?img=8",
+  },
+  {
+    name: "Olivia Thomas",
+    position: "Graphic Designer",
+    image: "https://i.pravatar.cc/300?img=9",
+  },
 ];
 
 const TeamsCardContainer = () => {
   return (
-    <div className="flex h-screen max-w-7xl flex-col items-center justify-center overflow-hidden border border-[#504F4F] bg-[#1E1E1E] p-10">
+    <div className="flex h-full w-full flex-col items-center justify-center overflow-hidden border border-[#504F4F] bg-[#1E1E1E] p-10 pt-32">
       {/* Header info */}
       <div>
         <motion.p
@@ -71,10 +96,7 @@ const TeamsCardContainer = () => {
       </div>
 
       {/* Team members */}
-      <div
-        data-lenis-prevent
-        className="hide-scrollbar mt-10 grid h-fit grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
-      >
+      <div className="hide-scrollbar mt-10 grid h-fit grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {sampleData.map((data, i) => (
           <CardsTeam key={i} data={data} />
         ))}
