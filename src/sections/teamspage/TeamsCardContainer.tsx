@@ -32,7 +32,7 @@ const sampleData: TeamMember[] = [
 
 const TeamsCardContainer = () => {
   return (
-    <div className="flex h-full max-w-7xl flex-col items-center justify-center overflow-hidden border border-[#504F4F] bg-[#1E1E1E] p-10">
+    <div className="flex h-screen max-w-7xl flex-col items-center justify-center overflow-hidden border border-[#504F4F] bg-[#1E1E1E] p-10">
       {/* Header info */}
       <div>
         <motion.p

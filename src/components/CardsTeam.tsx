@@ -20,9 +20,10 @@ const CardsTeam = ({ data }: CardsTeamProps) => {
 
       {/* Info */}
       <div className="mt-5">
-        <h4 className="font-[ClashDisplay] text-[clamp(.9rem,3vw,1.3rem)] text-[#D9D9D9] transition-all duration-300 ease-in-out group-hover:text-2xl group-active:text-2xl">
-          {name}
-        </h4>
+        <div className="relative mb-2 flex items-center pb-[2px] font-[ClashDisplay] text-[clamp(.9rem,3vw,1.3rem)] text-[#D9D9D9] transition-all duration-300 ease-in-out group-hover:text-2xl group-active:text-2xl">
+          <h4>{name}</h4>
+          <span className="absolute bottom-0 inline-block h-[1px] w-0 bg-[#FCAC04] opacity-0 transition-all duration-400 ease-in-out group-hover:w-full group-hover:opacity-100" />
+        </div>
         <p className="font-[SansationLight] text-sm text-white/60 transition-all">
           {position}
         </p>
