@@ -1,15 +1,27 @@
-interface CardsTeamProps {
-  data: {
-    name: string;
-    position: string;
-    image: string;
-  };
+import { useTeamsModalStore } from "@/store/TeamsModalStore";
+
+interface TeamData {
+  name: string;
+  position: string;
+  expertise: String[];
+  image: string;
+  bio: string;
+  linkedIn: string;
 }
 
-const CardsTeam = ({ data }: CardsTeamProps) => {
+const CardsTeam = ({ data }: { data: TeamData }) => {
   const { name, position, image } = data;
+
+  const openModal = useTeamsModalStore((state) => state.openModal);
+  const setData = useTeamsModalStore((state) => state.setData);
+
+  const handleClick = () => {
+    openModal(true);
+    setData(data);
+  };
+
   return (
-    <div className="group">
+    <div onClick={handleClick} className="group">
       <div className="relative h-80 w-full overflow-hidden border border-[#504F4F]">
         <img
           loading="lazy"
