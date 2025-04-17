@@ -46,20 +46,20 @@ const CareersCard = ({ data }: CareersPageProps) => {
             <p className="font-[ClashDisplay] text-sm text-[#D9D9D9]">
               Job Type
             </p>
-            <h1 className="mt-2 font-[ClashDisplay] text-xl font-normal text-white">
+            <h1 className="mt-1 font-[ClashDisplay] text-xl font-normal text-white">
               {jobType}
             </h1>
-            <hr className="mt-1 h-[1px] border-none bg-[#504F4F]" />
+            <hr className="mt-3 h-[1px] border-none bg-[#504F4F]" />
           </div>
 
           <div>
             <p className="font-[ClashDisplay] text-sm text-[#D9D9D9]">
               Location
             </p>
-            <h1 className="mt-2 font-[ClashDisplay] text-xl font-normal text-white">
+            <h1 className="mt-1 font-[ClashDisplay] text-xl font-normal text-white">
               {jobLocation}
             </h1>
-            <hr className="mt-1 h-[1px] border-none bg-[#504F4F]" />
+            <hr className="mt-3 h-[1px] border-none bg-[#504F4F]" />
           </div>
         </div>
 
