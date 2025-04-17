@@ -38,7 +38,7 @@ const Navigation = () => {
                 <Link to={"/teams"}>Teams</Link>
               </li>
               <li>
-                <Link to={"/careers"}>Teams</Link>
+                <Link to={"/careers"}>Careers</Link>
               </li>
             </ul>
           </div>
@@ -95,7 +95,7 @@ const Navigation = () => {
                 <Link to={"/teams"}>Teams</Link>
               </li>
               <li>
-                <Link to={"/careers"}>Teams</Link>
+                <Link to={"/careers"}>Careers</Link>
               </li>
             </ul>
           </div>
