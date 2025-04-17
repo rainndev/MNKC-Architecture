@@ -10,9 +10,9 @@ import React, {
   useContext,
 } from "react";
 
-import { cn } from "../../lib/utils";
+import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
-import { useOutsideClick } from "../../hooks/use-outside-click";
+import { useOutsideClick } from "@/hooks/use-outside-click";
 
 interface CarouselProps {
   items: JSX.Element[];

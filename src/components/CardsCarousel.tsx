@@ -1,6 +1,6 @@
 "use client";
 
-import { Carousel, Card } from "../components/ui/apple-cards-carousel";
+import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
 const DummyContent = () => {
   return (

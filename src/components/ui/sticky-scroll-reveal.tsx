@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { AnimatePresence, useMotionValueEvent, useScroll } from "motion/react";
 import { motion, useInView } from "motion/react";
-import { cn } from "../../lib/utils";
-import { useServicesStore } from "../../store/ServicesStore";
+import { cn } from "@/lib/utils";
+import { useServicesStore } from "@/store/ServicesStore";
 
 export const StickyScroll = ({
   content,

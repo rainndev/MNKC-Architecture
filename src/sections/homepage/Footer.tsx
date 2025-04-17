@@ -6,7 +6,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
-import { useSectionTracker } from "../../hooks/use-section-tracker";
+import { useSectionTracker } from "@/hooks/use-section-tracker";
 
 const Footer = () => {
   const ref = useSectionTracker({ title: "Contact Us", number: "00" });

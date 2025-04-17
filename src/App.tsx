@@ -1,11 +1,11 @@
 import { useEffect } from "react";
-import Homepage from "./pages/Homepage";
+import Homepage from "@/pages/Homepage";
 import { AnimatePresence, motion } from "framer-motion";
 import Lenis from "lenis";
-import { useLeftSideOverlayStore } from "./store/LeftSideOverlayStore";
+import { useLeftSideOverlayStore } from "@/store/LeftSideOverlayStore";
 import { Routes, Route } from "react-router-dom";
-import Teamspage from "./pages/Teamspage";
-import Navigation from "./components/Navigation";
+import Teamspage from "@/pages/Teamspage";
+import Navigation from "@/components/Navigation";
 
 const App = () => {
   const leftSidedata = useLeftSideOverlayStore((state) => state.data);

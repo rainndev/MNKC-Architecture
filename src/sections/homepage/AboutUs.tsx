@@ -1,7 +1,7 @@
-import CountUp from "../../components/CountUp";
+import CountUp from "@/components/CountUp";
 import { motion } from "framer-motion";
-import ScrollingUpImages from "../../components/ScrollingUpImages";
-import { useSectionTracker } from "../../hooks/use-section-tracker";
+import ScrollingUpImages from "@/components/ScrollingUpImages";
+import { useSectionTracker } from "@/hooks/use-section-tracker";
 
 const AboutUs = () => {
   const ref = useSectionTracker({ title: "About us", number: "01" });

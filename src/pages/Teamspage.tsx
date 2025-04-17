@@ -1,5 +1,5 @@
 import TeamsCardContainer from "@/sections/teamspage/TeamsCardContainer";
-import { useSectionTracker } from "../hooks/use-section-tracker";
+import { useSectionTracker } from "@/hooks/use-section-tracker";
 
 const Teamspage = () => {
   const ref = useSectionTracker({

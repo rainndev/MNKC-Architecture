@@ -1,4 +1,4 @@
-import { StickyScroll } from "../components/ui/sticky-scroll-reveal";
+import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 
 const content = [
   {

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useInView } from "framer-motion";
-import { useLeftSideOverlayStore } from "../store/LeftSideOverlayStore";
+import { useLeftSideOverlayStore } from "@/store/LeftSideOverlayStore";
 
 type SectionData = {
   number: string;

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useSectionTracker } from "../../hooks/use-section-tracker";
+import { useSectionTracker } from "@/hooks/use-section-tracker";
 
 const Hero = () => {
   const ref = useSectionTracker({ title: "Hero", number: "00" });
