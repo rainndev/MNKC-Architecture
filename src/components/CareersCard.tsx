@@ -41,7 +41,7 @@ const CareersCard = ({ data }: CareersPageProps) => {
       <hr className="h-[1px] border-none bg-[#504F4F]" />
 
       {/* Job Info*/}
-      <div className="grid grid-cols-1 gap-10 p-5 py-20 md:grid-cols-2 md:p-10">
+      <div className="grid grid-cols-1 gap-10 p-5 md:grid-cols-2 md:p-10">
         {/* Job type */}
         <div className="space-y-4">
           <div>
