@@ -9,7 +9,7 @@ const LeftSideOverlay = () => {
         <AnimatePresence mode="wait">
           {leftSidedata.number !== "00" && (
             <motion.div
-              key={leftSidedata.number}
+              key={leftSidedata.title}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}

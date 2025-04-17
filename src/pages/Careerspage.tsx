@@ -25,8 +25,8 @@ const data = [
 
 const Careerspage = () => {
   const ref = useSectionTracker({
-    title: "Careers",
-    number: "00",
+    title: "Build the Future, Together",
+    number: "01",
   });
 
   return (

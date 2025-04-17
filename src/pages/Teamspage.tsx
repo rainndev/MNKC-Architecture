@@ -4,8 +4,8 @@ import TeamsModal from "@/components/TeamsModal";
 
 const Teamspage = () => {
   const ref = useSectionTracker({
-    title: "Teams",
-    number: "00",
+    title: "Meet Our Team",
+    number: "01",
   });
   return (
     <>
