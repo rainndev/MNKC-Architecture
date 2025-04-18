@@ -27,7 +27,7 @@ const TeamsModal = () => {
                   <img
                     loading="lazy"
                     src={image}
-                    className="aspect-square h-96 w-full border border-[#504F4F] object-cover opacity-75"
+                    className="aspect-square w-full border border-[#504F4F] object-cover opacity-75"
                     alt=""
                   />
                 </div>

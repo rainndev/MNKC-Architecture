@@ -37,7 +37,7 @@ const Careerspage = () => {
       <div className="h-full w-full max-w-7xl border-x border-[#504F4F]/20">
         <div
           ref={ref}
-          className="flex h-full w-full flex-col items-center justify-center bg-[#1E1E1E] p-7 md:p-20"
+          className="flex h-full w-full flex-col items-center justify-center bg-[#1E1E1E] p-7 py-20 md:p-20"
         >
           {/* Container */}
           <div>
@@ -46,7 +46,7 @@ const Careerspage = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="w-fit border border-[#504F4F] px-4 py-2 font-[ClashDisplay] text-[clamp(.9rem,2vw,1rem)] text-[#D9D9D9]"
+              className="w-fit border border-[#504F4F] px-4 py-2 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] text-[#D9D9D9]"
             >
               We are hiring!
             </motion.p>
