@@ -6,8 +6,13 @@ import Teamspage from "@/pages/Teamspage";
 import Navigation from "@/components/Navigation";
 import LeftSideOverlay from "@/components/LeftSideOverlay";
 import Careerspage from "@/pages/Careerspage";
+import Sidebar from "@/components/Sidebar";
+import { useSideBarStore } from "@/store/SideBarStore";
+import { AnimatePresence } from "framer-motion";
 
 const App = () => {
+  const isOpen = useSideBarStore((state) => state.isOpen);
+
   useEffect(() => {
     // Initialize Lenis
     const lenis = new Lenis({
@@ -23,7 +28,7 @@ const App = () => {
     <>
       <div className="flex h-full w-full flex-col items-center justify-center bg-[#1E1E1E]">
         <Navigation />
-
+        <AnimatePresence>{isOpen && <Sidebar />}</AnimatePresence>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/teams" element={<Teamspage />} />

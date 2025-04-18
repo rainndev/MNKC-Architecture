@@ -20,7 +20,7 @@ const CareersCard = ({ data }: CareersPageProps) => {
   } = data;
 
   return (
-    <div className="border border-[#504F4F] bg-black/10 text-white shadow-lg">
+    <div className="border border-[#504F4F] text-white shadow-lg">
       {/* Info about careers */}
       <div className="grid grid-cols-1 gap-10 p-5 md:grid-cols-2 md:p-10">
         <div className="w-full">
