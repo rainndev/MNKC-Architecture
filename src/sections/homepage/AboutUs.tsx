@@ -59,6 +59,7 @@ const AboutUs = () => {
                   opacity: 0.7,
                   width: ["100%", "0%"],
                 }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: 0.2, ease: "easeInOut" }}
                 className="absolute top-0 right-0 z-0 h-full bg-[#FCAC04]"
               />
