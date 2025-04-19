@@ -46,6 +46,9 @@ const Sidebar = () => {
             <li onClick={closeSidebar}>
               <Link to={"/careers"}>Careers</Link>
             </li>
+            <li onClick={closeSidebar}>
+              <Link to={"/contact"}>Contact</Link>
+            </li>
           </ul>
         </div>
       </motion.div>
