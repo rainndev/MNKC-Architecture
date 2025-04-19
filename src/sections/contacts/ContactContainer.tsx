@@ -1,3 +1,6 @@
+import Map from "@/components/Map";
+import { motion } from "framer-motion";
+
 const ContactContainer = () => {
   return (
     <div className="grid h-full w-full grid-cols-1 gap-10 md:grid-cols-2">
@@ -5,13 +8,29 @@ const ContactContainer = () => {
       <div>
         {/* Header */}
         <div>
-          <h1 className="font-[ClashDisplay] text-[clamp(2rem,3vw,5rem)] text-amber-300">
-            Let's Connect
-          </h1>
-          <p className="mt-2 font-[SansationLight] text-[clamp(1rem,3vw,1.125rem)] font-normal text-[#D9D9D9]">
+          <motion.h1
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="font-[ClashDisplay] text-[clamp(2rem,3vw,5rem)] font-medium text-pretty text-[#D9D9D9]"
+          >
+            Let's <span className="text-[#FCAC04]">Connect</span>
+          </motion.h1>
+          <p className="relative mt-2 font-[SansationLight] text-[clamp(1rem,3vw,1.125rem)] font-normal text-[#D9D9D9]">
             Have a project in mind or just exploring ideas? We're here to help.
             Whether it’s a home, an office, or something unique, we’d love to
             hear about it.
+            <motion.span
+              initial={{ height: "0%", opacity: 0, width: "0%" }}
+              whileInView={{
+                height: "100%",
+                opacity: 0.7,
+                width: ["100%", "0%"],
+              }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: "easeInOut" }}
+              className="absolute top-0 right-0 z-0 h-full bg-[#FCAC04]"
+            />
           </p>
         </div>
 
@@ -19,7 +38,7 @@ const ContactContainer = () => {
         <form
           action="https://usebasin.com/f/18f95a87449e"
           method="POST"
-          className="my-10 flex w-full flex-col gap-5"
+          className="mt-10 flex w-full flex-col gap-5"
         >
           {/* Full name */}
           <div className="flex w-full flex-col gap-2">
@@ -119,7 +138,9 @@ const ContactContainer = () => {
 
       {/* item 2 */}
 
-      <div className="bg-[#212121]">maps</div>
+      <div className="bg-striped z-10 h-96 w-full border border-dashed border-[#d9d9d9]/20 bg-[#212121] p-2 opacity-70 transition-opacity duration-300 ease-in-out hover:opacity-100 md:h-full">
+        <Map />
+      </div>
     </div>
   );
 };
