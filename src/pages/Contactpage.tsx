@@ -1,4 +1,5 @@
 import { useSectionTracker } from "@/hooks/use-section-tracker";
+import ContactContainer from "@/sections/contacts/ContactContainer";
 
 const Contactpage = () => {
   const ref = useSectionTracker({
@@ -9,9 +10,11 @@ const Contactpage = () => {
   return (
     <div
       ref={ref}
-      className="flex h-screen w-full items-center justify-center text-2xl text-amber-300"
+      className="bg-striped flex min-h-screen w-full flex-col items-center justify-center"
     >
-      Contact
+      <div className="h-full w-full max-w-7xl border-x border-[#504F4F]/20 bg-[#1E1E1E] p-7 py-20 md:p-20">
+        <ContactContainer />
+      </div>
     </div>
   );
 };
