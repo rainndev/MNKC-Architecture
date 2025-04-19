@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css";
 import { Icon } from "leaflet";
 
 const Map = () => {
-  const position: [number, number] = [15.2480356, 120.6774088]; // Manila
+  const position: [number, number] = [15.2480356, 120.6774088];
 
   return (
     <MapContainer
@@ -20,7 +20,7 @@ const Map = () => {
       <Marker
         icon={
           new Icon({
-            iconUrl: "/public/images/map/location.png",
+            iconUrl: "/images/map/location.png",
             iconSize: [41, 41],
             iconAnchor: [12, 41],
           })
