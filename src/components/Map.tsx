@@ -9,6 +9,7 @@ const Map = () => {
   return (
     <MapContainer
       center={position}
+      zoomControl={false}
       zoom={100}
       style={{ height: "100%", width: "100%" }}
     >
