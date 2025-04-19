@@ -32,12 +32,15 @@ const CareersCard = ({ data }: CareersPageProps) => {
           </p>
         </div>
         <div className="flex w-full items-center justify-end">
-          <div className="group flex w-fit cursor-pointer items-center justify-end font-[SansationLight] text-[clamp(.9rem,3vw,1rem)] transition-colors duration-300 hover:text-[#504F4F]">
+          <a
+            href="mailto:mnkcarchitecture@gmail.com"
+            className="group flex w-fit cursor-pointer items-center justify-end font-[SansationLight] text-[clamp(.9rem,3vw,1rem)] transition-colors duration-300 hover:text-[#504F4F]"
+          >
             Apply{" "}
             <span className="ml-2 text-2xl transition-transform duration-400 ease-in-out group-hover:translate-x-[2px] group-hover:-translate-y-[2px]">
               <GoArrowUpRight />
             </span>
-          </div>
+          </a>
         </div>
       </div>
       <hr className="h-[1px] border-none bg-[#504F4F]" />
