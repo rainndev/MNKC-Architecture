@@ -68,11 +68,11 @@ const Faqs = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="text-logo-white mt-1 text-center font-[ClashDisplay] text-[clamp(2rem,3vw,5rem)] font-medium text-pretty"
+            className="text-logo-white mt-1 text-start font-[ClashDisplay] text-[clamp(2rem,3vw,5rem)] font-medium text-pretty"
           >
             Frequently <span className="text-logo-yellow">Asked Questions</span>
           </motion.h1>
-          <p className="text-logo-white relative mt-2 text-center font-[SansationLight] text-[clamp(1rem,3vw,1.125rem)] font-normal">
+          <p className="text-logo-white relative mt-2 text-start font-[SansationLight] text-[clamp(1rem,3vw,1.125rem)] font-normal">
             We know starting a project comes with a lot of questions. Here’s a
             quick guide to help you feel more confident and informed before we
             begin.
