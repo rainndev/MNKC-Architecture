@@ -1,7 +1,25 @@
 import Map from "@/components/Map";
 import { motion } from "framer-motion";
+import { useRef } from "react";
+import { useForm } from "react-hook-form";
+
+type ContactFormTypes = {
+  fullname: string;
+  email: string;
+  phone: string;
+  adress: string;
+  message: string;
+};
 
 const ContactContainer = () => {
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const { register, handleSubmit } = useForm<ContactFormTypes>();
+
+  const onSubmit = () => {
+    formRef.current?.submit();
+  };
+
   return (
     <div className="grid h-full w-full grid-cols-1 gap-10 md:grid-cols-2">
       {/* item1 */}
@@ -36,8 +54,10 @@ const ContactContainer = () => {
 
         {/* Form */}
         <form
+          ref={formRef}
           action="https://usebasin.com/f/18f95a87449e"
           method="POST"
+          onSubmit={handleSubmit(onSubmit)}
           className="mt-10 flex w-full flex-col gap-5"
         >
           {/* Full name */}
@@ -49,6 +69,7 @@ const ContactContainer = () => {
               Full Name
             </label>
             <input
+              {...register("fullname", { required: "Name is required" })}
               className="mt-1 border border-[#d9d9d9]/20 p-3 pl-5 text-[#d9d9d9] placeholder-[#d9d9d9]/20 transition-colors duration-300 ease-in-out focus:border-[#FCAC04] focus:outline-none"
               type="text"
               name="fullname"
@@ -66,6 +87,13 @@ const ContactContainer = () => {
               Email
             </label>
             <input
+              {...register("email", {
+                required: "Email is required",
+                pattern: {
+                  value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                  message: "Invalid email address",
+                },
+              })}
               className="mt-1 border border-[#d9d9d9]/20 p-3 pl-5 text-[#d9d9d9] placeholder-[#d9d9d9]/20 transition-colors duration-300 ease-in-out focus:border-[#FCAC04] focus:outline-none"
               type="email"
               name="email"
@@ -83,6 +111,9 @@ const ContactContainer = () => {
               Phone
             </label>
             <input
+              {...register("phone", {
+                required: "Phone number is required",
+              })}
               className="mt-1 border border-[#d9d9d9]/20 p-3 pl-5 text-[#d9d9d9] placeholder-[#d9d9d9]/20 transition-colors duration-300 ease-in-out focus:border-[#FCAC04] focus:outline-none"
               type="number"
               name="phone"
@@ -100,6 +131,9 @@ const ContactContainer = () => {
               Address
             </label>
             <input
+              {...register("adress", {
+                required: "Address is required",
+              })}
               className="mt-1 border border-[#d9d9d9]/20 p-3 pl-5 text-[#d9d9d9] placeholder-[#d9d9d9]/20 transition-colors duration-300 ease-in-out focus:border-[#FCAC04] focus:outline-none"
               type="text"
               name="adress"
@@ -117,6 +151,7 @@ const ContactContainer = () => {
               Message
             </label>
             <textarea
+              {...register("message", { required: "Message is required" })}
               className="mt-1 border border-[#d9d9d9]/20 p-3 pl-5 text-[#d9d9d9] placeholder-[#d9d9d9]/20 transition-colors duration-300 ease-in-out focus:border-[#FCAC04] focus:outline-none"
               name="message"
               rows={5}
