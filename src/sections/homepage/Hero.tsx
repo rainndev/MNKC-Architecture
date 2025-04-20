@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useSectionTracker } from "@/hooks/use-section-tracker";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const ref = useSectionTracker({ title: "Hero", number: "00" });
@@ -44,7 +45,7 @@ const Hero = () => {
           >
             {/* buttons */}
 
-            <a href="https://www.facebook.com/MNKCArchitecture" target="_blank">
+            <Link to={"/contact"}>
               <div className="group border-logo-gray inline-block border">
                 <button className="bg-striped relative m-[3px] cursor-pointer overflow-hidden px-5 py-2 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-medium">
                   {/* Animated Background */}
@@ -56,7 +57,7 @@ const Hero = () => {
                   </span>
                 </button>
               </div>
-            </a>
+            </Link>
 
             <a href="#about">
               <div className="bg-striped border-logo-gray mt-2 inline-block border">
