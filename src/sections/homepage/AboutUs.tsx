@@ -77,7 +77,7 @@ const AboutUs = () => {
                     className="count-up-text"
                   />
                   + Years of <br />
-                  <span className="text-amber-400"> Experience</span>
+                  <span className="text-logo-yellow"> Experience</span>
                 </p>
               </div>
 
@@ -91,7 +91,7 @@ const AboutUs = () => {
                     duration={2}
                     className="count-up-text"
                   />
-                  + <span className="text-amber-400">Projects</span>
+                  + <span className="text-logo-yellow">Projects</span>
                 </p>
               </div>
 
@@ -105,7 +105,7 @@ const AboutUs = () => {
                     duration={2}
                     className="count-up-text"
                   />
-                  + <span className="text-amber-400">Clients</span>
+                  + <span className="text-logo-yellow">Clients</span>
                 </p>
               </div>
             </div>
