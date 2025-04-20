@@ -12,7 +12,7 @@ const Contactpage = () => {
       ref={ref}
       className="bg-striped flex h-full w-full flex-col items-center justify-center"
     >
-      <div className="h-full min-h-screen w-full max-w-7xl border-x border-[#504F4F]/20 bg-[#1E1E1E] p-7 py-20 md:p-20">
+      <div className="bg-logo-black border-logo-gray/20 h-full min-h-screen w-full max-w-7xl border-x p-7 py-20 md:p-20">
         <ContactContainer />
       </div>
     </div>

@@ -106,7 +106,7 @@ export const StickyScroll = ({
                           width: activeCard === index ? "100%" : 0,
                         }}
                         transition={{ duration: 0.3, delay: 0.2 }}
-                        className="mt-5 h-[1px] w-full bg-[#504F4F]"
+                        className="bg-logo-gray mt-5 h-[1px] w-full"
                       />
                     </motion.h2>
                   </div>
@@ -118,7 +118,7 @@ export const StickyScroll = ({
                     animate={{
                       opacity: activeCard === index ? 1 : 0.3,
                     }}
-                    className="mt-10 w-full text-lg text-[clamp(.9rem,3vw,1.125rem)] leading-loose font-thin text-[#D9D9D9] lg:max-w-sm"
+                    className="text-logo-white mt-10 w-full text-lg text-[clamp(.9rem,3vw,1.125rem)] leading-loose font-thin lg:max-w-sm"
                   >
                     {item.description}
                   </motion.p>

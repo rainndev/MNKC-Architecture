@@ -22,7 +22,7 @@ const LeftSideOverlay = () => {
                 animate={{ opacity: 1, width: "100%" }}
                 exit={{ opacity: 0, width: 0 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="h-[1px] w-15 bg-[#FCAC04]"
+                className="bg-logo-yellow h-[1px] w-15"
               />
               <p className="text-nowrap">{leftSidedata.title}</p>
             </motion.div>

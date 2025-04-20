@@ -22,7 +22,7 @@ const ImageColumn = ({
       return (
         <div
           key={index}
-          className="h-60 w-full max-w-md overflow-hidden border border-dashed border-[#D9D9D9]/10 bg-[#D9D9D9]/10 p-2"
+          className="border-logo-white/10 bg-logo-white/10 h-60 w-full max-w-md overflow-hidden border border-dashed p-2"
         >
           <img
             loading="lazy"

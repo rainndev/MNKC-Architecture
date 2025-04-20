@@ -16,7 +16,7 @@ const Navigation = () => {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -50 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="sticky top-0 left-0 z-20 flex w-full justify-center border-b border-b-[#504F4F] bg-[#1E1E1E]/40 p-5 font-[SansationLight] backdrop-blur-md"
+        className="bg-logo-black/40 border-b-logo-gray sticky top-0 left-0 z-20 flex w-full justify-center border-b p-5 font-[SansationLight] backdrop-blur-md"
       >
         <nav className="flex w-full max-w-7xl flex-col items-center justify-between">
           <div className="flex w-full items-center justify-between">
@@ -30,7 +30,7 @@ const Navigation = () => {
             </div>
 
             {/* Desktop links */}
-            <div className="hidden text-[#D9D9D9] md:block">
+            <div className="text-logo-white hidden md:block">
               <ul className="flex space-x-10">
                 <li>
                   <Link to={"/"}>Home</Link>

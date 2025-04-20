@@ -130,15 +130,15 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
         {/* Buttons */}
         <div className="flex justify-end gap-2">
           {/* Previous button */}
-          <button className="border border-[#504F4F]" onClick={scrollLeft}>
-            <p className="relative m-[3px] flex cursor-pointer bg-[#D9D9D9]/10 px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-normal text-[#D9D9D9] transition duration-300 ease-in-out hover:bg-[#D9D9D9]/20 active:bg-[#FCAC04] active:text-[#1E1E1E]">
+          <button className="border-logo-gray border" onClick={scrollLeft}>
+            <p className="active:bg-logo-yellow bg-logo-white/10 text-logo-white hover:bg-logo-white/20 active:text-logo-black relative m-[3px] flex cursor-pointer px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-normal transition duration-300 ease-in-out">
               Previous
             </p>
           </button>
 
           {/* Next button */}
-          <button className="border border-[#504F4F]" onClick={scrollRight}>
-            <p className="relative m-[3px] flex cursor-pointer bg-[#D9D9D9]/10 px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-normal text-[#D9D9D9] transition duration-300 ease-in-out hover:bg-[#D9D9D9]/20 active:bg-[#FCAC04] active:text-[#1E1E1E]">
+          <button className="border-logo-gray border" onClick={scrollRight}>
+            <p className="active:bg-logo-yellow bg-logo-white/10 text-logo-white hover:bg-logo-white/20 active:text-logo-black relative m-[3px] flex cursor-pointer px-6 py-3 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-normal transition duration-300 ease-in-out">
               Next
             </p>
           </button>
@@ -206,14 +206,14 @@ export const Card = ({
               exit={{ opacity: 0 }}
               ref={containerRef}
               layoutId={layout ? `card-${card.title}` : undefined}
-              className="relative z-[60] mx-auto h-fit w-full bg-[#1E1E1E]/40 font-sans md:max-w-5xl"
+              className="bg-logo-black/40 relative z-[60] mx-auto h-fit w-full font-sans md:max-w-5xl"
             >
               {/* Popup header container*/}
               <div className="px-5 py-10 md:px-10 md:py-20">
                 {/* category   */}
                 <motion.p
                   layoutId={layout ? `category-${card.title}` : undefined}
-                  className="text-[clamp(.8rem,2vw,1.125rem)] font-normal text-[#D9D9D9]"
+                  className="text-logo-white text-[clamp(.8rem,2vw,1.125rem)] font-normal"
                 >
                   {card.category}
                 </motion.p>
@@ -236,7 +236,7 @@ export const Card = ({
               </div>
 
               {/* Popup content */}
-              <div className="border-t-1 border-dashed border-[#D9D9D9]/20 py-10">
+              <div className="border-logo-white/20 border-t-1 border-dashed py-10">
                 {card.content}
               </div>
             </motion.div>
@@ -248,9 +248,9 @@ export const Card = ({
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
-        className="group relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden border border-dashed border-[#D9D9D9]/10 bg-[#D9D9D9]/10 p-5 md:h-[40rem] md:w-96"
+        className="group border-logo-white/10 bg-logo-white/10 relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden border border-dashed p-5 md:h-[40rem] md:w-96"
       >
-        <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-[#1E1E1E]/75 to-[#1E1E1E]/75 transition-colors duration-300 ease-in-out group-hover:to-transparent" />
+        <div className="from-logo-black/75 to-logo-black/75 pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b transition-colors duration-300 ease-in-out group-hover:to-transparent" />
 
         {/* Card title */}
         <div className="z-40 p-5 md:p-8">

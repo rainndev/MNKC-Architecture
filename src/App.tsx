@@ -28,7 +28,7 @@ const App = () => {
 
   return (
     <>
-      <div className="flex h-full w-full flex-col items-center justify-center bg-[#1E1E1E]">
+      <div className="bg-logo-black flex h-full w-full flex-col items-center justify-center">
         <Navigation />
         <AnimatePresence>{isOpen && <Sidebar />}</AnimatePresence>
         <Routes>

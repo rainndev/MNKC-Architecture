@@ -8,9 +8,9 @@ const Hero = () => {
     <div
       ref={ref}
       id="hero"
-      className="relative flex w-full items-center justify-center border-b border-[#504F4F] bg-[linear-gradient(to_right,rgba(80,79,79,0.4)_1px,transparent_1px),linear-gradient(to_bottom,rgba(80,79,79,0.4)_1px,transparent_1px)] bg-[size:2rem_2rem]"
+      className="border-logo-gray relative flex w-full items-center justify-center border-b bg-[linear-gradient(to_right,rgba(80,79,79,0.4)_1px,transparent_1px),linear-gradient(to_bottom,rgba(80,79,79,0.4)_1px,transparent_1px)] bg-[size:2rem_2rem]"
     >
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-[#1E1E1E] [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]" />
+      <div className="bg-logo-black pointer-events-none absolute inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]" />
 
       <div className="grid h-[100dvh] w-full max-w-7xl grid-cols-1 items-center justify-center p-7 md:grid-cols-2">
         <div className="z-10 w-full">
@@ -19,9 +19,9 @@ const Hero = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1, ease: "easeInOut" }}
-            className="font-[ClashDisplay] text-[clamp(2rem,3vw,5rem)] leading-tight font-medium text-pretty text-[#D9D9D9]"
+            className="text-logo-white font-[ClashDisplay] text-[clamp(2rem,3vw,5rem)] leading-tight font-medium text-pretty"
           >
-            <span className="text-[#FCAC04]">Designing the Future</span>{" "}
+            <span className="text-logo-yellow">Designing the Future</span>{" "}
             Building Today
           </motion.h1>
 
@@ -30,7 +30,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
-            className="mt-4 font-[SansationLight] text-[clamp(1rem,3vw,1.125rem)] font-normal text-[#D9D9D9]"
+            className="text-logo-white mt-4 font-[SansationLight] text-[clamp(1rem,3vw,1.125rem)] font-normal"
           >
             Award wining architectural solutions that transform spaces and
             elevate experiences
@@ -45,13 +45,13 @@ const Hero = () => {
             {/* buttons */}
 
             <a href="https://www.facebook.com/MNKCArchitecture" target="_blank">
-              <div className="group inline-block border border-[#504F4F]">
+              <div className="group border-logo-gray inline-block border">
                 <button className="bg-striped relative m-[3px] cursor-pointer overflow-hidden px-5 py-2 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-medium">
                   {/* Animated Background */}
-                  <span className="absolute top-0 left-0 z-10 h-full w-full bg-[#FCAC04] transition-all duration-500 ease-in-out group-hover:w-0 active:w-0" />
+                  <span className="bg-logo-yellow absolute top-0 left-0 z-10 h-full w-full transition-all duration-500 ease-in-out group-hover:w-0 active:w-0" />
 
                   {/* Text on Top */}
-                  <span className="relative z-20 font-medium text-[#1E1E1E] transition-colors duration-300 ease-in-out group-hover:text-[#D9D9D9]">
+                  <span className="group-hover:text-logo-white text-logo-black relative z-20 font-medium transition-colors duration-300 ease-in-out">
                     Start Your Project
                   </span>
                 </button>
@@ -59,12 +59,12 @@ const Hero = () => {
             </a>
 
             <a href="#about">
-              <div className="bg-striped mt-2 inline-block border border-[#504F4F]">
-                <button className="group relative m-[2px] cursor-pointer overflow-hidden border border-[#504F4F] px-5 py-2 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-normal text-[#D9D9D9]">
+              <div className="bg-striped border-logo-gray mt-2 inline-block border">
+                <button className="group text-logo-white border-logo-gray relative m-[2px] cursor-pointer overflow-hidden border px-5 py-2 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-normal">
                   <span className="relative z-10 transition-colors duration-300 ease-in-out">
                     Learn More
                   </span>
-                  <span className="absolute top-0 left-0 z-0 h-full w-0 bg-[#D9D9D9]/20 transition-all duration-500 ease-in-out group-hover:w-full active:w-full" />
+                  <span className="bg-logo-white/20 absolute top-0 left-0 z-0 h-full w-0 transition-all duration-500 ease-in-out group-hover:w-full active:w-full" />
                 </button>
               </div>
             </a>

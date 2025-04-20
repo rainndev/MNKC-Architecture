@@ -87,7 +87,7 @@ const sampleData: TeamMemberTypes[] = [
 
 const TeamsCardContainer = () => {
   return (
-    <div className="flex h-full w-full flex-col items-center justify-center overflow-hidden border-x border-[#504F4F]/20 bg-[#1E1E1E] p-7 py-20 md:p-20">
+    <div className="bg-logo-black border-logo-gray/20 flex h-full w-full flex-col items-center justify-center overflow-hidden border-x p-7 py-20 md:p-20">
       {/* Header info */}
 
       <div>
@@ -105,11 +105,11 @@ const TeamsCardContainer = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="mt-1 font-[ClashDisplay] text-[clamp(2rem,3vw,5rem)] font-medium text-pretty text-[#D9D9D9]"
+          className="text-logo-white mt-1 font-[ClashDisplay] text-[clamp(2rem,3vw,5rem)] font-medium text-pretty"
         >
-          <span className="text-[#FCAC04]">Meet</span> Our Team
+          <span className="text-logo-yellow">Meet</span> Our Team
         </motion.h1>
-        <p className="relative mt-2 font-[SansationLight] text-[clamp(1rem,3vw,1.125rem)] font-normal text-[#D9D9D9]">
+        <p className="text-logo-white relative mt-2 font-[SansationLight] text-[clamp(1rem,3vw,1.125rem)] font-normal">
           Get to know the passionate minds behind our designs. Our team is a
           blend of architects, designers, and thinkers—working together to bring
           innovative and sustainable spaces to life.
@@ -122,7 +122,7 @@ const TeamsCardContainer = () => {
             }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeInOut" }}
-            className="absolute top-0 right-0 z-0 h-full bg-[#FCAC04]"
+            className="bg-logo-yellow absolute top-0 right-0 z-0 h-full"
           />
         </p>
       </div>

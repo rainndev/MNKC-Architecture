@@ -34,10 +34,10 @@ const Careerspage = () => {
       ref={ref}
       className="bg-striped flex min-h-screen w-full flex-col items-center justify-center"
     >
-      <div className="h-full min-h-screen w-full max-w-7xl border-x border-[#504F4F]/20">
+      <div className="border-logo-gray/20 h-full min-h-screen w-full max-w-7xl border-x">
         <div
           ref={ref}
-          className="flex h-full w-full flex-col items-center justify-center bg-[#1E1E1E] p-7 py-20 md:p-20"
+          className="bg-logo-black flex h-full w-full flex-col items-center justify-center p-7 py-20 md:p-20"
         >
           {/* Container */}
           <div>
@@ -46,7 +46,7 @@ const Careerspage = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="w-fit border border-[#504F4F] px-4 py-2 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] text-[#D9D9D9]"
+              className="text-logo-white border-logo-gray w-fit border px-4 py-2 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)]"
             >
               We are hiring!
             </motion.p>
@@ -55,11 +55,12 @@ const Careerspage = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="mt-2 font-[ClashDisplay] text-[clamp(2rem,3vw,5rem)] font-medium text-pretty text-[#D9D9D9]"
+              className="text-logo-white mt-2 font-[ClashDisplay] text-[clamp(2rem,3vw,5rem)] font-medium text-pretty"
             >
-              <span className="text-[#FCAC04]">Build the Future,</span> Together
+              <span className="text-logo-yellow">Build the Future,</span>{" "}
+              Together
             </motion.h1>
-            <p className="relative mt-2 font-[SansationLight] text-[clamp(1rem,3vw,1.125rem)] font-normal text-[#D9D9D9]">
+            <p className="text-logo-white relative mt-2 font-[SansationLight] text-[clamp(1rem,3vw,1.125rem)] font-normal">
               We’re on the lookout for passionate, creative people who love
               architecture as much as we do. At MNKC, we believe great design
               starts with great people. If you're someone who dreams big, cares
@@ -74,7 +75,7 @@ const Careerspage = () => {
                 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1, ease: "easeInOut" }}
-                className="absolute top-0 right-0 z-0 h-full bg-[#FCAC04]"
+                className="bg-logo-yellow absolute top-0 right-0 z-0 h-full"
               />
             </p>
           </div>
