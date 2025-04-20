@@ -10,7 +10,8 @@ import Sidebar from "@/components/Sidebar";
 import { useSideBarStore } from "@/store/SideBarStore";
 import { AnimatePresence } from "framer-motion";
 import Contactpage from "@/pages/Contactpage";
-import ThankYouPage from "./pages/ThankYouPage";
+import ThankYouPage from "@/pages/ThankYouPage";
+import Faqs from "@/pages/Faqs";
 
 const App = () => {
   const isOpen = useSideBarStore((state) => state.isOpen);
@@ -37,6 +38,7 @@ const App = () => {
           <Route path="/careers" element={<Careerspage />} />
           <Route path="/contact" element={<Contactpage />} />
           <Route path="/contact/success-form" element={<ThankYouPage />} />
+          <Route path="/faqs" element={<Faqs />} />
         </Routes>
 
         {/* Left side overlay */}

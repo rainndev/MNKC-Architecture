@@ -44,6 +44,10 @@ const Navigation = () => {
                 <li>
                   <Link to={"/contact"}>Contact</Link>
                 </li>
+
+                <li>
+                  <Link to={"/faqs"}>Faqs</Link>
+                </li>
               </ul>
             </div>
 
