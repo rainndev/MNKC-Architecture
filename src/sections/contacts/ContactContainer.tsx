@@ -1,4 +1,5 @@
 import Map from "@/components/Map";
+import { SelectMap } from "@/components/SelectMap";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useForm } from "react-hook-form";
@@ -173,7 +174,10 @@ const ContactContainer = () => {
 
       {/* item 2 */}
 
-      <div className="bg-striped z-10 h-96 w-full border border-dashed border-[#d9d9d9]/20 bg-[#212121] p-2 opacity-70 transition-opacity duration-300 ease-in-out hover:opacity-100 md:h-full">
+      <div className="bg-striped relative z-10 h-96 w-full border border-dashed border-[#d9d9d9]/20 bg-[#212121] p-2 opacity-70 transition-opacity duration-300 ease-in-out hover:opacity-100 md:h-full">
+        <div className="absolute top-2 left-2 z-401 h-fit w-fit overflow-hidden bg-[#212121]/70 text-center font-[SansationLight] text-[#D9D9D9]">
+          <SelectMap />
+        </div>
         <Map />
       </div>
     </div>

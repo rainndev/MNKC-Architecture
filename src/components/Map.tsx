@@ -2,8 +2,11 @@ import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
 import { Icon } from "leaflet";
+import { useMapSelectionStore } from "@/store/MapSelectionStore";
 
 const Map = () => {
+  const selectedMap = useMapSelectionStore((state) => state.selectedMap);
+  const { attribution, url } = selectedMap;
   const position: [number, number] = [15.2480356, 120.6774088];
 
   return (
@@ -13,10 +16,7 @@ const Map = () => {
       zoom={100}
       style={{ height: "100%", width: "100%" }}
     >
-      <TileLayer
-        url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
-        attribution="Tiles © Esri — Imagery from Esri, Maxar & contributors"
-      />
+      <TileLayer url={url} attribution={attribution} />
       <Marker
         icon={
           new Icon({

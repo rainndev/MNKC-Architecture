@@ -34,7 +34,7 @@ const Careerspage = () => {
       ref={ref}
       className="bg-striped flex min-h-screen w-full flex-col items-center justify-center"
     >
-      <div className="h-full w-full max-w-7xl border-x border-[#504F4F]/20">
+      <div className="h-full min-h-screen w-full max-w-7xl border-x border-[#504F4F]/20">
         <div
           ref={ref}
           className="flex h-full w-full flex-col items-center justify-center bg-[#1E1E1E] p-7 py-20 md:p-20"
