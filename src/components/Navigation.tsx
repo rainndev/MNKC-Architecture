@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useSideBarStore } from "@/store/SideBarStore";
 
 const Navigation = () => {
@@ -29,24 +29,24 @@ const Navigation = () => {
               />
             </div>
 
-            {/* Desktop links */}
+            {/* Desktop NavLinks */}
             <div className="text-logo-white hidden md:block">
               <ul className="flex space-x-10">
                 <li>
-                  <Link to={"/"}>Home</Link>
+                  <NavLink to={"/"}>Home</NavLink>
                 </li>
                 <li>
-                  <Link to={"/teams"}>Teams</Link>
+                  <NavLink to={"/teams"}>Teams</NavLink>
                 </li>
                 <li>
-                  <Link to={"/careers"}>Careers</Link>
+                  <NavLink to={"/careers"}>Careers</NavLink>
                 </li>
                 <li>
-                  <Link to={"/contact"}>Contact</Link>
+                  <NavLink to={"/contact"}>Contact</NavLink>
                 </li>
 
                 <li>
-                  <Link to={"/faqs"}>Faqs</Link>
+                  <NavLink to={"/faqs"}>Faqs</NavLink>
                 </li>
               </ul>
             </div>

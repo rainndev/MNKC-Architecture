@@ -1,7 +1,12 @@
 import { useSideBarStore } from "@/store/SideBarStore";
 import { MdClose } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+import { AiFillHome } from "react-icons/ai";
+import { BsFillPeopleFill } from "react-icons/bs";
+import { IoIosBriefcase } from "react-icons/io";
+import { RiMessage3Fill } from "react-icons/ri";
+import { BsFillQuestionSquareFill } from "react-icons/bs";
 
 const Sidebar = () => {
   const setOpen = useSideBarStore((state) => state.setOpen);
@@ -21,6 +26,7 @@ const Sidebar = () => {
       transition={{ duration: 0.5, ease: "easeInOut" }}
       className="fixed top-0 right-0 z-20 flex h-full w-full justify-end bg-black/40 backdrop-blur-md md:hidden"
     >
+      <div className="bg-striped border-logo-black w-7 border-x" />
       <motion.div
         initial={{ opacity: 0, x: 300 }}
         animate={{ opacity: 1, x: 0 }}
@@ -36,22 +42,49 @@ const Sidebar = () => {
             <MdClose />
           </div>
 
-          <ul className="text-logo-white flex flex-col items-start space-y-4">
+          <ul className="text-logo-white mt-10 flex flex-col items-start space-y-5 text-[clamp(1rem,2vw,1.5rem)]">
             <li onClick={closeSidebar}>
-              <Link to={"/"}>Home</Link>
+              <NavLink className="text-logo-white flex items-center" to={"/"}>
+                <AiFillHome className="mr-4" />
+                Home
+              </NavLink>
             </li>
             <li onClick={closeSidebar}>
-              <Link to={"/teams"}>Teams</Link>
+              <NavLink
+                className="text-logo-white flex items-center"
+                to={"/teams"}
+              >
+                <BsFillPeopleFill className="mr-4" />
+                Teams
+              </NavLink>
             </li>
             <li onClick={closeSidebar}>
-              <Link to={"/careers"}>Careers</Link>
+              <NavLink
+                className="text-logo-white flex items-center"
+                to={"/careers"}
+              >
+                <IoIosBriefcase className="mr-4" />
+                Careers
+              </NavLink>
             </li>
             <li onClick={closeSidebar}>
-              <Link to={"/contact"}>Contact</Link>
+              <NavLink
+                className="text-logo-white flex items-center"
+                to={"/contact"}
+              >
+                <RiMessage3Fill className="mr-4" />
+                Contact
+              </NavLink>
             </li>
 
             <li onClick={closeSidebar}>
-              <Link to={"/faqs"}>Faqs</Link>
+              <NavLink
+                className="text-logo-white flex items-center"
+                to={"/faqs"}
+              >
+                <BsFillQuestionSquareFill className="mr-4" />
+                Faqs
+              </NavLink>
             </li>
           </ul>
         </div>

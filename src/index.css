@@ -25,6 +25,10 @@
   font-display: swap;
 }
 
+.active {
+  @apply text-logo-yellow transition-all duration-300 ease-in-out;
+}
+
 .grid-about > div {
   @apply border-logo-white/10 text-logo-white bg-logo-black/10 flex items-center justify-center border p-10 font-[ClashDisplay] text-lg font-medium transition-all duration-300 ease-in-out;
 }
