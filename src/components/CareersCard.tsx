@@ -20,7 +20,7 @@ const CareersCard = ({ data }: CareersPageProps) => {
   } = data;
 
   return (
-    <div className="border-logo-gray border text-white shadow-lg">
+    <div className="border-logo-gray/30 border text-white">
       {/* Info about careers */}
       <div className="grid grid-cols-1 gap-10 p-5 md:grid-cols-2 md:p-10">
         <div className="w-full">
@@ -43,7 +43,7 @@ const CareersCard = ({ data }: CareersPageProps) => {
           </a>
         </div>
       </div>
-      <hr className="bg-logo-gray h-[1px] border-none" />
+      <hr className="bg-logo-gray/30 h-[1px] border-none" />
 
       {/* Job Info*/}
       <div className="bg-striped grid grid-cols-1 gap-10 p-5 md:grid-cols-2 md:p-10">
