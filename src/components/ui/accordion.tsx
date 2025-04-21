@@ -29,20 +29,27 @@ function AccordionItem({
 function AccordionTrigger({
   className,
   children,
+  tabIndex,
   ...props
 }: React.ComponentProps<typeof AccordionPrimitive.Trigger>) {
+  console.log(children);
+
+  const childrenArray = React.Children.toArray(children);
   return (
     <AccordionPrimitive.Header className="flex">
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         // this container title
         className={cn(
-          "focus-visible:border-ring focus-visible:ring-ring/50 text-logo-white flex flex-1 items-start justify-between gap-4 p-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180",
+          "focus-visible:border-ring focus-visible:ring-ring/50 text-logo-white flex flex-1 items-center justify-start gap-4 py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180",
           className,
         )}
         {...props}
       >
-        {children}
+        {/* Number index */}
+        {childrenArray[0]}
+
+        <div className="flex w-full">{childrenArray[2]}</div>
         <ChevronDownIcon className="text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200" />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>

@@ -87,7 +87,7 @@ const sampleData: TeamMemberTypes[] = [
 
 const TeamsCardContainer = () => {
   return (
-    <div className="bg-logo-black border-logo-gray/20 flex h-full w-full flex-col items-center justify-center overflow-hidden border-x p-7 py-20 md:p-20">
+    <div className="bg-logo-black border-logo-gray/20 flex h-full w-full flex-col items-center justify-center overflow-hidden border-x p-7 pt-20 md:p-20 md:pb-50">
       {/* Header info */}
 
       <div>
