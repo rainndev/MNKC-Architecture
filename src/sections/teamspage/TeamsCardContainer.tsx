@@ -110,9 +110,9 @@ const TeamsCardContainer = () => {
           <span className="text-logo-yellow">Meet</span> Our Team
         </motion.h1>
         <p className="text-logo-white relative mt-2 font-[SansationLight] text-[clamp(1rem,3vw,1.125rem)] font-normal">
-          Get to know the passionate minds behind our designs. Our team is a
-          blend of architects, designers, and thinkers—working together to bring
-          innovative and sustainable spaces to life.
+          Get to know the awesome people behind our designs. We're a team of
+          architects, designers, and creative thinkers working together to build
+          cool, sustainable spaces
           <motion.span
             initial={{ height: "0%", opacity: 0, width: "0%" }}
             whileInView={{

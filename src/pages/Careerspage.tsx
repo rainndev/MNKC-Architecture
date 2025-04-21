@@ -61,11 +61,9 @@ const Careerspage = () => {
               Together
             </motion.h1>
             <p className="text-logo-white relative mt-2 font-[SansationLight] text-[clamp(1rem,3vw,1.125rem)] font-normal">
-              We’re on the lookout for passionate, creative people who love
-              architecture as much as we do. At MNKC, we believe great design
-              starts with great people. If you're someone who dreams big, cares
-              about the details, and wants to make an impact through thoughtful
-              spaces — we’d love to meet you.
+              We're looking for passionate, creative people who love
+              architecture. If you're someone who thinks big, pays attention to
+              the details, and wants to design spaces that matter, let's talk
               <motion.span
                 initial={{ height: "0%", opacity: 0, width: "0%" }}
                 whileInView={{
