@@ -59,12 +59,12 @@ const ContactContainer = () => {
           action="https://usebasin.com/f/18f95a87449e"
           method="POST"
           onSubmit={handleSubmit(onSubmit)}
-          className="mt-10 flex w-full flex-col gap-5"
+          className="mt-10 flex w-full flex-col gap-5 text-[clamp(.9rem,3vw,1rem)]"
         >
           {/* Full name */}
           <div className="flex w-full flex-col gap-2">
             <label
-              className="font-[SansationLight] text-base text-white"
+              className="font-[SansationLight] text-white"
               htmlFor="fullname"
             >
               Full Name
@@ -82,7 +82,7 @@ const ContactContainer = () => {
           {/* Email */}
           <div className="flex w-full flex-col gap-2">
             <label
-              className="font font-[SansationLight] text-base text-white"
+              className="font font-[SansationLight] text-white"
               htmlFor="email"
             >
               Email
@@ -105,10 +105,7 @@ const ContactContainer = () => {
 
           {/* Phone number */}
           <div className="flex w-full flex-col gap-2">
-            <label
-              className="font-[SansationLight] text-base text-white"
-              htmlFor="phone"
-            >
+            <label className="font-[SansationLight] text-white" htmlFor="phone">
               Phone
             </label>
             <input
@@ -126,7 +123,7 @@ const ContactContainer = () => {
           {/* Adresss */}
           <div className="flex w-full flex-col gap-2">
             <label
-              className="font-[SansationLight] text-base text-white"
+              className="font-[SansationLight] text-white"
               htmlFor="adress"
             >
               Address
@@ -146,7 +143,7 @@ const ContactContainer = () => {
           {/* Message */}
           <div className="flex w-full flex-col gap-2">
             <label
-              className="font-[SansationLight] text-base text-white"
+              className="font-[SansationLight] text-white"
               htmlFor="message"
             >
               Message
@@ -165,7 +162,7 @@ const ContactContainer = () => {
           {/* Submit button */}
           <button
             type="submit"
-            className="bg-striped hover:bg-logo-yellow/80 active:bg-logo-yellow/80 border-logo-white/20 mt-5 w-full border py-3 font-[ClashDisplay] text-base font-medium text-white transition-colors duration-300 ease-in-out hover:text-[#212121] active:text-[#212121]"
+            className="bg-striped hover:bg-logo-yellow/80 active:bg-logo-yellow/80 border-logo-white/20 mt-5 w-full border py-3 font-[ClashDisplay] font-medium text-white transition-colors duration-300 ease-in-out hover:text-[#212121] active:text-[#212121]"
           >
             Send message
           </button>

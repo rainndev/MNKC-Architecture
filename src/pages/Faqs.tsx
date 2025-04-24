@@ -49,7 +49,7 @@ const Faqs = () => {
         </header>
 
         {/* Container card   */}
-        <div className="mt-30 h-full w-full">
+        <div className="mt-20 h-full w-full md:mt-30">
           <Accordion type="single" collapsible className="w-full space-y-5">
             {faqsContent.map(({ question, answer }, index) => (
               <AccordionItem

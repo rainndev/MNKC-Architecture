@@ -14,11 +14,12 @@ export const useMapSelectionStore = create<MapSelectionStore>()(
     (set) => ({
       tilesData: tileOptions,
       selectedMap: {
-        id: "123123",
-        label: "CartoDB Dark Matter",
-        value: "CartoDBDarkMatter",
-        url: "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
-        attribution: '&copy; <a href="https://carto.com/">CARTO</a>',
+        id: "-1",
+        label: "Esri Satellite",
+        value: "EsriSatellite",
+        url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+        attribution:
+          "Tiles &copy; Esri — Imagery from Esri, Maxar & contributors",
       },
       setSelectedMap: (index) =>
         set(() => ({ selectedMap: tileOptions[index] })),
