@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ThankYouPage = () => {
   return (
-    <div className="bg-logo-black flex h-screen w-full items-center justify-center">
+    <section className="bg-logo-black flex h-screen w-full items-center justify-center">
       <div className="bg-striped border-logo-gray/20 flex max-w-4xl flex-col items-center justify-center gap-5 border-x-5 p-5 text-center md:p-20">
         <h1 className="text-logo-yellow font-[ClashDisplay] text-[clamp(1.5rem,3vw,5rem)] font-medium text-pretty">
           Thanks for the message!
@@ -25,7 +25,7 @@ const ThankYouPage = () => {
           </div>
         </Link>
       </div>
-    </div>
+    </section>
   );
 };
 

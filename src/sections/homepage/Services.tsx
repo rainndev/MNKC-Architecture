@@ -8,7 +8,7 @@ const Services = () => {
   const isContentVisible = useServicesStore((state) => state.isContentVisbile);
 
   return (
-    <div
+    <section
       ref={ref}
       id="services"
       className="relative flex h-screen w-full flex-col justify-center bg-[linear-gradient(to_right,rgba(80,79,79,0.2)_1px,transparent_1px),linear-gradient(to_bottom,rgba(80,79,79,0.1)_1px,transparent_1px)] bg-[size:2rem_2rem]"
@@ -63,7 +63,7 @@ const Services = () => {
       </div> */}
 
       <StickyScrollReveal />
-    </div>
+    </section>
   );
 };
 

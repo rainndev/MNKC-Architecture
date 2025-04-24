@@ -11,14 +11,14 @@ const Teamspage = () => {
     <>
       <TeamsModal />
 
-      <div
+      <section
         ref={ref}
         className="bg-striped flex h-full w-full flex-col items-center justify-center"
       >
         <div className="w-full max-w-7xl">
           <TeamsCardContainer />
         </div>
-      </div>
+      </section>
     </>
   );
 };

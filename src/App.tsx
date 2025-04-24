@@ -29,23 +29,21 @@ const App = () => {
   }, []);
 
   return (
-    <>
-      <div className="bg-logo-black flex h-full w-full flex-col items-center justify-center">
-        <Navigation />
-        <AnimatePresence>{isOpen && <Sidebar />}</AnimatePresence>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/teams" element={<Teamspage />} />
-          <Route path="/careers" element={<Careerspage />} />
-          <Route path="/contact" element={<Contactpage />} />
-          <Route path="/contact/success-form" element={<ThankYouPage />} />
-          <Route path="/faqs" element={<Faqs />} />
-        </Routes>
-        <Footer />
-        {/* Left side overlay */}
-        <LeftSideOverlay />
-      </div>
-    </>
+    <div className="bg-logo-black flex h-full w-full flex-col items-center justify-center">
+      <Navigation />
+      <AnimatePresence>{isOpen && <Sidebar />}</AnimatePresence>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/teams" element={<Teamspage />} />
+        <Route path="/careers" element={<Careerspage />} />
+        <Route path="/contact" element={<Contactpage />} />
+        <Route path="/contact/success-form" element={<ThankYouPage />} />
+        <Route path="/faqs" element={<Faqs />} />
+      </Routes>
+      <Footer />
+      {/* Left side overlay */}
+      <LeftSideOverlay />
+    </div>
   );
 };
 

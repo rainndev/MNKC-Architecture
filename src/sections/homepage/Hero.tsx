@@ -6,7 +6,7 @@ const Hero = () => {
   const ref = useSectionTracker({ title: "Hero", number: "00" });
 
   return (
-    <div
+    <section
       ref={ref}
       id="hero"
       className="border-logo-gray relative flex w-full items-center justify-center border-b bg-[linear-gradient(to_right,rgba(80,79,79,0.4)_1px,transparent_1px),linear-gradient(to_bottom,rgba(80,79,79,0.4)_1px,transparent_1px)] bg-[size:2rem_2rem]"
@@ -79,7 +79,7 @@ const Hero = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -6,7 +6,7 @@ const Featured = () => {
   const ref = useSectionTracker({ title: "Featured Projects", number: "03" });
 
   return (
-    <div
+    <section
       ref={ref}
       id="featured"
       className="border-logo-gray flex min-h-screen w-full flex-col items-center justify-center border-b text-center text-5xl font-bold text-white"
@@ -63,7 +63,7 @@ const Featured = () => {
       <div className="flex w-full max-w-7xl items-center justify-center overflow-hidden p-10">
         <CardsCarousel />
       </div>
-    </div>
+    </section>
   );
 };
 

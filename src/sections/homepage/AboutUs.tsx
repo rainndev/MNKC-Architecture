@@ -7,7 +7,7 @@ const AboutUs = () => {
   const ref = useSectionTracker({ title: "About us", number: "01" });
 
   return (
-    <div
+    <section
       ref={ref}
       id="about"
       className="bg-logo-black border-logo-gray relative flex h-full w-full items-center justify-center border-b"
@@ -22,7 +22,7 @@ const AboutUs = () => {
         <div className="z-50 flex h-full w-full items-center justify-center p-7">
           <div className="mt-10 w-full max-w-3xl py-10">
             {/* heading */}
-            <div className="flex w-full items-center justify-start text-nowrap">
+            <header className="flex w-full items-center justify-start text-nowrap">
               <motion.h1
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ const AboutUs = () => {
                 transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
                 className="bg-logo-gray ml-5 h-[1px] w-full md:ml-10"
               />
-            </div>
+            </header>
 
             {/* Description */}
             <motion.p
@@ -123,7 +123,7 @@ const AboutUs = () => {
           <ScrollingUpImages />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

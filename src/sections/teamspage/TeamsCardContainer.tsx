@@ -82,7 +82,7 @@ const TeamsCardContainer = () => {
     <div className="bg-logo-black border-logo-gray/20 flex h-full w-full flex-col items-center justify-center overflow-hidden border-x p-7 pt-20 md:p-20 md:pb-50">
       {/* Header info */}
 
-      <div>
+      <header>
         <motion.p
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -117,14 +117,14 @@ const TeamsCardContainer = () => {
             className="bg-logo-yellow absolute top-0 right-0 z-0 h-full"
           />
         </p>
-      </div>
+      </header>
 
       {/* Team members */}
-      <div className="hide-scrollbar mt-30 grid h-fit w-full grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <section className="hide-scrollbar mt-30 grid h-fit w-full grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {sampleData.map((data, i) => (
           <CardsTeam key={i} data={data} />
         ))}
-      </div>
+      </section>
     </div>
   );
 };

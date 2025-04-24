@@ -19,7 +19,7 @@ const Sidebar = () => {
   };
 
   return (
-    <motion.div
+    <motion.aside
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -27,14 +27,14 @@ const Sidebar = () => {
       className="fixed top-0 right-0 z-20 flex h-full w-full justify-end bg-black/40 backdrop-blur-md md:hidden"
     >
       <div className="bg-striped border-logo-black w-7 border-x" />
-      <motion.div
+      <motion.header
         initial={{ opacity: 0, x: 300 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: 300 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
         className="bg-logo-black block h-full w-full max-w-[300px] p-5 shadow-lg md:hidden"
       >
-        <div className="mt-5 ml-5 w-full py-4">
+        <nav className="mt-5 ml-5 w-full py-4">
           <div
             onClick={closeSidebar}
             className="text-logo-white hover:bg-logo-white/20 active:bg-logo-white/20 border-logo-gray absolute top-5 right-5 z-50 cursor-pointer border p-2 text-[clamp(1rem,2vw,1.5rem)] transition-all duration-300 ease-in-out md:top-10 md:right-10"
@@ -43,14 +43,19 @@ const Sidebar = () => {
           </div>
 
           <ul className="text-logo-white mt-10 flex flex-col items-start space-y-5 text-[clamp(1rem,2vw,1.5rem)]">
-            <li onClick={closeSidebar}>
-              <NavLink className="text-logo-white flex items-center" to={"/"}>
+            <li>
+              <NavLink
+                onClick={closeSidebar}
+                className="text-logo-white flex items-center"
+                to={"/"}
+              >
                 <AiFillHome className="mr-4" />
                 Home
               </NavLink>
             </li>
-            <li onClick={closeSidebar}>
+            <li>
               <NavLink
+                onClick={closeSidebar}
                 className="text-logo-white flex items-center"
                 to={"/teams"}
               >
@@ -58,8 +63,9 @@ const Sidebar = () => {
                 Teams
               </NavLink>
             </li>
-            <li onClick={closeSidebar}>
+            <li>
               <NavLink
+                onClick={closeSidebar}
                 className="text-logo-white flex items-center"
                 to={"/careers"}
               >
@@ -67,8 +73,9 @@ const Sidebar = () => {
                 Careers
               </NavLink>
             </li>
-            <li onClick={closeSidebar}>
+            <li>
               <NavLink
+                onClick={closeSidebar}
                 className="text-logo-white flex items-center"
                 to={"/contact"}
               >
@@ -77,8 +84,9 @@ const Sidebar = () => {
               </NavLink>
             </li>
 
-            <li onClick={closeSidebar}>
+            <li>
               <NavLink
+                onClick={closeSidebar}
                 className="text-logo-white flex items-center"
                 to={"/faqs"}
               >
@@ -87,9 +95,9 @@ const Sidebar = () => {
               </NavLink>
             </li>
           </ul>
-        </div>
-      </motion.div>
-    </motion.div>
+        </nav>
+      </motion.header>
+    </motion.aside>
   );
 };
 

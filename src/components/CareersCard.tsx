@@ -20,9 +20,9 @@ const CareersCard = ({ data }: CareersPageProps) => {
   } = data;
 
   return (
-    <div className="border-logo-gray/30 border text-white">
+    <article className="border-logo-gray/30 border text-white">
       {/* Info about careers */}
-      <div className="grid grid-cols-1 gap-10 p-5 md:grid-cols-2 md:p-10">
+      <header className="grid grid-cols-1 gap-10 p-5 md:grid-cols-2 md:p-10">
         <div className="w-full">
           <h1 className="text-logo-yellow font-[ClashDisplay] text-[clamp(1.2rem,3vw,1.5rem)]">
             {jobTitle}
@@ -42,11 +42,12 @@ const CareersCard = ({ data }: CareersPageProps) => {
             </span>
           </a>
         </div>
-      </div>
+      </header>
+
       <hr className="bg-logo-gray/30 h-[1px] border-none" />
 
       {/* Job Info*/}
-      <div className="bg-striped grid grid-cols-1 gap-10 p-5 md:grid-cols-2 md:p-10">
+      <section className="bg-striped grid grid-cols-1 gap-10 p-5 md:grid-cols-2 md:p-10">
         {/* Job type */}
         <div className="space-y-4">
           <div>
@@ -77,8 +78,8 @@ const CareersCard = ({ data }: CareersPageProps) => {
             {jobDescription}
           </p>
         </div>
-      </div>
-    </div>
+      </section>
+    </article>
   );
 };
 

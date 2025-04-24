@@ -12,7 +12,7 @@ const Footer = () => {
   const ref = useSectionTracker({ title: "Contact Us", number: "00" });
 
   return (
-    <div
+    <footer
       id="contact"
       ref={ref}
       className="flex h-fit w-full flex-col items-start justify-center bg-[#191919] text-white sm:items-center"
@@ -120,7 +120,7 @@ const Footer = () => {
         <CiHeart />
         <p>by Rainier</p>
       </a>
-    </div>
+    </footer>
   );
 };
 

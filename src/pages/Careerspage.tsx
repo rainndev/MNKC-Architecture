@@ -30,7 +30,7 @@ const Careerspage = () => {
   });
 
   return (
-    <div
+    <section
       ref={ref}
       className="bg-striped flex min-h-screen w-full flex-col items-center justify-center"
     >
@@ -40,7 +40,7 @@ const Careerspage = () => {
           className="bg-logo-black flex h-full w-full flex-col items-center justify-center p-7 py-20 md:p-20 md:pb-50"
         >
           {/* Container */}
-          <div>
+          <header>
             <motion.p
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -76,7 +76,7 @@ const Careerspage = () => {
                 className="bg-logo-yellow absolute top-0 right-0 z-0 h-full"
               />
             </p>
-          </div>
+          </header>
 
           <div className="mt-30 flex w-full flex-col space-y-10">
             {data.map((jobData, i) => (
@@ -85,7 +85,7 @@ const Careerspage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

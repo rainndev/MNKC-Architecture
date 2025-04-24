@@ -13,7 +13,7 @@ const CardsTeam = ({ data }: { data: TeamData }) => {
   };
 
   return (
-    <div onClick={handleClick} className="group">
+    <article onClick={handleClick} className="group">
       <div className="border-logo-gray relative h-80 w-full cursor-pointer overflow-hidden border">
         <img
           loading="lazy"
@@ -25,15 +25,15 @@ const CardsTeam = ({ data }: { data: TeamData }) => {
       </div>
 
       {/* Info */}
-      <div className="mt-5">
+      <header className="mt-5">
         <h4 className="text-logo-white flex items-center pb-[2px] font-[ClashDisplay] text-[clamp(1.2rem,3vw,1.3rem)]">
           {name}
         </h4>
         <p className="font-[SansationLight] text-sm text-white/60 transition-all">
           {position}
         </p>
-      </div>
-    </div>
+      </header>
+    </article>
   );
 };
 

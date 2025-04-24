@@ -57,12 +57,12 @@ const Faqs = () => {
   });
 
   return (
-    <div
+    <section
       ref={ref}
       className="bg-striped flex min-h-screen w-full flex-col items-center justify-center"
     >
       <div className="bg-logo-black border-logo-gray/20 flex h-full w-full max-w-7xl flex-col items-center justify-center border-x p-5 py-20 md:p-20 md:pb-50">
-        <div>
+        <header>
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -88,7 +88,7 @@ const Faqs = () => {
               className="bg-logo-yellow absolute top-0 right-0 z-0 h-full"
             />
           </p>
-        </div>
+        </header>
 
         {/* Container card   */}
         <div className="mt-30 h-full w-full">
@@ -113,7 +113,7 @@ const Faqs = () => {
           </Accordion>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
