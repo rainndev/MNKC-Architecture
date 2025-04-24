@@ -1,6 +1,5 @@
 import AboutUs from "@/sections/homepage/AboutUs";
 import Featured from "@/sections/homepage/Featured";
-
 import Hero from "@/sections/homepage/Hero";
 import Services from "@/sections/homepage/Services";
 

@@ -1,13 +1,5 @@
 import { useTeamsModalStore } from "@/store/TeamsModalStore";
-
-interface TeamData {
-  name: string;
-  position: string;
-  expertise: String[];
-  image: string;
-  bio: string;
-  linkedIn: string;
-}
+import { TeamData } from "@/types/teams-card";
 
 const CardsTeam = ({ data }: { data: TeamData }) => {
   const { name, position, image } = data;

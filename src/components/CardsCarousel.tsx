@@ -1,6 +1,7 @@
 "use client";
 
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
+import { CardCarousel } from "@/types/card-carousel";
 
 const DummyContent = () => {
   return (
@@ -26,7 +27,7 @@ const DummyContent = () => {
   );
 };
 
-const data = [
+const data: CardCarousel[] = [
   {
     category: "Design Innovation",
     title: "Solara Industries Headquarters",

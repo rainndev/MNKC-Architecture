@@ -1,16 +1,8 @@
 import { motion } from "framer-motion";
 import CardsTeam from "@/components/CardsTeam";
+import { TeamData } from "@/types/teams-card";
 
-export interface TeamMemberTypes {
-  name: string;
-  position: string;
-  expertise: string[];
-  image: string;
-  bio: string;
-  linkedIn: string;
-}
-
-const sampleData: TeamMemberTypes[] = [
+const sampleData: TeamData[] = [
   {
     name: "John Doe",
     position: "Founder",
