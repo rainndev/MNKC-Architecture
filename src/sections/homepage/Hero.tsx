@@ -33,8 +33,8 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
             className="text-logo-white mt-4 font-[SansationLight] text-[clamp(1rem,3vw,1.125rem)] font-normal"
           >
-            Award wining architectural solutions that transform spaces and
-            elevate experiences
+            Designing spaces that stand out with smart, stylish solutions built
+            for how you live and work every day.
           </motion.p>
 
           <motion.div
