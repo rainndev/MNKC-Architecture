@@ -26,16 +26,6 @@ export const content = [
     title: "Exterior Design",
     description:
       "We design the outside look of your home or building to make a great first impression. From the shape to the style, we make sure it reflects you.",
-    content: (
-      <div className="h-full w-full items-center justify-center bg-black/20 p-5 text-white">
-        <div className="h-full w-full rounded-lg opacity-55">
-          <img
-            src="/images/services/img2.png"
-            className="h-full w-full rounded-lg object-cover opacity-70"
-          />
-        </div>
-      </div>
-    ),
 
     icon: <BsLayoutSidebarReverse />,
   },
@@ -43,16 +33,6 @@ export const content = [
     title: "Interior Design",
     description:
       "We bring life to your indoor spaces with colors, furniture, lighting, and layout that match your taste and lifestyle. We want it to feel like you.",
-    content: (
-      <div className="h-full w-full items-center justify-center bg-black/20 p-5 text-white">
-        <div className="h-full w-full rounded-lg opacity-40">
-          <img
-            src="/images/services/img3.png"
-            className="h-full w-full rounded-lg object-cover"
-          />
-        </div>
-      </div>
-    ),
 
     icon: <BsLayoutSidebarInset />,
   },
@@ -60,16 +40,6 @@ export const content = [
     title: "Rendering Services",
     description:
       "We create realistic 3D visuals so you can see what your space will look like before it's built. It helps you make smart choices early on.",
-    content: (
-      <div className="h-full w-full items-center justify-center bg-black/20 p-5 text-white">
-        <div className="h-full w-full rounded-lg opacity-55">
-          <img
-            src="/images/services/img4.png"
-            className="h-full w-full rounded-lg object-cover opacity-60"
-          />
-        </div>
-      </div>
-    ),
 
     icon: <SiRender />,
   },
@@ -77,16 +47,6 @@ export const content = [
     title: "Construction Services",
     description:
       "We turn ideas into reality by handling the building process from start to finish. You can count on us to get it done right and on time.",
-    content: (
-      <div className="h-full w-full items-center justify-center bg-black/20 p-5 text-white">
-        <div className="h-full w-full rounded-lg opacity-55">
-          <img
-            src="/images/services/img5.png"
-            className="h-full w-full rounded-lg object-cover opacity-70"
-          />
-        </div>
-      </div>
-    ),
 
     icon: <LuConstruction />,
   },

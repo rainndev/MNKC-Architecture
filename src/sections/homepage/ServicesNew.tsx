@@ -15,7 +15,7 @@ const ServicesNew = () => {
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1, ease: "easeInOut" }}
-          className="text-logo-yellow mt-5 mb-0 w-full text-[clamp(.9rem,3vw,1.25rem)] md:mb-1"
+          className="text-logo-white/50 mt-5 mb-0 w-full text-[clamp(.9rem,3vw,1.25rem)] md:mb-1"
         >
           Our services
         </motion.p>
@@ -25,16 +25,8 @@ const ServicesNew = () => {
           transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
           className="text-logo-white w-full text-[clamp(1.5rem,3vw,3rem)] font-medium md:whitespace-nowrap"
         >
-          What we offer
+          What <span className="text-logo-yellow">we offer</span>
         </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
-          className="text-logo-white/50 w-full text-[clamp(.9rem,3vw,1.125rem)]"
-        >
-          Keep scrolling to learn more.
-        </motion.p>
       </div>
 
       <div className="mt-15 grid h-full grid-cols-1 items-center justify-center gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -44,19 +36,22 @@ const ServicesNew = () => {
             initial={{ opacity: 0, y: -40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut", delay: i * 0.1 }}
-            className="text-logo-white bg-logo-black border-logo-gray/30 h-full w-full border p-5 md:p-10"
+            viewport={{ once: true }}
+            className="text-logo-white bg-logo-black h-full w-full"
           >
-            <div className="flex items-center justify-start gap-4">
-              <span className="text-logo-yellow">{data.icon}</span>
+            <div className="hover:bg-logo-white/10 hover:border-logo-yellow/10 border-logo-gray/30 border p-5 transition-all duration-300 ease-in-out md:p-10">
+              <div className="flex items-center justify-start gap-4">
+                <span className="text-logo-yellow">{data.icon}</span>
 
-              <h1 className="text-[clamp(1.1rem,3vw,1.25rem)] font-semibold">
-                {data.title}
-              </h1>
+                <h1 className="text-[clamp(1.1rem,3vw,1.25rem)] font-semibold">
+                  {data.title}
+                </h1>
+              </div>
+
+              <p className="text-logo-white/90 mt-5 text-[clamp(.9rem,3vw,1rem)] leading-relaxed">
+                {data.description}
+              </p>
             </div>
-
-            <p className="text-logo-white/90 mt-5 text-[clamp(.9rem,3vw,1rem)] leading-relaxed">
-              {data.description}
-            </p>
           </motion.div>
         ))}
       </div>

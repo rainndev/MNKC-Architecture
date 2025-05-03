@@ -1,8 +1,7 @@
-import ServicesNew from "@/components/ServicesNew";
+import ServicesNew from "@/sections/homepage/ServicesNew";
 import AboutUs from "@/sections/homepage/AboutUs";
 import Featured from "@/sections/homepage/Featured";
 import Hero from "@/sections/homepage/Hero";
-import Services from "@/sections/homepage/Services";
 
 const Homepage = () => {
   return (
