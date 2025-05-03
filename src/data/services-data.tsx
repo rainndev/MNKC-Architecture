@@ -1,8 +1,14 @@
+import { GrPlan } from "react-icons/gr";
+import { BsLayoutSidebarInset } from "react-icons/bs";
+import { BsLayoutSidebarReverse } from "react-icons/bs";
+import { SiRender } from "react-icons/si";
+import { LuConstruction } from "react-icons/lu";
+
 export const content = [
   {
     title: "Space Planning",
     description:
-      "We help you make the most out of your space — whether it's big or small. We’ll figure out the best layout so everything flows and feels just right.",
+      "We help you make the most out of your space, whether it's big or small. We’ll figure out the best layout so everything flows and feels just right.",
     content: (
       <div className="h-full w-full items-center justify-center bg-black/20 p-5 text-white">
         <div className="h-full w-full rounded-lg opacity-55">
@@ -13,6 +19,8 @@ export const content = [
         </div>
       </div>
     ),
+
+    icon: <GrPlan />,
   },
   {
     title: "Exterior Design",
@@ -28,6 +36,8 @@ export const content = [
         </div>
       </div>
     ),
+
+    icon: <BsLayoutSidebarReverse />,
   },
   {
     title: "Interior Design",
@@ -43,6 +53,8 @@ export const content = [
         </div>
       </div>
     ),
+
+    icon: <BsLayoutSidebarInset />,
   },
   {
     title: "Rendering Services",
@@ -58,6 +70,8 @@ export const content = [
         </div>
       </div>
     ),
+
+    icon: <SiRender />,
   },
   {
     title: "Construction Services",
@@ -73,5 +87,7 @@ export const content = [
         </div>
       </div>
     ),
+
+    icon: <LuConstruction />,
   },
 ];

@@ -1,3 +1,4 @@
+import ServicesNew from "@/components/ServicesNew";
 import AboutUs from "@/sections/homepage/AboutUs";
 import Featured from "@/sections/homepage/Featured";
 import Hero from "@/sections/homepage/Hero";
@@ -8,7 +9,7 @@ const Homepage = () => {
     <main className="flex h-full w-full flex-col items-center justify-center">
       <Hero />
       <AboutUs />
-      <Services />
+      <ServicesNew />
       <Featured />
     </main>
   );
