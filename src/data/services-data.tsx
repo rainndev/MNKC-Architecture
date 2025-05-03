@@ -1,38 +1,38 @@
 export const content = [
   {
-    title: "3D Architectural Visualization",
+    title: "Space Planning",
     description:
-      "Bring your ideas to life with high-quality 3D renders and animations. Our visualization services help clients understand the design before construction begins, ensuring alignment with your vision.",
+      "We help you make the most out of your space — whether it's big or small. We’ll figure out the best layout so everything flows and feels just right.",
     content: (
       <div className="h-full w-full items-center justify-center bg-black/20 p-5 text-white">
         <div className="h-full w-full rounded-lg opacity-55">
           <img
             src="/images/services/img1.png"
-            className="h-full w-full rounded-lg object-cover"
+            className="h-full w-full rounded-lg object-cover opacity-70"
           />
         </div>
       </div>
     ),
   },
   {
-    title: "Concept Design & Planning",
+    title: "Exterior Design",
     description:
-      "We turn your ideas into buildable concepts. From sketches to zoning analysis, our team develops creative and functional designs tailored to your needs and budget.",
+      "We design the outside look of your home or building to make a great first impression. From the shape to the style, we make sure it reflects you.",
     content: (
       <div className="h-full w-full items-center justify-center bg-black/20 p-5 text-white">
         <div className="h-full w-full rounded-lg opacity-55">
           <img
             src="/images/services/img2.png"
-            className="h-full w-full rounded-lg object-cover"
+            className="h-full w-full rounded-lg object-cover opacity-70"
           />
         </div>
       </div>
     ),
   },
   {
-    title: "Schematic Design & Development",
+    title: "Interior Design",
     description:
-      "We refine initial concepts into detailed plans, integrating aesthetics, functionality, and sustainability. Our process ensures smooth transition to construction documentation.",
+      "We bring life to your indoor spaces with colors, furniture, lighting, and layout that match your taste and lifestyle. We want it to feel like you.",
     content: (
       <div className="h-full w-full items-center justify-center bg-black/20 p-5 text-white">
         <div className="h-full w-full rounded-lg opacity-40">
@@ -45,45 +45,30 @@ export const content = [
     ),
   },
   {
-    title: "Construction Documentation",
+    title: "Rendering Services",
     description:
-      "We prepare complete sets of drawings and specifications required for construction, permitting, and bidding. Accuracy and detail ensure smooth execution on-site.",
+      "We create realistic 3D visuals so you can see what your space will look like before it's built. It helps you make smart choices early on.",
     content: (
       <div className="h-full w-full items-center justify-center bg-black/20 p-5 text-white">
         <div className="h-full w-full rounded-lg opacity-55">
           <img
-            src="/images/services/img1.png"
-            className="h-full w-full rounded-lg object-cover"
+            src="/images/services/img4.png"
+            className="h-full w-full rounded-lg object-cover opacity-60"
           />
         </div>
       </div>
     ),
   },
   {
-    title: "Project Management",
+    title: "Construction Services",
     description:
-      "From planning to handover, we manage timelines, budgets, and coordination between contractors and consultants to deliver your project successfully.",
+      "We turn ideas into reality by handling the building process from start to finish. You can count on us to get it done right and on time.",
     content: (
       <div className="h-full w-full items-center justify-center bg-black/20 p-5 text-white">
         <div className="h-full w-full rounded-lg opacity-55">
           <img
-            src="/images/services/img1.png"
-            className="h-full w-full rounded-lg object-cover"
-          />
-        </div>
-      </div>
-    ),
-  },
-  {
-    title: "Sustainable Design",
-    description:
-      "We integrate green building principles and energy-efficient strategies into your project to reduce environmental impact and operating costs.",
-    content: (
-      <div className="h-full w-full items-center justify-center bg-black/20 p-5 text-white">
-        <div className="h-full w-full rounded-lg opacity-55">
-          <img
-            src="/images/services/img1.png"
-            className="h-full w-full rounded-lg object-cover"
+            src="/images/services/img5.png"
+            className="h-full w-full rounded-lg object-cover opacity-70"
           />
         </div>
       </div>
