@@ -2,8 +2,11 @@ import ProjectCard from "@/components/ProjectCard";
 import { motion } from "framer-motion";
 import { projects } from "@/data/projects-data";
 import { useState } from "react";
+import { useSectionTracker } from "@/hooks/use-section-tracker";
 
 const ProjectsPage = () => {
+  const ref = useSectionTracker({ title: "Featured Projects", number: "01" });
+
   const tabTitles = [...new Set(projects.map((data) => data.category))];
   tabTitles.unshift("All Projects");
   const [filteredProjects, setFilteredProjects] = useState(projects);
@@ -20,7 +23,10 @@ const ProjectsPage = () => {
     setActiveTab(title);
   };
   return (
-    <section className="text-logo-yellow flex min-h-screen w-full max-w-7xl flex-col items-center p-7">
+    <section
+      ref={ref}
+      className="text-logo-yellow flex min-h-screen w-full max-w-7xl flex-col items-center p-7"
+    >
       {/* Header */}
       <header className="bg-logo-black/20 border-logo-gray/50 bg-striped flex w-full flex-col items-start justify-center md:border md:p-10">
         <motion.h1
