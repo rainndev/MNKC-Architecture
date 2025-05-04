@@ -34,8 +34,10 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
             src={data.img}
             alt={data.title}
             onLoad={() => setLoaded(true)}
-            className={`h-full w-full rounded-lg object-cover transition-all duration-500 ease-in-out hover:scale-105 hover:opacity-100 ${
-              loaded ? "opacity-50" : "opacity-0"
+            onContextMenu={(e) => e.preventDefault()}
+            onDragStart={(e) => e.preventDefault()}
+            className={`h-full w-full rounded-lg object-cover transition-all duration-500 ease-in-out select-none hover:scale-105 hover:opacity-100 active:scale-105 active:opacity-100 ${
+              loaded ? "opacity-30" : "opacity-0"
             }`}
           />
         </motion.div>

@@ -17,6 +17,8 @@ const CardsTeam = ({ data }: { data: TeamData }) => {
       <div className="border-logo-gray relative h-80 w-full cursor-pointer overflow-hidden border">
         <img
           loading="lazy"
+          onContextMenu={(e) => e.preventDefault()}
+          onDragStart={(e) => e.preventDefault()}
           src={image}
           className="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-103 group-active:scale-103"
         />
