@@ -41,13 +41,21 @@ const ServicesNew = () => {
             viewport={{ once: true }}
             className="text-logo-white h-full w-full"
           >
-            <div className="from-logo-white/10 via-logo-gray/50 to-logo-yellow/30 border-logo-gray/30 h-full rounded-lg bg-gradient-to-r p-[2px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r md:rounded-xl md:border md:bg-none">
-              <div className="bg-logo-black/90 md:bg-logo-black/70 hover:bg-logo-black/70 hover:border-logo-yellow/10 border-logo-gray/30 h-full rounded-lg border p-5 text-white transition-all duration-500 ease-in-out hover:backdrop-blur-2xl md:rounded-xl md:p-10">
+            <div className="group border-logo-gray/50 relative h-full rounded-lg border transition-all duration-500 ease-in-out md:rounded-xl md:p-[2px]">
+              {/* Gradient border layer --Desktop */}
+              <div className="from-logo-white/10 via-logo-gray/50 to-logo-yellow/30 absolute inset-0 hidden rounded-lg bg-gradient-to-r opacity-100 transition-opacity duration-500 ease-in-out md:block md:rounded-xl md:opacity-0 md:group-hover:opacity-100"></div>
+
+              {/* Gradient border layer --Mobile */}
+              <div className="from-logo-white/5 via-logo-gray/10 to-logo-yellow/15 absolute inset-0 block rounded-lg bg-gradient-to-r p-[2px] md:hidden">
+                <div className="bg-logo-black/20 h-full w-full rounded-md"></div>
+              </div>
+
+              {/* Inner content card */}
+              <div className="border-logo-gray/30 bg-logo-black/70 group-hover:bg-logo-black/70 relative h-full rounded-lg border p-5 text-white transition-all duration-500 ease-in-out md:rounded-xl md:p-10">
                 <div className="flex items-center justify-start gap-4">
                   <span className="text-logo-yellow bg-logo-gray/20 bg-striped rounded-full p-3">
                     {data.icon}
                   </span>
-
                   <h1 className="text-[clamp(1.1rem,3vw,1.25rem)] font-semibold">
                     {data.title}
                   </h1>
