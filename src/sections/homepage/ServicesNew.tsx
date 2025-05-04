@@ -8,10 +8,11 @@ const ServicesNew = () => {
   return (
     <section
       ref={ref}
-      className="relative flex min-h-screen w-full flex-col items-center justify-center bg-[linear-gradient(to_right,rgba(80,79,79,0.4)_1px,transparent_1px),linear-gradient(to_bottom,rgba(80,79,79,0.4)_1px,transparent_1px)] bg-[size:2rem_2rem] p-7"
+      className="relative flex min-h-screen w-full flex-col items-center bg-[linear-gradient(to_right,rgba(80,79,79,0.4)_1px,transparent_1px),linear-gradient(to_bottom,rgba(80,79,79,0.4)_1px,transparent_1px)] bg-[size:2rem_2rem] p-7"
     >
       <div className="bg-logo-black pointer-events-none absolute inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-      <div className="md:bg-logo-yellow/60 absolute z-0 hidden h-[500px] w-[600px] rounded-full blur-[120px] sm:block" />
+      <div className="md:bg-logo-yellow/70 absolute -top-20 left-100 z-0 hidden h-[1100px] w-[200px] -rotate-45 rounded-full blur-[200px] sm:block" />
+
       <div className="z-10 flex h-full w-full flex-col items-center justify-center text-center font-[ClashDisplay]">
         <motion.p
           initial={{ opacity: 0, y: -30 }}
@@ -32,7 +33,7 @@ const ServicesNew = () => {
         </motion.h1>
       </div>
 
-      <div className="z-10 mt-15 grid h-full max-w-7xl grid-cols-1 items-center justify-center gap-4 p-0 md:grid-cols-2 md:gap-5 md:p-7 lg:grid-cols-3">
+      <div className="z-10 mt-15 grid h-full max-w-7xl grid-cols-1 items-center justify-center gap-4 p-0 md:grid-cols-2 md:gap-4 md:p-7 lg:grid-cols-3">
         {content.map((data, i) => (
           <motion.div
             key={i}
@@ -44,7 +45,7 @@ const ServicesNew = () => {
           >
             <div className="group border-logo-gray/50 relative h-full rounded-lg border transition-all duration-500 ease-in-out md:rounded-xl md:p-[2px]">
               {/* Gradient border layer --Desktop */}
-              <div className="from-logo-white/10 via-logo-gray/50 to-logo-yellow/30 absolute inset-0 hidden rounded-lg bg-gradient-to-r opacity-100 transition-opacity duration-500 ease-in-out md:block md:rounded-xl md:opacity-0 md:group-hover:opacity-100"></div>
+              <div className="from-logo-white/10 via-logo-gray/30 to-logo-yellow/20 absolute inset-0 hidden rounded-lg bg-gradient-to-r opacity-100 transition-opacity duration-500 ease-in-out md:block md:rounded-xl md:opacity-0 md:group-hover:opacity-100"></div>
 
               {/* Gradient border layer --Mobile */}
               <div className="from-logo-white/5 via-logo-gray/10 to-logo-yellow/15 absolute inset-0 block rounded-lg bg-gradient-to-r p-[2px] md:hidden">
@@ -52,7 +53,7 @@ const ServicesNew = () => {
               </div>
 
               {/* Inner content card */}
-              <div className="border-logo-gray/30 bg-logo-black/70 group-hover:bg-logo-black/70 relative h-full rounded-lg border p-5 text-white transition-all duration-500 ease-in-out md:rounded-xl md:p-10">
+              <div className="border-logo-gray/30 bg-logo-black/60 group-hover:bg-logo-black/70 relative h-full rounded-lg border p-5 text-white transition-all duration-500 ease-in-out md:rounded-xl md:p-10">
                 <div className="flex items-center justify-start gap-4">
                   <span className="text-logo-yellow bg-logo-gray/20 bg-striped rounded-full p-3">
                     {data.icon}

@@ -17,7 +17,7 @@ const AboutUs = () => {
 
       <div className="bg-logo-black pointer-events-none absolute inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 
-      <div className="relative z-5 grid min-h-screen w-full max-w-7xl grid-cols-1 flex-col items-center justify-center bg-[rgba(30,30,30,.5)] lg:grid-cols-[60%_40%]">
+      <div className="relative grid min-h-screen w-full max-w-7xl grid-cols-1 flex-col items-center justify-center bg-[rgba(30,30,30,.5)] lg:grid-cols-[60%_40%]">
         {/* item 1 */}
         <div className="z-50 flex h-full w-full items-center justify-center p-7">
           <div className="mt-10 w-full max-w-3xl py-10">

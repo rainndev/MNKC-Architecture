@@ -5,7 +5,7 @@ import FeaturedNew from "@/sections/homepage/FeaturedNew";
 
 const Homepage = () => {
   return (
-    <main className="flex h-full w-full flex-col items-center justify-center">
+    <main className="flex h-full w-full flex-col items-center justify-center overflow-hidden">
       <Hero />
       <AboutUs />
       <ServicesNew />
