@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 interface ProjectCardProps {
   data: {
@@ -8,8 +9,10 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ data }: ProjectCardProps) => {
+  const [loaded, setLoaded] = useState(false);
+
   return (
-    <div>
+    <div className="aspect-video">
       <h1 className="text-logo-white text-[clamp(.8rem,2vw,1rem)]">
         {data.title}
       </h1>
@@ -19,13 +22,21 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="overflow-hidden rounded-lg"
+          className="relative aspect-video w-full overflow-hidden rounded-lg"
         >
+          {/* Skeleton loader */}
+          {!loaded && (
+            <div className="bg-logo-white/10 absolute inset-0 animate-pulse rounded-lg" />
+          )}
+
           <img
             loading="lazy"
             src={data.img}
             alt={data.title}
-            className="aspect-video h-full w-full rounded-lg object-cover opacity-50 transition-all duration-300 ease-in-out hover:scale-105 hover:opacity-100"
+            onLoad={() => setLoaded(true)}
+            className={`h-full w-full rounded-lg object-cover transition-all duration-500 ease-in-out hover:scale-105 hover:opacity-100 ${
+              loaded ? "opacity-50" : "opacity-0"
+            }`}
           />
         </motion.div>
       </div>
