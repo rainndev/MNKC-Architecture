@@ -27,7 +27,8 @@ const ServicesNew = () => {
           transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
           className="text-logo-white w-full text-[clamp(1.5rem,3vw,3rem)] font-medium md:whitespace-nowrap"
         >
-          What <span className="text-logo-yellow">we offer</span>
+          <span className="text-logo-yellow">What we offer</span> to Bring Your
+          Vision to Life
         </motion.h1>
       </div>
 
