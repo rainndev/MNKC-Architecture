@@ -1,7 +1,7 @@
 import ServicesNew from "@/sections/homepage/ServicesNew";
 import AboutUs from "@/sections/homepage/AboutUs";
-import Featured from "@/sections/homepage/Featured";
 import Hero from "@/sections/homepage/Hero";
+import FeaturedNew from "@/sections/homepage/FeaturedNew";
 
 const Homepage = () => {
   return (
@@ -9,7 +9,7 @@ const Homepage = () => {
       <Hero />
       <AboutUs />
       <ServicesNew />
-      <Featured />
+      <FeaturedNew />
     </main>
   );
 };

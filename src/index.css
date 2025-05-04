@@ -6,6 +6,7 @@
   --color-logo-white: #d9d9d9;
   --color-logo-black: #1e1e1e;
   --color-logo-gray: #504f4f;
+  --color-grid-gray: #7b7b7b;
 }
 
 @custom-variant dark (&:is(.dark *));
