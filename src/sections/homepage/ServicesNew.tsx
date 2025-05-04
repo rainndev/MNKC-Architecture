@@ -15,7 +15,7 @@ const ServicesNew = () => {
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1, ease: "easeInOut" }}
-          className="text-logo-white/50 mt-5 mb-0 w-full text-[clamp(.9rem,3vw,1.25rem)] md:mb-1"
+          className="text-logo-white/50 mt-5 mb-0 w-full text-[clamp(.9rem,3vw,1.25rem)]"
         >
           Our services
         </motion.p>
@@ -29,7 +29,7 @@ const ServicesNew = () => {
         </motion.h1>
       </div>
 
-      <div className="mt-15 grid h-full grid-cols-1 items-center justify-center gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-15 grid h-full grid-cols-1 items-center justify-center gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-3">
         {content.map((data, i) => (
           <motion.div
             key={i}
@@ -39,18 +39,21 @@ const ServicesNew = () => {
             viewport={{ once: true }}
             className="text-logo-white bg-logo-black h-full w-full"
           >
-            <div className="hover:bg-logo-white/10 hover:border-logo-yellow/10 border-logo-gray/30 border p-5 transition-all duration-300 ease-in-out md:p-10">
-              <div className="flex items-center justify-start gap-4">
-                <span className="text-logo-yellow">{data.icon}</span>
+            <div className="from-logo-white/10 via-logo-gray/50 to-logo-yellow/30 h-full rounded-lg bg-gradient-to-r p-[2px] md:rounded-xl">
+              <div className="bg-logo-black hover:bg-logo-black/80 hover:border-logo-yellow/10 border-logo-gray/30 h-full rounded-lg border p-5 text-white transition-all duration-500 ease-in-out hover:backdrop-blur-2xl md:rounded-xl md:p-10">
+                <div className="flex items-center justify-start gap-4">
+                  <span className="text-logo-yellow bg-logo-gray/20 bg-striped rounded-full p-3">
+                    {data.icon}
+                  </span>
 
-                <h1 className="text-[clamp(1.1rem,3vw,1.25rem)] font-semibold">
-                  {data.title}
-                </h1>
+                  <h1 className="text-[clamp(1.1rem,3vw,1.25rem)] font-semibold">
+                    {data.title}
+                  </h1>
+                </div>
+                <p className="text-logo-white/90 mt-5 text-[clamp(.9rem,3vw,1rem)] leading-relaxed">
+                  {data.description}
+                </p>
               </div>
-
-              <p className="text-logo-white/90 mt-5 text-[clamp(.9rem,3vw,1rem)] leading-relaxed">
-                {data.description}
-              </p>
             </div>
           </motion.div>
         ))}
