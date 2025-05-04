@@ -1,49 +1,11 @@
 import { useSectionTracker } from "@/hooks/use-section-tracker";
 import { ThreeDMarquee } from "@/components/ui/3d-marquee";
 import { NavLink } from "react-router-dom";
-
-const images = [
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img2.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-  "/images/about-us/about-img1.webp",
-];
+import { projects } from "@/data/projects-data";
 
 const FeaturedNew = () => {
+  const projectsArray = projects.map((project) => project.img);
+
   const ref = useSectionTracker({ title: "Featured Projects", number: "03" });
   return (
     <div
@@ -68,7 +30,7 @@ const FeaturedNew = () => {
             </div>
           </NavLink>
         </div>
-        <ThreeDMarquee images={images} />
+        <ThreeDMarquee images={projectsArray} />
       </div>
     </div>
   );

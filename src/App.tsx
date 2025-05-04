@@ -13,7 +13,7 @@ import Contactpage from "@/pages/Contactpage";
 import ThankYouPage from "@/pages/ThankYouPage";
 import Faqs from "@/pages/Faqs";
 import Footer from "@/sections/homepage/Footer";
-import Projects from "@/pages/Projects";
+import ProjectsPage from "@/pages/ProjectsPage";
 
 const App = () => {
   const isOpen = useSideBarStore((state) => state.isOpen);
@@ -40,7 +40,7 @@ const App = () => {
         <Route path="/contact" element={<Contactpage />} />
         <Route path="/contact/success-form" element={<ThankYouPage />} />
         <Route path="/faqs" element={<Faqs />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects" element={<ProjectsPage />} />
       </Routes>
       <Footer />
       {/* Left side overlay */}
