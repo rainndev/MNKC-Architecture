@@ -42,7 +42,7 @@ const ServicesNew = () => {
             className="text-logo-white h-full w-full"
           >
             <div className="from-logo-white/10 via-logo-gray/50 to-logo-yellow/30 h-full rounded-lg bg-gradient-to-r p-[2px] md:rounded-xl">
-              <div className="bg-logo-black/90 md:bg-logo-black/80 hover:bg-logo-black/50 hover:border-logo-yellow/10 border-logo-gray/30 h-full rounded-lg border p-5 text-white transition-all duration-500 ease-in-out hover:backdrop-blur-2xl md:rounded-xl md:p-10">
+              <div className="bg-logo-black/90 md:bg-logo-black/70 hover:bg-logo-black/50 hover:border-logo-yellow/10 border-logo-gray/30 h-full rounded-lg border p-5 text-white transition-all duration-500 ease-in-out hover:backdrop-blur-2xl md:rounded-xl md:p-10">
                 <div className="flex items-center justify-start gap-4">
                   <span className="text-logo-yellow bg-logo-gray/20 bg-striped rounded-full p-3">
                     {data.icon}
