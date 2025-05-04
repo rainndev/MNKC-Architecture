@@ -1,5 +1,6 @@
 import { useSectionTracker } from "@/hooks/use-section-tracker";
 import { ThreeDMarquee } from "@/components/ui/3d-marquee";
+import { NavLink } from "react-router-dom";
 
 const images = [
   "/images/about-us/about-img1.webp",
@@ -56,7 +57,7 @@ const FeaturedNew = () => {
             <span className="text-logo-yellow">Explore Some </span>of Our
             Previous Projects
           </h1>
-          <a className="group pointer-events-auto">
+          <NavLink to={"/projects"} className="group pointer-events-auto">
             <div className="bg-striped border-logo-gray mt-2 inline-block border">
               <button className="text-logo-white border-logo-gray bg-logo-black/70 relative m-[2px] cursor-pointer overflow-hidden border px-5 py-2 font-[ClashDisplay] text-[clamp(.8rem,2vw,1rem)] font-normal md:bg-transparent">
                 <span className="relative z-10 transition-colors duration-300 ease-in-out">
@@ -65,7 +66,7 @@ const FeaturedNew = () => {
                 <span className="bg-logo-black/70 absolute top-0 left-0 z-0 h-full w-0 transition-all duration-500 ease-in-out group-hover:w-full active:w-full" />
               </button>
             </div>
-          </a>
+          </NavLink>
         </div>
         <ThreeDMarquee images={images} />
       </div>

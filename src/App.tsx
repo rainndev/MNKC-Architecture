@@ -12,7 +12,8 @@ import { AnimatePresence } from "framer-motion";
 import Contactpage from "@/pages/Contactpage";
 import ThankYouPage from "@/pages/ThankYouPage";
 import Faqs from "@/pages/Faqs";
-import Footer from "./sections/homepage/Footer";
+import Footer from "@/sections/homepage/Footer";
+import Projects from "@/pages/Projects";
 
 const App = () => {
   const isOpen = useSideBarStore((state) => state.isOpen);
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/contact" element={<Contactpage />} />
         <Route path="/contact/success-form" element={<ThankYouPage />} />
         <Route path="/faqs" element={<Faqs />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
       <Footer />
       {/* Left side overlay */}

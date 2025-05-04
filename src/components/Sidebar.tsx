@@ -7,6 +7,7 @@ import { BsFillPeopleFill } from "react-icons/bs";
 import { IoIosBriefcase } from "react-icons/io";
 import { RiMessage3Fill } from "react-icons/ri";
 import { BsFillQuestionSquareFill } from "react-icons/bs";
+import { FaFolder } from "react-icons/fa";
 
 const Sidebar = () => {
   const setOpen = useSideBarStore((state) => state.setOpen);
@@ -73,6 +74,18 @@ const Sidebar = () => {
                 Careers
               </NavLink>
             </li>
+
+            <li>
+              <NavLink
+                onClick={closeSidebar}
+                className="text-logo-white flex items-center"
+                to={"/projects"}
+              >
+                <FaFolder className="mr-4" />
+                Projects
+              </NavLink>
+            </li>
+
             <li>
               <NavLink
                 onClick={closeSidebar}
