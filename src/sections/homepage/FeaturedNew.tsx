@@ -10,7 +10,7 @@ const FeaturedNew = () => {
   return (
     <div
       ref={ref}
-      className="group flex w-full flex-col items-center justify-center p-7 text-white"
+      className="group z-0 flex w-full flex-col items-center justify-center p-7 text-white"
     >
       <div className="bg-logo-black/40 ring-logo-gray/20 relative mx-auto my-10 w-full max-w-7xl overflow-hidden p-3 ring-1">
         {/* Overlay */}
@@ -25,7 +25,7 @@ const FeaturedNew = () => {
                 <span className="relative z-10 transition-colors duration-300 ease-in-out">
                   See Our Work
                 </span>
-                <span className="bg-logo-black/70 absolute top-0 left-0 z-0 h-full w-0 transition-all duration-500 ease-in-out group-hover:w-full active:w-full" />
+                <span className="absolute top-0 left-0 z-0 h-full w-0 transition-all duration-500 ease-in-out group-hover:w-full active:w-full" />
               </button>
             </div>
           </NavLink>

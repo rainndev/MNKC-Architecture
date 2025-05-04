@@ -20,7 +20,7 @@ const CardsTeam = ({ data }: { data: TeamData }) => {
           onContextMenu={(e) => e.preventDefault()}
           onDragStart={(e) => e.preventDefault()}
           src={image}
-          className="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-103 group-active:scale-103"
+          className="h-full w-full object-cover grayscale-50 transition-all duration-300 ease-in-out group-hover:scale-103 group-hover:grayscale-0 group-active:scale-103"
         />
 
         <span className="bg-striped bg-logo-black absolute bottom-0 left-0 flex h-full w-full items-center justify-center opacity-70 transition-all duration-300 ease-in-out group-hover:h-0 group-hover:opacity-0 group-active:opacity-0"></span>

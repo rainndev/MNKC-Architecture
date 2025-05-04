@@ -11,7 +11,7 @@ const ServicesNew = () => {
       className="relative flex min-h-screen w-full flex-col items-center bg-[linear-gradient(to_right,rgba(80,79,79,0.4)_1px,transparent_1px),linear-gradient(to_bottom,rgba(80,79,79,0.4)_1px,transparent_1px)] bg-[size:2rem_2rem] p-7"
     >
       <div className="bg-logo-black pointer-events-none absolute inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-      <div className="md:bg-logo-yellow/70 absolute -top-20 left-100 z-0 hidden h-[1100px] w-[200px] -rotate-45 rounded-full blur-[200px] sm:block" />
+      <div className="md:bg-logo-yellow/70 absolute -top-20 left-100 z-5 hidden h-[1100px] w-[200px] -rotate-45 rounded-full blur-[200px] sm:block" />
 
       <div className="z-10 flex h-full w-full flex-col items-center justify-center text-center font-[ClashDisplay]">
         <motion.p
