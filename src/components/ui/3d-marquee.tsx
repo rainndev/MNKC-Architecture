@@ -46,6 +46,8 @@ export const ThreeDMarquee = ({
                   <div className="relative" key={imageIndex + image}>
                     <GridLineHorizontal className="-top-4" offset="20px" />
                     <motion.img
+                      onContextMenu={(e) => e.preventDefault()}
+                      onDragStart={(e) => e.preventDefault()}
                       whileTap={{
                         y: -10,
                       }}
