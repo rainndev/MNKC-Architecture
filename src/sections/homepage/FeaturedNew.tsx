@@ -12,7 +12,7 @@ const FeaturedNew = () => {
       ref={ref}
       className="group z-0 flex w-full max-w-7xl flex-col items-center justify-center p-7 text-white"
     >
-      <div className="bg-logo-black/40 ring-logo-gray/20 relative mx-auto my-10 w-full max-w-7xl overflow-hidden p-3 ring-1">
+      <div className="bg-logo-black/40 ring-logo-gray/20 relative mx-auto my-10 w-full max-w-7xl overflow-hidden p-1 ring-1 md:p-3">
         {/* Overlay */}
         <div className="bg-logo-black/70 pointer-events-none absolute inset-0 z-10 flex flex-col items-center justify-center p-10 opacity-100 transition-all duration-500 ease-in-out">
           <h1 className="text-center font-[ClashDisplay] text-[clamp(1.125rem,3vw,3rem)] font-medium text-pretty">
