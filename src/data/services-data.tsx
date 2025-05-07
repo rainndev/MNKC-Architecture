@@ -1,8 +1,9 @@
 import { GrPlan } from "react-icons/gr";
 import { BsLayoutSidebarInset } from "react-icons/bs";
 import { BsLayoutSidebarReverse } from "react-icons/bs";
-import { SiRender } from "react-icons/si";
 import { LuConstruction } from "react-icons/lu";
+import { FaRegLightbulb } from "react-icons/fa";
+import { MdOutlineImageAspectRatio } from "react-icons/md";
 
 export const content = [
   {
@@ -41,7 +42,7 @@ export const content = [
     description:
       "We create realistic 3D visuals so you can see what your space will look like before it's built. It helps you make smart choices early on.",
 
-    icon: <SiRender />,
+    icon: <MdOutlineImageAspectRatio />,
   },
   {
     title: "Construction Services",
@@ -49,5 +50,13 @@ export const content = [
       "We turn ideas into reality by handling the building process from start to finish. You can count on us to get it done right and on time.",
 
     icon: <LuConstruction />,
+  },
+
+  {
+    title: "Design Consultation",
+    description:
+      "We guide you through every step of your project with expert advice. Whether you're unsure where to start or need help refining your vision, we're here for you.",
+
+    icon: <FaRegLightbulb />,
   },
 ];
