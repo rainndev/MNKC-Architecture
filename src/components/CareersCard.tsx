@@ -6,7 +6,7 @@ interface CareersPageProps {
     jobShortDescription: string;
     jobType: string;
     jobLocation: string;
-    jobDescription: string;
+    jobDescription: string[];
   };
 }
 
@@ -22,7 +22,7 @@ const CareersCard = ({ data }: CareersPageProps) => {
   return (
     <article className="border-logo-gray/30 border text-white">
       {/* Info about careers */}
-      <header className="grid grid-cols-1 gap-10 p-5 md:grid-cols-2 md:p-10">
+      <header className="bg-striped grid grid-cols-1 gap-10 p-5 md:grid-cols-2 md:p-10">
         <div className="w-full">
           <h1 className="text-logo-yellow font-[ClashDisplay] text-[clamp(1.2rem,3vw,1.5rem)]">
             {jobTitle}
@@ -47,23 +47,23 @@ const CareersCard = ({ data }: CareersPageProps) => {
       <hr className="bg-logo-gray/30 h-[1px] border-none" />
 
       {/* Job Info*/}
-      <section className="bg-striped grid grid-cols-1 gap-10 p-5 md:grid-cols-2 md:p-10">
+      <section className="grid grid-cols-1 gap-10 p-5 md:grid-cols-2 md:p-10">
         {/* Job type */}
         <div className="space-y-4">
           <div>
-            <p className="text-logo-white font-[ClashDisplay] text-[clamp(.8rem,3vw,1rem)]">
+            <p className="border-logo-white/20 border-b-[1px] pb-2 font-[ClashDisplay] text-[clamp(.9rem,3vw,1.125rem)] text-white">
               Job Type
             </p>
-            <h1 className="mt-1 font-[ClashDisplay] text-[clamp(1rem,3vw,1.25rem)] font-normal text-white">
+            <h1 className="text-logo-white/80 mt-5 font-[ClashDisplay] text-[clamp(.8rem,3vw,1rem)] font-normal">
               {jobType}
             </h1>
           </div>
 
           <div>
-            <p className="text-logo-white font-[ClashDisplay] text-[clamp(.8rem,3vw,1rem)]">
+            <p className="border-logo-white/20 border-b-[1px] pb-2 font-[ClashDisplay] text-[clamp(.9rem,3vw,1.125rem)] text-white">
               Location
             </p>
-            <h1 className="mt-1 font-[ClashDisplay] text-[clamp(1rem,3vw,1.25rem)] font-normal text-white">
+            <h1 className="text-logo-white/80 mt-5 font-[ClashDisplay] text-[clamp(.8rem,3vw,1rem)] font-normal">
               {jobLocation}
             </h1>
           </div>
@@ -71,12 +71,17 @@ const CareersCard = ({ data }: CareersPageProps) => {
 
         {/* Job description */}
         <div>
-          <h1 className="font-[ClashDisplay] text-[clamp(1.2rem,3vw,1rem)] font-normal text-white">
+          <h1 className="border-logo-white/20 border-b-[1px] pb-2 font-[ClashDisplay] text-[clamp(.9rem,3vw,1.125rem)] font-normal text-white">
             Job Description
           </h1>
-          <p className="text-logo-white mt-2 font-[SansationLight] text-[clamp(.9rem,3vw,1rem)]">
-            {jobDescription}
-          </p>
+
+          <ul className="mt-5 space-y-2">
+            {jobDescription.map((text) => (
+              <li className="marker:text-logo-yellow text-logo-white/95 list-inside list-disc font-[SansationLight] text-[clamp(.8rem,3vw,1rem)]">
+                {text}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
     </article>
