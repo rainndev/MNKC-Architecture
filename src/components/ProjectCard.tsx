@@ -10,12 +10,11 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ data }: ProjectCardProps) => {
   const [loaded, setLoaded] = useState(false);
+  const { title, img } = data;
 
   return (
     <div className="aspect-video">
-      <h1 className="text-logo-white text-[clamp(.8rem,2vw,1rem)]">
-        {data.title}
-      </h1>
+      <h1 className="text-logo-white text-[clamp(.8rem,2vw,1rem)]">{title}</h1>
       <div className="bg-logo-black/20 border-logo-gray/20 mt-3 flex h-fit w-full items-center justify-center rounded-lg border p-2 shadow-lg md:mr-5">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -31,8 +30,8 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
 
           <img
             loading="lazy"
-            src={data.img}
-            alt={data.title}
+            src={img}
+            alt={title}
             onLoad={() => setLoaded(true)}
             onContextMenu={(e) => e.preventDefault()}
             onDragStart={(e) => e.preventDefault()}

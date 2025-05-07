@@ -1,8 +1,10 @@
 import { useTeamsModalStore } from "@/store/TeamsModalStore";
 import { TeamData } from "@/types/teams-card";
+import { useState } from "react";
 
 const CardsTeam = ({ data }: { data: TeamData }) => {
   const { name, position, image } = data;
+  const [loaded, setLoaded] = useState(false);
 
   const openModal = useTeamsModalStore((state) => state.openModal);
   const setData = useTeamsModalStore((state) => state.setData);
@@ -15,8 +17,15 @@ const CardsTeam = ({ data }: { data: TeamData }) => {
   return (
     <article onClick={handleClick} className="group">
       <div className="border-logo-gray relative h-80 w-full cursor-pointer overflow-hidden border">
+        {/* Skeleton loader */}
+        {!loaded && (
+          <div className="bg-logo-white/10 absolute inset-0 animate-pulse" />
+        )}
+
+        {/* team image */}
         <img
           loading="lazy"
+          onLoad={() => setLoaded(true)}
           onContextMenu={(e) => e.preventDefault()}
           onDragStart={(e) => e.preventDefault()}
           src={image}

@@ -4,16 +4,44 @@ import { projects } from "@/data/projects-data";
 import { useState } from "react";
 import { useSectionTracker } from "@/hooks/use-section-tracker";
 
+const ContainerVariant = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.2,
+    },
+  },
+};
+
+const childrenVariant = {
+  initial: {
+    opacity: 0,
+    y: -20,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeInOut",
+    },
+  },
+
+  exit: {
+    opacity: 0,
+    y: -20,
+  },
+};
+
 const ProjectsPage = () => {
   const ref = useSectionTracker({ title: "Featured Projects", number: "01" });
-
   const tabTitles = [...new Set(projects.map((data) => data.category))];
   tabTitles.unshift("All Projects");
   const [filteredProjects, setFilteredProjects] = useState(projects);
   const [activeTab, setActiveTab] = useState("All Projects");
 
+  // Filter projects based on the selected tab title
   const handleTabClick = (title: string) => {
-    // Filter projects based on the selected tab title
     const filteredProjects =
       title === "All Projects"
         ? projects
@@ -22,6 +50,7 @@ const ProjectsPage = () => {
     setFilteredProjects(filteredProjects);
     setActiveTab(title);
   };
+
   return (
     <section
       ref={ref}
@@ -69,19 +98,19 @@ const ProjectsPage = () => {
       </div>
 
       {/* Projects Card*/}
-      <div className="mt-10 grid h-full w-full items-center gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <motion.div
+        variants={ContainerVariant}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        className="mt-10 grid h-full w-full items-center gap-5 md:grid-cols-2 lg:grid-cols-3"
+      >
         {filteredProjects.map((data, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.5, ease: "easeInOut", delay: 0.1 * i }}
-          >
+          <motion.div variants={childrenVariant} key={i}>
             <ProjectCard data={data} key={i} />
           </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };
