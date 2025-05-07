@@ -76,8 +76,11 @@ const CareersCard = ({ data }: CareersPageProps) => {
           </h1>
 
           <ul className="mt-5 space-y-2">
-            {jobDescription.map((text) => (
-              <li className="marker:text-logo-yellow text-logo-white/95 list-inside list-disc font-[SansationLight] text-[clamp(.8rem,3vw,1rem)]">
+            {jobDescription.map((text, i) => (
+              <li
+                key={i}
+                className="marker:text-logo-yellow text-logo-white/95 list-inside list-disc font-[SansationLight] text-[clamp(.8rem,3vw,1rem)]"
+              >
                 {text}
               </li>
             ))}

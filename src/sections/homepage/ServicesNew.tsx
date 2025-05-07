@@ -8,7 +8,7 @@ const ServicesNew = () => {
   return (
     <section
       ref={ref}
-      className="relative flex min-h-screen w-full flex-col items-center bg-[linear-gradient(to_right,rgba(80,79,79,0.4)_1px,transparent_1px),linear-gradient(to_bottom,rgba(80,79,79,0.4)_1px,transparent_1px)] bg-[size:2rem_2rem] p-7"
+      className="relative flex min-h-screen w-full flex-col items-center justify-center bg-[linear-gradient(to_right,rgba(80,79,79,0.4)_1px,transparent_1px),linear-gradient(to_bottom,rgba(80,79,79,0.4)_1px,transparent_1px)] bg-[size:2rem_2rem] p-7"
     >
       <div className="bg-logo-black pointer-events-none absolute inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       <div className="md:bg-logo-yellow/70 absolute -top-20 left-100 z-5 hidden h-[1100px] w-[200px] -rotate-45 rounded-full blur-[200px] sm:block" />
@@ -53,16 +53,16 @@ const ServicesNew = () => {
               </div>
 
               {/* Inner content card */}
-              <div className="border-logo-gray/30 bg-logo-black/60 group-hover:bg-logo-black/70 relative h-full rounded-lg border p-5 text-white transition-all duration-500 ease-in-out md:rounded-xl md:p-10">
+              <div className="group border-logo-gray/30 bg-logo-black/60 group-hover:bg-logo-black/70 relative h-full rounded-lg border p-5 transition-all duration-500 ease-in-out md:rounded-xl md:p-8">
                 <div className="flex items-center justify-start gap-4">
-                  <span className="text-logo-yellow bg-logo-gray/20 bg-striped rounded-full p-3">
+                  <span className="text-logo-yellow bg-logo-gray/30 bg-striped rounded-full p-3 transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:rotate-6">
                     {data.icon}
                   </span>
-                  <h1 className="text-[clamp(1.1rem,3vw,1.25rem)] font-semibold">
+                  <h1 className="text-logo-white text-[clamp(1.1rem,3vw,1.25rem)] font-semibold">
                     {data.title}
                   </h1>
                 </div>
-                <p className="text-logo-white/90 mt-5 text-[clamp(.9rem,3vw,1rem)] leading-relaxed">
+                <p className="text-logo-white/85 mt-5 text-[clamp(.9rem,3vw,1.125rem)] leading-relaxed">
                   {data.description}
                 </p>
               </div>

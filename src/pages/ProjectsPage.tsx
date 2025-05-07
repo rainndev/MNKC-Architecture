@@ -28,7 +28,7 @@ const ProjectsPage = () => {
       className="text-logo-yellow flex min-h-screen w-full max-w-7xl flex-col items-center p-7"
     >
       {/* Header */}
-      <header className="bg-logo-black/20 border-logo-gray/50 bg-striped flex w-full flex-col items-start justify-center md:border md:p-10">
+      <header className="bg-logo-black/20 border-logo-gray/50 md:bg-striped flex w-full flex-col items-start justify-center border-b pb-4 md:border md:p-10">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -61,7 +61,7 @@ const ProjectsPage = () => {
           <span
             key={title}
             onClick={() => handleTabClick(title)}
-            className={`${activeTab === title ? "bg-logo-yellow text-logo-black" : "bg-logo-white/10 text-logo-white"} mt-2 inline-block cursor-pointer rounded-sm p-2 px-3 text-[clamp(.8rem,2vw,.9rem)]`}
+            className={`${activeTab === title ? "bg-logo-yellow text-logo-black" : "bg-logo-white/5 text-logo-white"} mt-2 inline-block cursor-pointer rounded-sm p-2 px-3 text-[clamp(.7rem,2vw,.9rem)]`}
           >
             {title}
           </span>

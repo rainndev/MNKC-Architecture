@@ -9,7 +9,7 @@ export const content = [
   {
     title: "Space Planning",
     description:
-      "We help you make the most out of your space, whether it's big or small. We’ll figure out the best layout so everything flows and feels just right.",
+      "We help you make the most out of your space, whether it's big or small. ",
     content: (
       <div className="h-full w-full items-center justify-center bg-black/20 p-5 text-white">
         <div className="h-full w-full rounded-lg opacity-55">
@@ -26,28 +26,28 @@ export const content = [
   {
     title: "Exterior Design",
     description:
-      "We design the outside look of your home or building to make a great first impression. From the shape to the style, we make sure it reflects you.",
+      "We design the outside look of your home or building to make a great first impression.",
 
     icon: <BsLayoutSidebarReverse />,
   },
   {
     title: "Interior Design",
     description:
-      "We bring life to your indoor spaces with colors, furniture, lighting, and layout that match your taste and lifestyle. We want it to feel like you.",
+      "We bring life to your indoor spaces with colors, furniture, lighting, and layout that match your taste and lifestyle.",
 
     icon: <BsLayoutSidebarInset />,
   },
   {
     title: "Rendering Services",
     description:
-      "We create realistic 3D visuals so you can see what your space will look like before it's built. It helps you make smart choices early on.",
+      "We create realistic 3D visuals so you can see what your space will look like before it's built. ",
 
     icon: <MdOutlineImageAspectRatio />,
   },
   {
     title: "Construction Services",
     description:
-      "We turn ideas into reality by handling the building process from start to finish. You can count on us to get it done right and on time.",
+      "We turn ideas into reality by handling the building process from start to finish. ",
 
     icon: <LuConstruction />,
   },
@@ -55,7 +55,7 @@ export const content = [
   {
     title: "Design Consultation",
     description:
-      "We guide you through every step of your project with expert advice. Whether you're unsure where to start or need help refining your vision, we're here for you.",
+      "We guide you through every step of your project with expert advice.",
 
     icon: <FaRegLightbulb />,
   },
