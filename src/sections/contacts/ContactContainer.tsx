@@ -56,7 +56,7 @@ const ContactContainer = () => {
         {/* Form */}
         <form
           ref={formRef}
-          action="https://usebasin.com/f/18f95a87449e"
+          action="https://usebasin.com/f/4256ee9b6a6c"
           method="POST"
           onSubmit={handleSubmit(onSubmit)}
           className="mt-10 flex w-full flex-col gap-5 text-[clamp(.9rem,3vw,1rem)]"
