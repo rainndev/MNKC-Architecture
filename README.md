@@ -8,7 +8,7 @@ This project was developed as the final requirement for **WS101: Web System**. I
 
 This project was created under permission granted by **MNKC Architecture** through an official signed letter from the Founder of the Company. The use of company branding, name, and assets is solely for the purpose of completing academic requirements.
 
-![Signed Letter Proof](images/signed-letter/letter.jpg)
+![Signed Letter Proof](https://raw.githubusercontent.com/rainndev/MNKC-Architecture/main/public/images/signed-letter/letter.jpg?token=GHSAT0AAAAAADCHZA6Q3FITTSMBLP2MHPYQ2A4CEFQ)
 
 ## Objectives
 
