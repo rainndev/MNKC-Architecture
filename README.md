@@ -12,7 +12,7 @@ This project was created under permission granted by **MNKC Architecture** throu
 
 ## Video Documentary
 
-[![Click to watch the video](https://placehold.co/600x400)](https://raw.githubusercontent.com/rainndev/MNKC-Architecture/main/public/images/signed-letter/thumbnail.png)
+[![Click to watch the video](https://raw.githubusercontent.com/rainndev/MNKC-Architecture/main/public/images/signed-letter/thumbnail.png)](https://drive.google.com/file/d/1fwKFBUFRJzHA-Uo4HiDfkAv6sYQugExd/view)
 
 ## Objectives
 
