@@ -43,17 +43,17 @@ const ServicesNew = () => {
             viewport={{ once: true }}
             className="text-logo-white h-full w-full"
           >
-            <div className="group border-logo-gray/50 relative h-full rounded-lg border transition-all duration-500 ease-in-out md:rounded-xl md:p-[2px]">
+            <div className="group border-logo-gray/50 relative h-full rounded-md border transition-all duration-500 ease-in-out md:rounded-xl md:p-[2px]">
               {/* Gradient border layer --Desktop */}
-              <div className="from-logo-white/10 via-logo-gray/30 to-logo-yellow/20 absolute inset-0 hidden rounded-lg bg-gradient-to-r opacity-100 transition-opacity duration-500 ease-in-out md:block md:rounded-xl md:opacity-0 md:group-hover:opacity-100"></div>
+              <div className="from-logo-white/10 via-logo-gray/30 to-logo-yellow/20 absolute inset-0 hidden rounded-md bg-gradient-to-r opacity-100 transition-opacity duration-500 ease-in-out md:block md:rounded-xl md:opacity-0 md:group-hover:opacity-100"></div>
 
               {/* Gradient border layer --Mobile */}
-              <div className="from-logo-white/5 via-logo-gray/10 to-logo-yellow/15 absolute inset-0 block rounded-lg bg-gradient-to-r p-[2px] md:hidden">
+              <div className="from-logo-white/5 via-logo-gray/10 to-logo-yellow/15 absolute inset-0 block rounded-md bg-gradient-to-r p-[2px] md:hidden">
                 <div className="bg-logo-black/20 h-full w-full rounded-md"></div>
               </div>
 
               {/* Inner content card */}
-              <div className="group border-logo-gray/30 bg-logo-black/60 group-hover:bg-logo-black/70 relative h-full rounded-lg border p-5 transition-all duration-500 ease-in-out md:rounded-xl md:p-8">
+              <div className="group border-logo-gray/30 bg-logo-black/60 group-hover:bg-logo-black/70 relative h-full rounded-md border p-5 transition-all duration-500 ease-in-out md:rounded-xl md:p-8">
                 <div className="flex items-center justify-start gap-4">
                   <span className="text-logo-yellow bg-logo-gray/30 bg-striped rounded-full p-3 transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:rotate-6">
                     {data.icon}

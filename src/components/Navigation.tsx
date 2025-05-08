@@ -1,13 +1,19 @@
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { useSideBarStore } from "@/store/SideBarStore";
+import { useEffect, useState } from "react";
 
 const Navigation = () => {
   const setOpen = useSideBarStore((state) => state.setOpen);
+  const [title, setTitle] = useState("Home");
 
   const toggleMenu = () => {
     setOpen(true);
   };
+
+  useEffect(() => {
+    document.title = `${title} | MNKC Architecture`;
+  }, [title]);
 
   return (
     <>
@@ -32,23 +38,23 @@ const Navigation = () => {
             {/* Desktop NavLinks */}
             <div className="text-logo-white hidden md:block">
               <ul className="flex space-x-10">
-                <li>
+                <li onClick={() => setTitle("Home")}>
                   <NavLink to={"/"}>Home</NavLink>
                 </li>
-                <li>
+                <li onClick={() => setTitle("Teams")}>
                   <NavLink to={"/teams"}>Teams</NavLink>
                 </li>
-                <li>
+                <li onClick={() => setTitle("Careers")}>
                   <NavLink to={"/careers"}>Careers</NavLink>
                 </li>
-                <li>
+                <li onClick={() => setTitle("Projects")}>
                   <NavLink to={"/projects"}>Projects</NavLink>
                 </li>
-                <li>
+                <li onClick={() => setTitle("Contact")}>
                   <NavLink to={"/contact"}>Contact</NavLink>
                 </li>
 
-                <li>
+                <li onClick={() => setTitle("Faqs")}>
                   <NavLink to={"/faqs"}>Faqs</NavLink>
                 </li>
               </ul>
