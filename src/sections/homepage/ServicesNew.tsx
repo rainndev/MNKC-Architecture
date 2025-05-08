@@ -62,7 +62,7 @@ const ServicesNew = () => {
                     {data.title}
                   </h1>
                 </div>
-                <p className="text-logo-white/85 mt-5 text-[clamp(.9rem,3vw,1.125rem)] leading-relaxed">
+                <p className="text-logo-white/80 mt-5 font-[SansationLight] text-[clamp(.9rem,3vw,1.1rem)] leading-relaxed">
                   {data.description}
                 </p>
               </div>
