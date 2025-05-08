@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project was developed as the final requirement for **WS101: Web System**. It is a responsive landing page for **MNKC Architecture**, a conceptual architectural firm that embodies innovation, structural elegance, and modern design. This is a mock website created for **MNKC Architecture** as part of a school or academic requirement.
+This project was created as our final requirement for **WS101: Web System**. It’s a responsive landing page made for **MNKC Architecture**, an architectural firm known for its innovative and modern designs. Our goal was to demonstrate what we’ve learned in web development by creating a functional and visually appealing site based on real branding and design elements from MNKC.
 
 ## Permission
 
@@ -10,9 +10,13 @@ This project was created under permission granted by **MNKC Architecture** throu
 
 ![Signed Letter Proof](https://raw.githubusercontent.com/rainndev/MNKC-Architecture/main/public/images/signed-letter/letter.jpg)
 
+## Video Documentary
+
+[![Click to watch the video](https://placehold.co/600x400)](https://raw.githubusercontent.com/rainndev/MNKC-Architecture/main/public/images/signed-letter/thumbnail.png)
+
 ## Objectives
 
-- Demonstrate the ability to build a structured and responsive React-based landing page
+- Demonstrate the ability to build a structured and responsive landing page
 
 ## Key Features
 

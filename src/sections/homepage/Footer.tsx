@@ -82,7 +82,7 @@ const Footer = () => {
               <span>
                 <IoLocationSharp />
               </span>
-              6MXH+622, Magalang, Pampanga
+              #5 Purok 1 Sanjose Magalang
             </li>
           </ul>
         </div>
