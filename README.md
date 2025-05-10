@@ -12,7 +12,7 @@ This project was created under permission granted by **MNKC Architecture** throu
 
 ## Video Documentary
 
-[![Click to watch the video](https://raw.githubusercontent.com/rainndev/MNKC-Architecture/main/public/images/signed-letter/thumbnail.png)](https://drive.google.com/file/d/1f6gMiA_n3DprzLZNaWHI6b3aR-PR7hF6/view)
+https://github.com/user-attachments/assets/5e5c77b5-de4c-4ea1-9695-57f0a52b4e0e
 
 ## Objectives
 
