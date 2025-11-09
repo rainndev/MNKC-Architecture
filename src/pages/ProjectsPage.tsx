@@ -21,10 +21,11 @@ const childrenVariant = {
   animate: {
     opacity: 1,
     y: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeInOut",
-    },
+  },
+
+  transition: {
+    duration: 0.3,
+    ease: "easeInOut",
   },
 
   exit: {
@@ -62,7 +63,7 @@ const ProjectsPage = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          transition={{ duration: 0.5, ease: ["easeInOut"] }}
           className="text-logo-white mt-1 font-[ClashDisplay] text-[clamp(2rem,3vw,5rem)] font-medium text-pretty"
         >
           <span className="text-logo-yellow">Project</span> Showcase
